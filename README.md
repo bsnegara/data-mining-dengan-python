@@ -1,5 +1,7 @@
 # Data Mining dengan Python
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24458752.svg)](https://doi.org/10.5281/zenodo.24458752)
+
 Kode, data, dan notebook pendamping buku *Data Mining dengan Python:
 Konsep, Algoritme, dan Studi Kasus dengan CRISP-DM* (Nalar Press, 2027)
 karya Benny Sukma Negara.
@@ -82,6 +84,18 @@ python kode/data/bangkitkan_data_mds.py kode/data
 python kode/data/bangkitkan_data_proyek.py kode/data
 python kode/bab05/bersihkan.py
 ```
+
+## Mengutip
+
+Repositori ini diarsipkan di Zenodo dengan DOI
+[10.5281/zenodo.24458752](https://doi.org/10.5281/zenodo.24458752).
+Bila memakai kode atau dataset ini dalam karya ilmiah, kutip sebagai:
+
+> Negara, B. S. (2026). *Data Mining dengan Python: kode, data, dan notebook
+> pendamping* [Perangkat lunak]. Zenodo. https://doi.org/10.5281/zenodo.24458752
+
+Metadata kutipan juga tersedia di `CITATION.cff` (tombol *Cite this
+repository* di GitHub).
 
 ## Lisensi
 

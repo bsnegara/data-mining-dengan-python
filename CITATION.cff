@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Bila memakai kode atau dataset ini, mohon kutip sebagai berikut."
+title: "Data Mining dengan Python: kode, data, dan notebook pendamping"
+type: software
+authors:
+  - family-names: Negara
+    given-names: Benny Sukma
+doi: 10.5281/zenodo.24458752
+repository-code: "https://github.com/bsnegara/data-mining-dengan-python"
+license: MIT
+date-released: 2026-11-23
+keywords:
+  - data mining
+  - python
+  - CRISP-DM
+  - machine learning
