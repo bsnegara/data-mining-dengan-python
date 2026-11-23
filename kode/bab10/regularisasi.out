@@ -1,0 +1,11 @@
+92 anggota gerai G24, 15 atribut
+OLS, 15 atribut      MAE CV    68.4 ribu Rp
+OLS, 135 atribut     MAE CV   147.9 ribu Rp
+ridge, 135 atribut   MAE CV    69.1 ribu Rp
+lasso, 135 atribut   MAE CV    62.0 ribu Rp
+lasso memilih 41 dari 135 atribut; terbesar:
+  nilai_90h pakai_ulasan           +81.4
+  nilai_90h                        +77.3
+  porsi_pagi pakai_ulasan          -48.7
+  ragam_menu pakai_ulasan          -35.1
+  umur nilai_90h                   +30.8

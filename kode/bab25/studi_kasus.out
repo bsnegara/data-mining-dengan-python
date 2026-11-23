@@ -1,0 +1,35 @@
+F1 per topik (uji):   kata kunci   logistik
+  antar              0.829      1.000
+  aplikasi           0.916      1.000
+  harga              1.000      1.000
+  pelayanan          0.959      1.000
+  rasa               0.918      1.000
+  suasana            0.838      1.000
+  mikro-F1           0.920      1.000
+  semua tepat        0.766      1.000
+
+ambang keluhan (recall CV >= 0,95): 0.44
+uji: recall 0.985, presisi 0.785, ditandai 25.6% ulasan
+
+keluhan per topik per 100 ulasan:
+         antar  aplikasi  harga  pelayanan  rasa  suasana
+tanggal                                                  
+2025-07    4.0      10.1    8.6        5.2  14.4      5.7
+2025-08    4.9       9.4    5.5        8.4  11.7      4.5
+2025-09    3.9       6.5    5.7        9.5  10.1      5.4
+2025-10    4.5       5.3    7.4        8.2  13.0      4.0
+2025-11    5.2       7.1    7.4        9.2   8.6      6.4
+2025-12    4.5       6.8    5.5        9.4  11.7      5.5
+2026-01    4.5       9.2    7.0        8.7  13.4      5.6
+2026-02    8.4       9.8    7.3       12.9  13.6      5.2
+2026-03    4.0       6.0    7.1        8.3  12.0      6.6
+korelasi dengan hitungan label manual: 0.976
+di atas batas kendali p: tidak ada
+
+ulasan dengan kata-kata baru:
+  kurirnya nyasar, kopi dateng telat dan rasa 1.00, antar 1.00
+  baristanya cuek bgt, dipanggil diem aj pelayanan 1.00, rasa 0.52
+  aplikasinya ngelag pas checkout        aplikasi 1.00, rasa 0.25
+  harganya bikin dompet nangis           harga 1.00, rasa 0.79
+  kopinya enak, tempatnya gerah          rasa 1.00, suasana 0.51
+  ga worth it, mending beli sachet       rasa 0.15, suasana 0.08

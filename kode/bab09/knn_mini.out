@@ -1,0 +1,12 @@
+   acidity  body     asal  jarak
+1     7.50  7.25  Kerinci  0.292
+6     7.25  7.00  Kerinci  0.400
+5     7.00  7.75     Gayo  0.430
+2     7.75  7.50   Toraja  0.510
+3     6.75  7.75     Gayo  0.610
+0     7.75  7.00  Kerinci  0.640
+7     6.75  7.00   Flores  0.640
+4     6.50  7.50     Gayo  0.757
+k=1: Kerinci 1
+k=3: Kerinci 2, Gayo 1
+k=5: Kerinci 2, Gayo 2, Toraja 1

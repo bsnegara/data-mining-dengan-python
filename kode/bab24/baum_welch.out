@@ -1,0 +1,11 @@
+iterasi  1: log-likelihood sebelum = -12.3676
+  pi = [0.729 0.271]  A = [[0.668, 0.332], [0.119, 0.881]]
+  B  = [[0.617, 0.332, 0.051], [0.17, 0.335, 0.495]]
+iterasi  2: log-likelihood sebelum = -11.7248
+iterasi  3: log-likelihood sebelum = -11.2030
+iterasi 10: log-likelihood sebelum = -10.3355
+iterasi 30: log-likelihood sebelum = -10.3070
+akhir: A = [[0.683, 0.317], [0.0, 1.0]]
+       B = [[0.583, 0.417, 0.0], [0.0, 0.124, 0.876]]
+hmmlearn A = [[0.683, 0.317], [0.0, 1.0]]
+hmmlearn B = [[0.583, 0.417, 0.0], [0.0, 0.124, 0.876]]

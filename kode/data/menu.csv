@@ -1,0 +1,23 @@
+kode_menu,nama_menu,kategori,harga
+K01,Kopi Susu Gula Aren,kopi susu,22000
+K02,Kopi Susu Pandan,kopi susu,24000
+K03,Kopi Susu Klepon,kopi susu,25000
+K04,Cafe Latte,kopi susu,28000
+K05,Cappuccino,kopi susu,28000
+K06,Es Kopi Susu Kelapa,kopi susu,26000
+H01,Americano,kopi hitam,20000
+H02,Espresso,kopi hitam,18000
+H03,V60 Gayo,kopi hitam,30000
+H04,V60 Kerinci,kopi hitam,30000
+H05,Kopi Tubruk Toraja,kopi hitam,18000
+N01,Teh Tarik,non-kopi,18000
+N02,Cokelat Aceh,non-kopi,24000
+N03,Matcha Latte,non-kopi,27000
+N04,Es Teh Serai,non-kopi,15000
+N05,Es Kelapa Muda,non-kopi,20000
+M01,Roti Bakar Srikaya,makanan,18000
+M02,Pisang Goreng Keju,makanan,20000
+M03,Croissant Mentega,makanan,22000
+M04,Nasi Goreng Kampung,makanan,32000
+M05,Kue Lapis Legit,makanan,15000
+M06,Bolu Pandan,makanan,12000

@@ -1,0 +1,4 @@
+logistik  Brier 0.0670  rata-rata ramalan 0.128
+hutan     Brier 0.0712  rata-rata ramalan 0.128
+nb        Brier 0.2965  rata-rata ramalan 0.408
+porsi churn uji 0.122

@@ -1,0 +1,29 @@
+k= 1: varians terjelaskan 0.205
+k= 2: varians terjelaskan 0.304
+k= 3: varians terjelaskan 0.365
+k= 5: varians terjelaskan 0.461
+k=10: varians terjelaskan 0.649
+                        f1     f2    kategori
+nama_menu                                    
+V60 Kerinci          0.366 -0.272  kopi hitam
+Americano            0.433 -0.272  kopi hitam
+V60 Gayo             0.335 -0.244  kopi hitam
+Espresso             0.349 -0.240  kopi hitam
+Kopi Tubruk Toraja   0.304 -0.151  kopi hitam
+Croissant Mentega    0.309 -0.070     makanan
+Roti Bakar Srikaya   0.364 -0.056     makanan
+Cappuccino           0.288 -0.049   kopi susu
+Pisang Goreng Keju   0.309 -0.023     makanan
+Bolu Pandan          0.343 -0.023     makanan
+Cafe Latte           0.360 -0.021   kopi susu
+Nasi Goreng Kampung  0.254 -0.021     makanan
+Kue Lapis Legit      0.334 -0.019     makanan
+Es Kelapa Muda       0.184  0.021    non-kopi
+Es Teh Serai         0.173  0.023    non-kopi
+Matcha Latte         0.252  0.041    non-kopi
+Teh Tarik            0.250  0.042    non-kopi
+Cokelat Aceh         0.265  0.052    non-kopi
+Kopi Susu Klepon     0.367  0.075   kopi susu
+Es Kopi Susu Kelapa  0.355  0.095   kopi susu
+Kopi Susu Pandan     0.497  0.179   kopi susu
+Kopi Susu Gula Aren  0.770  0.423   kopi susu

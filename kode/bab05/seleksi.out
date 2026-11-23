@@ -1,0 +1,9 @@
+varians kecil: []
+tren_frek        0.106
+nilai_90h        0.086
+recency_hari     0.078
+frekuensi_90h    0.070
+ragam_menu       0.038
+porsi_promo      0.015
+RFE: frekuensi_90h, tren_frek, recency_hari, nilai_90h,
+keluhan_90h, pakai_ulasan

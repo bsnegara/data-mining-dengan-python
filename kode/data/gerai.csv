@@ -1,0 +1,41 @@
+id_gerai,kode_aplikasi,nama_gerai,kota,provinsi,tipe_lokasi,tanggal_buka,luas_m2,jumlah_kursi
+G01,KN-PKU-01,Kopi Nusantara Pekanbaru 1,Pekanbaru,Riau,kampus,2016-08-17,83,33
+G02,KN-MDN-01,Kopi Nusantara Medan 1,Medan,Sumatera Utara,perkantoran,2017-04-18,70,52
+G03,KN-PLM-01,Kopi Nusantara Palembang 1,Palembang,Sumatera Selatan,mal,2017-11-23,75,47
+G04,KN-BDG-01,Kopi Nusantara Bandung 1,Bandung,Jawa Barat,kampus,2018-02-02,74,35
+G05,KN-JKT-01,Kopi Nusantara Jakarta 1,Jakarta,DKI Jakarta,perkantoran,2018-02-18,96,25
+G06,KN-PKU-02,Kopi Nusantara Pekanbaru 2,Pekanbaru,Riau,mal,2018-05-29,102,35
+G07,KN-PLM-02,Kopi Nusantara Palembang 2,Palembang,Sumatera Selatan,mal,2018-08-13,59,37
+G08,KN-BTM-01,Kopi Nusantara Batam 1,Batam,Kepulauan Riau,kampus,2019-03-02,73,34
+G09,KN-BDG-02,Kopi Nusantara Bandung 2,Bandung,Jawa Barat,perkantoran,2019-06-17,78,29
+G10,KN-MDN-02,Kopi Nusantara Medan 2,Medan,Sumatera Utara,mal,2019-10-10,64,26
+G11,KN-BDG-03,Kopi Nusantara Bandung 3,Bandung,Jawa Barat,kampus,2020-01-06,113,40
+G12,KN-JKT-02,Kopi Nusantara Jakarta 2,Jakarta,DKI Jakarta,kampus,2020-01-25,113,32
+G13,KN-PDG-01,Kopi Nusantara Padang 1,Padang,Sumatera Barat,perkantoran,2020-02-07,123,44
+G14,KN-MDN-03,Kopi Nusantara Medan 3,Medan,Sumatera Utara,mal,2020-02-28,110,29
+G15,KN-JKT-03,Kopi Nusantara Jakarta 3,Jakarta,DKI Jakarta,permukiman,2020-06-02,63,16
+G16,KN-PDG-02,Kopi Nusantara Padang 2,Padang,Sumatera Barat,permukiman,2020-06-19,111,38
+G17,KN-PDG-03,Kopi Nusantara Padang 3,Padang,Sumatera Barat,kampus,2020-12-06,67,42
+G18,KN-YOG-01,Kopi Nusantara Yogyakarta 1,Yogyakarta,DI Yogyakarta,permukiman,2021-06-16,142,44
+G19,KN-PKU-03,Kopi Nusantara Pekanbaru 3,Pekanbaru,Riau,permukiman,2021-06-19,86,42
+G20,KN-MDN-04,Kopi Nusantara Medan 4,Medan,Sumatera Utara,mal,2021-11-25,82,38
+G21,KN-BTM-02,Kopi Nusantara Batam 2,Batam,Kepulauan Riau,kampus,2022-02-17,101,39
+G22,KN-JKT-04,Kopi Nusantara Jakarta 4,Jakarta,DKI Jakarta,mal,2022-05-02,124,37
+G23,KN-PKU-04,Kopi Nusantara Pekanbaru 4,Pekanbaru,Riau,perkantoran,2022-06-22,79,41
+G24,KN-PDG-04,Kopi Nusantara Padang 4,Padang,Sumatera Barat,mal,2022-11-28,74,27
+G25,KN-YOG-02,Kopi Nusantara Yogyakarta 2,Yogyakarta,DI Yogyakarta,mal,2023-01-01,40,24
+G26,KN-YOG-03,Kopi Nusantara Yogyakarta 3,Yogyakarta,DI Yogyakarta,mal,2023-02-02,110,21
+G27,KN-BDG-04,Kopi Nusantara Bandung 4,Bandung,Jawa Barat,mal,2023-04-21,62,43
+G28,KN-MDN-05,Kopi Nusantara Medan 5,Medan,Sumatera Utara,perkantoran,2023-05-23,76,26
+G29,KN-PLM-03,Kopi Nusantara Palembang 3,Palembang,Sumatera Selatan,perkantoran,2023-07-29,46,29
+G30,KN-MDN-06,Kopi Nusantara Medan 6,Medan,Sumatera Utara,kampus,2023-10-11,78,35
+G31,KN-JKT-05,Kopi Nusantara Jakarta 5,Jakarta,DKI Jakarta,permukiman,2023-12-12,102,40
+G32,KN-YOG-04,Kopi Nusantara Yogyakarta 4,Yogyakarta,DI Yogyakarta,permukiman,2023-12-16,130,33
+G33,KN-PKU-05,Kopi Nusantara Pekanbaru 5,Pekanbaru,Riau,perkantoran,2024-01-05,86,22
+G34,KN-BTM-03,Kopi Nusantara Batam 3,Batam,Kepulauan Riau,perkantoran,2024-03-21,72,36
+G35,KN-PKU-06,Kopi Nusantara Pekanbaru 6,Pekanbaru,Riau,mal,2024-03-31,106,33
+G36,KN-JKT-06,Kopi Nusantara Jakarta 6,Jakarta,DKI Jakarta,mal,2024-12-30,92,56
+G37,KN-PLM-04,Kopi Nusantara Palembang 4,Palembang,Sumatera Selatan,perkantoran,2025-01-14,101,34
+G38,KN-PDG-05,Kopi Nusantara Padang 5,Padang,Sumatera Barat,kampus,2025-01-14,77,31
+G39,KN-PKU-07,Kopi Nusantara Pekanbaru 7,Pekanbaru,Riau,perkantoran,2025-03-17,87,37
+G40,KN-PKU-08,Kopi Nusantara Pekanbaru 8,Pekanbaru,Riau,kampus,2025-05-30,72,49

@@ -1,0 +1,11 @@
+kemiripan kosinus antarpengguna:
+         Ani   Budi  Citra   Dedi    Eka
+Ani    1.000  0.868  0.317  0.173  0.909
+Budi   0.868  1.000  0.323  0.145  0.823
+Citra  0.317  0.323  1.000  0.494  0.333
+Dedi   0.173  0.145  0.494  1.000  0.067
+Eka    0.909  0.823  0.333  0.067  1.000
+dua tetangga Budi: ['Ani', 'Eka']
+  ramalan Budi untuk pandan   : 2.51
+  ramalan Budi untuk V60      : 0.00
+  ramalan Budi untuk espresso : 0.49

@@ -1,0 +1,9 @@
+PC1 mentah: porsi varians 3 komponen pertama [0.982 0.017 0.001]
+PC1 baku  : porsi varians 3 komponen pertama [0.282 0.236 0.162]
+                 simp. baku  PC1 mentah  PC1 baku
+ketinggian_mdpl     144.453       0.998     0.503
+kadar_air             0.875       0.000    -0.377
+densitas_gl          20.583       0.058     0.562
+ukuran_screen         1.018       0.002     0.357
+cacat_primer          2.310       0.000    -0.350
+cacat_sekunder        3.350       0.000    -0.196

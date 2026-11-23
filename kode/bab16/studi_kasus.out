@@ -1,0 +1,39 @@
+             sabtu  minggu  libur_nasional  libur_semester  ramadan  hujan
+tipe_lokasi                                                               
+kampus       1.196   1.124           0.863           0.822    0.970  0.910
+mal          1.212   1.135           1.150           1.011    0.976  0.892
+perkantoran  1.195   1.112           0.831           1.010    0.871  0.889
+permukiman   1.181   1.111           1.108           1.043    0.832  0.880
+
+36 gerai dibuka sebelum 2025; korelasi kofenetik:
+  single   0.861
+  complete 0.793
+  average  0.889
+  ward     0.867
+tinggi 6 penggabungan terakhir: [1.83 2.11 2.83 5.   8.91 9.21]
+k=2: silhouette 0.438, ARI vs tipe lokasi 0.310
+k=3: silhouette 0.579, ARI vs tipe lokasi 0.665
+k=4: silhouette 0.638, ARI vs tipe lokasi 0.856
+k=5: silhouette 0.646, ARI vs tipe lokasi 0.800
+k=6: silhouette 0.557, ARI vs tipe lokasi 0.636
+
+tipe_lokasi  kampus  mal  perkantoran  permukiman
+klaster                                          
+1                 8    0            0           0
+2                 0   12            0           1
+3                 0    1            0           5
+4                 0    0            9           0
+
+profil klaster (indeks, 1 = sama dengan hari biasa):
+         libur_nasional  libur_semester  ramadan
+klaster                                         
+1                 0.836           0.847    0.925
+2                 1.154           1.005    0.981
+3                 1.097           1.055    0.821
+4                 0.823           1.028    0.859
+menyimpang: G15 Kopi Nusantara Jakarta 3 (permukiman) di klaster 2
+menyimpang: G36 Kopi Nusantara Jakarta 6 (mal) di klaster 3
+gerai baru G37 (perkantoran, buka 2025-01-14): terdekat ke klaster 4
+gerai baru G38 (kampus, buka 2025-01-14): terdekat ke klaster 1
+gerai baru G39 (perkantoran, buka 2025-03-17): terdekat ke klaster 1
+gerai baru G40 (kampus, buka 2025-05-30): terdekat ke klaster 1

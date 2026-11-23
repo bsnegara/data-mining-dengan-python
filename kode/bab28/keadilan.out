@@ -1,0 +1,16 @@
+      n  churn  skor  disasar   TPR   FPR  presisi
+L  1781  0.139 0.133    0.164 0.722 0.074    0.613
+P  2176  0.142 0.143    0.174 0.716 0.084    0.586
+
+              n  churn  skor  disasar   TPR   FPR  presisi
+Bandung     378  0.116 0.135    0.161 0.682 0.093    0.492
+Palembang   359  0.120 0.132    0.162 0.814 0.073    0.603
+Medan       590  0.136 0.125    0.144 0.688 0.059    0.647
+Yogyakarta  352  0.139 0.133    0.156 0.776 0.056    0.691
+Pekanbaru   785  0.145 0.144    0.181 0.702 0.092    0.563
+Padang      463  0.149 0.133    0.164 0.667 0.076    0.605
+Jakarta     745  0.150 0.142    0.183 0.696 0.092    0.574
+Batam       285  0.165 0.167    0.204 0.830 0.080    0.672
+
+AUC dengan jenis kelamin 0.9221, tanpa 0.9222
+korelasi skor: 0.9998; keputusan berbeda: 17 anggota

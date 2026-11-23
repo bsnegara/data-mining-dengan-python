@@ -1,0 +1,20 @@
+(8000, 22)
+int64             10
+float64            6
+object             5
+datetime64[ns]     1
+                mean    std   min    50%     max
+umur            29.1    8.5  17.0   28.0    65.0
+frekuensi_90h   14.3   10.3   0.0   12.0    81.0
+recency_hari    12.0   20.9   0.0    5.0   149.0
+nilai_90h      597.7  442.5   0.0  498.0  4032.8
+tingkat
+perunggu    4000
+perak       2800
+emas        1200
+kota
+Pekanbaru    20.0
+Jakarta      18.1
+Medan        15.1
+Padang       11.3
+Pekanbaru 0

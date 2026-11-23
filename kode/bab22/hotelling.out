@@ -1,0 +1,9 @@
+batas kendali T2 (fase II, alfa 0,0027): 24.82
+enam T2 terbesar:
+  B055 T2  55.8 SINYAL terbesar: durasi_detik (z -7.3)
+  B038 T2  54.0 SINYAL terbesar: suhu_akhir (z -5.4)
+  B017 T2  26.6 SINYAL terbesar: detik_crack (z -3.1)
+  B011 T2  10.3        terbesar: berat_kg (z +2.9)
+  B057 T2  10.2        terbesar: suhu_akhir (z -1.8)
+  B079 T2   9.9        terbesar: berat_kg (z -2.9)
+korelasi durasi-crack fase I: 0.70

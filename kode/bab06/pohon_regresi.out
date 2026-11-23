@@ -1,0 +1,17 @@
+MAE tebak rata-rata: 4.19
+kedalaman 1: MAE uji = 3.50
+kedalaman 2: MAE uji = 2.48
+kedalaman 3: MAE uji = 2.03
+kedalaman 5: MAE uji = 1.80
+kedalaman 8: MAE uji = 1.82
+|--- jamur <= 0.5
+|   |--- ketinggian_mdpl <= 1510.5
+|   |   |--- value: [78.3]
+|   |--- ketinggian_mdpl >  1510.5
+|   |   |--- value: [83.8]
+|--- jamur >  0.5
+|   |--- ketinggian_mdpl <= 1539.5
+|   |   |--- value: [69.3]
+|   |--- ketinggian_mdpl >  1539.5
+|   |   |--- value: [73.4]
+

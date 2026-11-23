@@ -1,0 +1,10 @@
+umur kosong: 568
+        churn  frekuensi_90h
+umur                        
+terisi  0.120         14.300
+kosong  0.143         13.845
+rata-rata        RMSE = 9.05 tahun
+median           RMSE = 9.15 tahun
+median per kota  RMSE = 9.12 tahun
+kNN              RMSE = 5.97 tahun
+(8000, 2)

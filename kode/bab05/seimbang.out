@@ -1,0 +1,6 @@
+porsi churn: 0.118
+asli           n= 4950  presisi=0.66  recall=0.30
+undersampling  n= 1174  presisi=0.34  recall=0.84
+oversampling   n= 8726  presisi=0.35  recall=0.83
+SMOTE          n= 8726  presisi=0.35  recall=0.83
+bobot kelas    n= 4950  presisi=0.35  recall=0.82

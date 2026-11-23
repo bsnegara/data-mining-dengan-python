@@ -1,0 +1,5 @@
+polinom kuadrat  JKG 0.422  RMSE 0.045
+eksponen jenuh   JKG 0.676  RMSE 0.056
+garis patah      JKG 0.390  RMSE 0.043
+eksponen: a = 0.543, tau = 6.08 bulan
+garis patah: a = 0.480, t0 = 12.53 bulan

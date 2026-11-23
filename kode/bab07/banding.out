@@ -1,0 +1,4 @@
+selisih AUC rata-rata (log - hutan): +0.0153
+uji 5x2cv: t = 1.833, p = 0.126
+McNemar: hanya log benar 46, hanya hutan benar 31
+         chi2 = 2.545, p = 0.111

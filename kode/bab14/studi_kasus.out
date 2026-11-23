@@ -1,0 +1,15 @@
+model           AUC-CV  AUC-uji
+logistik          0.940    0.938
+SVM linier        0.938    0.940
+SVM RBF           0.936    0.936
+random forest     0.929    0.924
+
+atas  bawah  otomatis  presisi-spec  presisi-kom  cupping
+0.50   0.50    100.0%         0.871        0.850     0.0%
+0.80   0.20     66.4%         0.948        0.979    33.6%
+0.90   0.10     50.4%         0.949        1.000    49.6%
+0.95   0.05     37.8%         0.988        1.000    62.2%
+0.95   0.20     51.3%         0.988        0.979    48.7%
+
+~500 kiriman/tahun, cupping Rp500 ribu/kiriman; ambang 0,95/0,2
+menghemat ~Rp128 jt per tahun

@@ -1,0 +1,12 @@
+   enak  kopi  lama  nyaman  pahit  pelayanan  ramah  tempat  wangi
+0     1     2     0       0      0          0      0       0      1
+1     0     1     1       0      1          1      0       0      0
+2     0     0     0       1      0          1      1       1      0
+df = 1: idf = 1.693   enak, lama, nyaman, pahit, ramah, tempat, wangi
+df = 2: idf = 1.288   kopi, pelayanan
+TF-IDF dokumen 1: {'enak': 0.481, 'kopi': 0.732, 'wangi': 0.481}
+sama dengan sklearn: True
+kemiripan kosinus:
+ [[1.    0.313 0.   ]
+ [0.313 1.    0.172]
+ [0.    0.172 1.   ]]

@@ -1,0 +1,17 @@
+B (dukungan 3/4)
+B -> K (dukungan 3/4)
+B -> M (dukungan 3/4)
+B -> M -> K (dukungan 3/4)
+K (dukungan 3/4)
+M (dukungan 4/4)
+M -> K (dukungan 3/4)
+
+50 pola dengan dukungan >= 250 sesi (5%)
+rata-rata p_beli seluruh sesi: 0.472
+                          pola  dukungan  p_beli
+            promo > lihat_menu       703    0.43
+            lihat_menu > promo       522    0.45
+                  promo > cari       388    0.45
+       detail_menu > keranjang      2120    0.80
+              cari > keranjang      1133    0.80
+cari > detail_menu > keranjang       871    0.82

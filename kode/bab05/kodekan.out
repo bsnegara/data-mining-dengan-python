@@ -1,0 +1,15 @@
+(8000, 8) ['kota_Bandung', 'kota_Batam', 'kota_Jakarta']
+[1. 0. 0. 1. 1.]
+   jk_L  jk_P  jk_nan
+0     1     0       0
+1     0     0       1
+2     0     1       0
+kota
+Jakarta       0.107
+Yogyakarta    0.112
+Medan         0.121
+Bandung       0.123
+Pekanbaru     0.124
+Padang        0.125
+Batam         0.137
+Palembang     0.138

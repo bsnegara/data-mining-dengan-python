@@ -1,0 +1,13 @@
+data latih: 8000 anggota per 31 Maret 2026, churn 0.121
+AUC-CV 0.915, Brier 0.0647
+kalibrasi per desil (rata-rata tebakan vs nyata):
+  0.00/0.00  0.01/0.01  0.07/0.06  0.27/0.28  0.67/0.67
+tersimpan: ['churn_v1.joblib', 'churn_v1.json']
+
+koefisien atribut numerik terbesar (dibakukan):
+  frekuensi_90h          -3.15
+  frekuensi_90h_lalu     +1.97
+  nilai_90h              -1.10
+  recency_hari           +0.53
+  keluhan_90h            +0.41
+  pakai_ulasan           -0.41

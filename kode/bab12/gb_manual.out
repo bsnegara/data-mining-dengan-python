@@ -1,0 +1,6 @@
+M=  1: MAE latih  120.4  MAE uji  117.8
+M= 10: MAE latih   66.4  MAE uji   65.1
+M= 50: MAE latih   50.2  MAE uji   52.2
+M=100: MAE latih   48.5  MAE uji   52.1
+M=300: MAE latih   43.5  MAE uji   52.3
+sklearn GradientBoostingRegressor: MAE uji 52.3

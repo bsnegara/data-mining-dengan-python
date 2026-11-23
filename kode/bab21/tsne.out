@@ -1,0 +1,5 @@
+metode        trustworthiness (k=10)
+PCA           0.903
+t-SNE p=5     0.987
+t-SNE p=30    0.990
+t-SNE p=100   0.985

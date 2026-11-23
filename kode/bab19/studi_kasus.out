@@ -1,0 +1,33 @@
+latih 1270 kiriman, uji 230 kiriman; porsi cacat latih 0.083
+
+log-likelihood rata-rata per kiriman uji:
+  kosong     -4.294
+  dipelajari -3.706
+  pakar      -3.711
+
+ramalan cacat saat penerimaan (uji, 19 cacat):
+  jaringan Bayes    AUC 0.762  Brier 0.0690
+  regresi logistik  AUC 0.791  Brier 0.0682
+
+P(cacat) di bawah intervensi:
+  tanpa intervensi                0.086  (+0.000)
+  do(jemur=mesin)                 0.056  (-0.030)
+  do(simpan=singkat)              0.068  (-0.018)
+  do(air=normal)                  0.031  (-0.055)
+  do(air=normal, simpan=singkat)  0.023  (-0.063)
+
+mengamati versus mengintervensi kadar air:
+  air=tinggi  P(cacat | air) 0.167   P(cacat | do(air)) 0.163
+  air=normal  P(cacat | air) 0.029   P(cacat | do(air)) 0.031
+
+diagnosis kiriman cacat: P(penyebab | cacat=ya)
+  air=tinggi    prior 0.413 -> posterior 0.799
+  jamur=ya      prior 0.104 -> posterior 0.890
+  jemur=terpal  prior 0.398 -> posterior 0.555
+  simpan=lama   prior 0.293 -> posterior 0.441
+  musim=hujan   prior 0.530 -> posterior 0.695
+
+perkiraan kiriman cacat per tahun (dari 500):
+  tanpa intervensi                 43.0 kiriman, rugi Rp 258 jt
+  do(air=normal)                   15.6 kiriman, rugi Rp  94 jt
+  do(air=normal, simpan=singkat)   11.3 kiriman, rugi Rp  68 jt

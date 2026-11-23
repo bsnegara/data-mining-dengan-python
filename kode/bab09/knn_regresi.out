@@ -1,0 +1,8 @@
+rata-rata       MAE 4.01 poin
+linier          MAE 1.83 poin
+kNN k=1         MAE 2.72 poin
+kNN k=5         MAE 2.07 poin
+kNN k=10        MAE 2.03 poin
+kNN k=20        MAE 2.03 poin
+kNN k=40        MAE 2.11 poin
+kNN k=20 jarak  MAE 2.02 poin

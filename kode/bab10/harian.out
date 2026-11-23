@@ -1,0 +1,11 @@
+30758 hari-gerai, 54 koefisien, R2 = 0.830
+Sabtu vs Senin            +28.2%
+per tahun                  +6.4%
+gajian                     +5.5%
+hujan per 10 mm            -4.2%
+libur kampus (Jul-Agu)    -17.8%
+libur nasional, kampus    -21.7%
+Ramadan, kampus           -13.9%
+Ramadan, mal (tambahan)   +19.0%
+sd sisa per kuintil ramalan, linier: 0.74 0.85 0.96 1.04 1.29
+sd sisa per kuintil ramalan, log   : 1.01 1.02 1.02 0.98 0.96

@@ -1,0 +1,9 @@
+churn       0   1
+tingkat          
+emas       56   0
+perak     142   7
+perunggu  139  56
+alfa=1e-10: P(tingkat|churn) perunggu 0.8889, perak 0.1111, emas 0.0000
+         P(churn | emas) = 0.0000
+alfa=1: P(tingkat|churn) perunggu 0.8636, perak 0.1212, emas 0.0152
+         P(churn | emas) = 0.0166

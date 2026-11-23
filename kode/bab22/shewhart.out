@@ -1,0 +1,4 @@
+fase I (30 batch): rata-rata 684.0 s, sigma (MR/1,128) 21.8 s
+batas kendali: 618.6 - 749.4 detik
+  B055: durasi 503 s  (terlalu cepat)
+  aturan 9 berturut-turut sepihak: tidak ada sinyal

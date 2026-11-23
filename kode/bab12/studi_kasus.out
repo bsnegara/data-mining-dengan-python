@@ -1,0 +1,10 @@
+LightGBM terbaik: {'reg_lambda': 10, 'num_leaves': 4, 'n_estimators': 800, 'min_child_samples': 20, 'learning_rate': 0.02, 'colsample_bytree': 0.8}
+
+model           AUC-CV  AUC-uji  AP-uji  Brier   laba(jt)
+logistik         0.914    0.915   0.625  0.0669      5.8
+random forest    0.902    0.908   0.612  0.0682      5.5
+LightGBM         0.910    0.913   0.635  0.0665      5.7
+tumpuk           0.914    0.916   0.636  0.0695      5.4
+
+selisih AUC tumpuk - logistik: +0.0008 [-0.0008, +0.0025]
+korelasi skor logistik vs LightGBM: 0.976

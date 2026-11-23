@@ -1,0 +1,6 @@
+ 1 klaster per kelas (  4 prototipe): 0.455
+ 2 klaster per kelas (  8 prototipe): 0.511
+ 4 klaster per kelas ( 16 prototipe): 0.669
+ 8 klaster per kelas ( 32 prototipe): 0.763
+16 klaster per kelas ( 64 prototipe): 0.761
+kNN k=25 (1200 objek latih)       : 0.775

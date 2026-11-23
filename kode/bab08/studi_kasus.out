@@ -1,0 +1,21 @@
+Gaussian NB, 15 atribut  AUC 0.856 +/- 0.020
+NB kartu, 7 atribut      AUC 0.893 +/- 0.014
+logistik, 18 atribut     AUC 0.914 +/- 0.012
+
+Kartu skor (poin = 10 x log10 P(x|churn)/P(x|setia)):
+  recency_hari  -5 -1 +3 +6 +11
+  tren          +9 +0 -6 -8
+  keluhan_90h   -1 +1 +3
+  ragam_menu    +4 +1 -1 -5
+  porsi_promo   -2 +0 +3
+  pakai_ulasan  +1 -4
+  tingkat       +3 -6 -16
+poin awal (peluang prior): -9
+
+poin total  anggota  churn nyata  peluang NB
+    < -30     2051      0.003       0.000
+ -30..-21     1771      0.020       0.004
+ -20..-11     1727      0.057       0.035
+  -10..-1     1264      0.168       0.233
+     0..9      666      0.413       0.720
+    >= 10      521      0.662       0.966

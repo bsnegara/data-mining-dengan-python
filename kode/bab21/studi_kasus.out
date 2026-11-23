@@ -1,0 +1,22 @@
+MDS nonmetrik 2D: stress-1 0.115
+Spearman(skor panel, jarak peta) 0.971
+Procrustes peta panel vs peta PCA atribut: 0.843
+
+pencocokan atribut ke peta (arah dan R^2):
+  tanah       arah (+1.00, +0.09)  R^2 0.95
+  pahit       arah (+1.00, -0.01)  R^2 0.96
+  keasaman    arah (-1.00, -0.03)  R^2 0.84
+  bunga       arah (-1.00, -0.03)  R^2 0.92
+  manis       arah (-0.96, +0.26)  R^2 0.87
+  cokelat     arah (+0.87, +0.48)  R^2 0.67
+  rasa_ikutan arah (+0.11, +0.99)  R^2 0.16
+
+kesesuaian setiap panelis dengan peta bersama:
+  made   Spearman dgn rata-rata 0.94, Procrustes 0.885
+  ayu    Spearman dgn rata-rata 0.92, Procrustes 0.767
+  rizal  Spearman dgn rata-rata 0.93, Procrustes 0.866
+  tiur   Spearman dgn rata-rata 0.93, Procrustes 0.891
+  yosef  Spearman dgn rata-rata 0.94, Procrustes 0.889
+
+kestabilan antar-inisialisasi: 1.000 - 1.000
+urutan pulau: ['Sumatera', 'Jawa', 'Bali-Nusa Tenggara', 'Sulawesi', 'Papua-Maluku']

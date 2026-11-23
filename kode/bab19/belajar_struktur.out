@@ -1,0 +1,13 @@
+tanpa pengetahuan domain:
+  BIC = -5772.8
+                   air -> musim
+           air , musim -> jemur
+           air , musim -> basah
+                 jamur -> simpan
+                 jamur -> air
+                 cacat -> jamur
+dengan urutan waktu (lapis):
+  BIC = -5761.7
+  basah , jemur , musim -> air
+          air , simpan -> jamur
+                 jamur -> cacat

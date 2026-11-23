@@ -1,0 +1,4 @@
+porsi churn: 0.1215
+tebak mayoritas    latih 0.879  uji 0.878
+pohon penuh        latih 1.000  uji 0.855
+pohon kedalaman 5  latih 0.919  uji 0.899

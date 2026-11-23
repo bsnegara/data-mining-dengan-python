@@ -1,0 +1,13 @@
+PSI atribut (> 0,25 = bergeser besar, 0,1-0,25 = waspada):
+  porsi_promo        0.104  rata-rata     0.28 ->     0.35
+  porsi_aplikasi     0.062  rata-rata     0.39 ->     0.45
+  lama_anggota_bln   0.033  rata-rata    26.27 ->    29.41
+  nilai_90h          0.004  rata-rata 597747.40 -> 596587.74
+  porsi_akhir_pekan  0.004  rata-rata     0.32 ->     0.33
+
+PSI skor churn: 0.008; rata-rata skor 0.122 -> 0.139
+
+kinerja pada kelompok kontrol Q3 (n = 3957):
+  AUC 0.922 (saat dilatih 0.915)
+  churn nyata 0.141, rata-rata tebakan 0.139
+  AUC bila kelompok voucer ikut dihitung: 0.907

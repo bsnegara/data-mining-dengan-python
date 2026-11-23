@@ -1,0 +1,9 @@
+(x.z)^2          = 16.00
+phi(x).phi(z)    = 16.00
+linier          akurasi CV 0.485
+polinomial d=2  akurasi CV 1.000
+RBF             akurasi CV 1.000
+RBF gamma=  0.1: akurasi latih 0.998, CV 0.997, SV 349
+RBF gamma=    1: akurasi latih 1.000, CV 1.000, SV 54
+RBF gamma=   10: akurasi latih 1.000, CV 1.000, SV 57
+RBF gamma=  100: akurasi latih 1.000, CV 1.000, SV 231

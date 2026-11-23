@@ -1,0 +1,25 @@
+          size    mean
+kelompok              
+kontrol   3957  0.1410
+voucer    4043  0.0843
+efek voucer: churn turun 0.057 (95%: 0.043 sampai 0.070)
+
+churn per desil skor model:
+kelompok  kontrol  voucer  uplift  laba_per_org
+desil                                          
+1           0.003   0.000   0.003        -14500
+2           0.010   0.005   0.005        -14000
+3           0.007   0.005   0.002        -14600
+4           0.010   0.008   0.002        -14600
+5           0.011   0.014  -0.004        -15700
+6           0.027   0.030  -0.003        -15600
+7           0.076   0.028   0.048         -6400
+8           0.171   0.098   0.073         -1900
+9           0.359   0.217   0.142         10500
+10          0.736   0.436   0.301         39100
+
+laba program per 1.000 anggota (ribu rupiah):
+  semua anggota              sasaran 100.0%     -4799  [ -7248,  -2520]
+  20% skor tertinggi         sasaran 20.0%      4733  [  2805,   6282]
+  p >= 0.278 (Bab 7)         sasaran 16.9%      4661  [  2976,   6093]
+  p >= ambang & peka promo   sasaran 12.1%      3888  [  2563,   5238]

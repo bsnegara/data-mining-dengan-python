@@ -1,0 +1,6 @@
+tanpa pencilan:
+  pusat k-means : [0.02 3.95]
+  medoid        : [0.02 3.93]
+dengan pencilan:
+  pusat k-means : [ 1.98 40.  ]
+  medoid        : [0.02 3.93]

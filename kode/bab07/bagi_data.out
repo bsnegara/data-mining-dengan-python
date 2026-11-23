@@ -1,0 +1,4 @@
+hold-out 20 kali : 0.899 s.d. 0.920 (rata-rata 0.911)
+CV 10 lipatan    : 0.913 +/- 0.009
+KFold            porsi churn per lipatan: 0.106 s.d. 0.141
+StratifiedKFold  porsi churn per lipatan: 0.121 s.d. 0.122

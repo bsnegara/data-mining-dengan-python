@@ -1,0 +1,20 @@
+asli  : Kopinya ENAK bgt, tp antrinya lama dan AC nya ga dingin di sini
+norm  : kopinya enak banget tapi antrinya lama dan acnya tidak dingin di sini
++stop : kopinya enak banget tapi antrinya lama acnya tidak dingin sini
++stem : kopi enak banget tapi antri lama acnya tidak dingin sini
++neg  : kopi enak banget tapi antri lama acnya tidak_dingin sini
+   pelayanannya -> layan
+  pengirimannya -> kirim
+      kemanisan -> manis
+     kebanyakan -> banyak
+     diperbaiki -> baik
+     baristanya -> baristanya
+   menyenangkan -> senang
+    berkualitas -> kualitas
+     pegawainya -> pegawai
+      kemahalan -> mahal
+
+stopword Sastrawi: 123 kata
+dikeluarkan dari daftar: belum, bisa, masih, sudah, tapi, tidak
+contoh kalimat negatif dengan stopword bawaan:
+   kopinya enak murah

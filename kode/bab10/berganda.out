@@ -1,0 +1,15 @@
+32 gerai, omzet harian rata-rata 2025 (ribu Rp)
+
+sederhana: kursi +0.23 (p = 0.97), R2 = 0.000
+
+berganda:
+                    Coef.  Std.Err.      t  P>|t|
+Intercept         717.355   148.601  4.827  0.000
+tipe mal          457.195    65.454  6.985  0.000
+tipe perkantoran  133.410    72.257  1.846  0.077
+tipe permukiman  -175.384    78.223 -2.242  0.034
+jumlah_kursi        3.643     3.241  1.124  0.272
+luas_m2             4.794     1.094  4.381  0.000
+kota_besar        228.918    50.431  4.539  0.000
+R2 = 0.823, R2 terkoreksi = 0.780, sigma = 138.7
+uji F: F = 19.4, p = 2.8e-08

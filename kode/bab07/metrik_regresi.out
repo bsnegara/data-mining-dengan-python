@@ -1,0 +1,5 @@
+target (ribu Rp): rata-rata 199.2, median 162.5, nol 12.6%
+model        MAE    RMSE    R2    MAPE*
+rata-rata   128.6   170.6 -0.003 105.0%
+linier       52.0    77.7 0.792  26.4%
+hutan        52.3    80.2 0.778  26.1%

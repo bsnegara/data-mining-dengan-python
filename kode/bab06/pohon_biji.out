@@ -1,0 +1,24 @@
+|--- skor_total <= 77.1
+|   |--- kadar_air <= 12.4
+|   |   |--- skor_total <= 72.9
+|   |   |   |--- weights: [2.0, 36.0] class: tolak
+|   |   |--- skor_total >  72.9
+|   |   |   |--- weights: [131.0, 25.0] class: terima
+|   |--- kadar_air >  12.4
+|   |   |--- skor_total <= 75.6
+|   |   |   |--- weights: [2.0, 169.0] class: tolak
+|   |   |--- skor_total >  75.6
+|   |   |   |--- weights: [20.0, 52.0] class: tolak
+|--- skor_total >  77.1
+|   |--- kadar_air <= 12.8
+|   |   |--- skor_total <= 78.9
+|   |   |   |--- weights: [119.0, 7.0] class: terima
+|   |   |--- skor_total >  78.9
+|   |   |   |--- weights: [706.0, 0.0] class: terima
+|   |--- kadar_air >  12.8
+|   |   |--- skor_total <= 81.1
+|   |   |   |--- weights: [61.0, 57.0] class: terima
+|   |   |--- skor_total >  81.1
+|   |   |   |--- weights: [110.0, 3.0] class: terima
+
+akurasi latih: 0.923

@@ -1,0 +1,16 @@
+semua struk: 136526 struk; lift semua aturan 0.51-0.72
+          konsekuen  support  confidence  lift  kulczynski
+   Kopi Susu Pandan    0.017       0.069 0.697       0.119
+          Americano    0.015       0.063 0.674       0.114
+Es Kopi Susu Kelapa    0.014       0.057 0.670       0.110
+         Cafe Latte    0.014       0.056 0.648       0.107
+          Teh Tarik    0.013       0.054 0.652       0.106
+
+struk >= 2 item: 57618 struk; lift semua aturan 0.40-0.77
+          konsekuen  support  confidence  lift  kulczynski
+   Kopi Susu Pandan    0.040       0.113 0.772       0.192
+          Americano    0.037       0.104 0.736       0.181
+Es Kopi Susu Kelapa    0.033       0.093 0.735       0.176
+         Cafe Latte    0.032       0.092 0.712       0.171
+          Teh Tarik    0.031       0.088 0.710       0.169
+

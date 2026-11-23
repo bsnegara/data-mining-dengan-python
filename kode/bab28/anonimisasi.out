@@ -1,0 +1,9 @@
+anggota yang unik (k = 1): 99.4%
+generalisasi (umur, jk, kota, tahun): k minimum 1, k < 5: 4.1%
+generalisasi (umur, jk, kota): k minimum 1, k < 5: 0.3%
+setelah 25 baris dengan k < 5 dihapus: k minimum 10
+
+pseudonim: ['1ebf437c347b', 'd1b133977533', 'ebe36a625e2e']
+hash tanpa kunci 7169b713f58c dibalik: A00001
+jumlah anggota Batam (epsilon 0.1): [598, 601, 594, 559, 563] (benar 586)
+jumlah anggota Batam (epsilon 1.0): [586, 587, 588, 586, 587] (benar 586)

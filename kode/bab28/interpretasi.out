@@ -1,0 +1,23 @@
+LightGBM (atribut numerik) AUC uji: 0.919
+
+rata-rata |SHAP| (log-odds), enam terbesar:
+tren             0.715
+nilai_90h        0.523
+recency_hari     0.401
+porsi_promo      0.279
+frekuensi_90h    0.249
+pakai_ulasan     0.221
+
+permutation importance logistik (turunnya AUC):
+frekuensi_90h         0.3056
+frekuensi_90h_lalu    0.0972
+nilai_90h             0.0497
+recency_hari          0.0243
+porsi_promo           0.0114
+
+anggota A11078: log-odds dasar -3.20, akhir 4.45 (p = 0.99)
+  tren               =      0.24  SHAP +2.20
+  recency_hari       =     78.00  SHAP +1.69
+  keluhan_90h        =      2.00  SHAP +1.19
+  frekuensi_90h_lalu =     28.00  SHAP +1.00
+  nilai_90h          = 215800.00  SHAP +0.76

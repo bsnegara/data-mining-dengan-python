@@ -1,0 +1,3 @@
+XGBoost         AUC uji 0.906  pohon  158  waktu  0.1 dtk
+LightGBM        AUC uji 0.907  pohon  129  waktu  0.1 dtk
+HistGB sklearn  AUC uji 0.906  pohon  319  waktu  0.4 dtk

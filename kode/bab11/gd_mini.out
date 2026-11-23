@@ -1,0 +1,7 @@
+iterasi 1: p = [0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5]  gradien = [ 0.  -0.5]
+iterasi    1: b0 = +0.0000, b1 = +0.2500, log-lik = -4.8450
+iterasi    2: b0 = -0.0521, b1 = +0.3549, log-lik = -4.6548
+iterasi   10: b0 = -0.5745, b1 = +0.6675, log-lik = -3.9148
+iterasi  100: b0 = -2.6303, b1 = +1.8345, log-lik = -2.6515
+iterasi 2000: b0 = -3.5336, b1 = +2.4458, log-lik = -2.5657
+scikit-learn: b0 = -3.5361, b1 = +2.4476

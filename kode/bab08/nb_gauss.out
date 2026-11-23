@@ -1,0 +1,11 @@
+rata-rata per kelas:
+                   setia      churn
+recency_hari        8.54      37.22
+frekuensi_90h      15.44       5.77
+nilai_90h      648660.76  229620.78
+keluhan_90h         0.30       0.47
+ragam_menu          5.84       3.35
+porsi_promo         0.27       0.36
+simpangan baku recency: [20.29 38.62]
+AUC CV, asli  : 0.861
+AUC CV, log1p : 0.861

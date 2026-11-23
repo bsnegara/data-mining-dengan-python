@@ -1,0 +1,9 @@
+# Pustaka yang belum tersedia di Google Colab. Dipasang oleh sel pertama
+# setiap notebook. Untuk instalasi lokal pakai requirements.txt.
+mlxtend
+hmmlearn
+PyWavelets
+Sastrawi
+shap
+fastapi
+httpx

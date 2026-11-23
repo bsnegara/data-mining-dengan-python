@@ -1,0 +1,20 @@
+1) P(cacat=ya | musim): musim dan cacat bergantung
+musim
+hujan      0.127
+kemarau    0.040
+
+2) P(cacat=ya | jamur, jemur, musim): bila jamur dan
+   jemur diketahui, musim hampir tak menambah informasi
+musim            hujan  kemarau
+jamur jemur                    
+tidak mesin      0.000    0.000
+      para-para  0.007    0.000
+      terpal     0.027    0.007
+ya    mesin      1.000    0.500
+      para-para  0.689    0.750
+      terpal     0.758    0.895
+
+3) kolider: lama simpan -> jamur <- kadar air
+   korelasi kadar air dan lama simpan
+   semua kiriman    (n=1500): -0.007
+   kiriman berjamur (n=152) : -0.161

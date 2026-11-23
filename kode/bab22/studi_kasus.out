@@ -1,0 +1,21 @@
+7679 kasir-hari, 133 di antaranya curang (1.7%)
+
+tingkat kasir-hari:    AUC    AP
+  z robust (maks)   0.945  0.470
+  LOF               0.914  0.413
+  Isolation Forest  0.938  0.671
+
+daftar audit mingguan: 10 kasir dengan skor rata-rata
+tertinggi; berapa minggu kasir curang masuk daftar?
+  G07-K2: 9 dari 10 minggu
+  G31-K3: 10 dari 10 minggu
+  G18-K1: 9 dari 11 minggu
+kasir jujur yang pernah masuk daftar: 64 dari 117
+paling sering: G19-K1 (5 minggu)
+
+profil kasir yang ditandai vs median semua kasir (Feb-Mar):
+        rasio_batal  diskon_per_struk  porsi_tunai  struk_setelah_tutup
+G07-K2        0.033           197.408        0.494                1.919
+G31-K3        0.071           187.308        0.493                1.190
+G18-K1        0.015           998.632        0.274                0.238
+median        0.012           209.742        0.279                0.149

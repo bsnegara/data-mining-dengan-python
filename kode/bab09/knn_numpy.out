@@ -1,0 +1,3 @@
+k= 1: NumPy 0.720  scikit-learn 0.715
+k= 5: NumPy 0.734  scikit-learn 0.748
+k=25: NumPy 0.793  scikit-learn 0.780

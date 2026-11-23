@@ -1,0 +1,13 @@
+iterasi 1: klaster 1233333323  SSE 305.50
+  pusat baru: (2.00; 1.00)  (4.00; 4.00)  (8.29; 4.14)
+iterasi 2: klaster 1113332323  SSE 62.37
+  pusat baru: (3.00; 1.17)  (5.50; 6.25)  (9.60; 4.40)
+iterasi 3: klaster 1113332223  SSE 24.98
+  pusat baru: (3.00; 1.17)  (6.00; 6.50)  (10.25; 3.75)
+iterasi 4: klaster 1113332222  SSE 14.79
+  pusat baru: (3.00; 1.17)  (6.50; 6.38)  (11.00; 3.00)
+iterasi 5: klaster 1113332222  SSE 10.35
+  pusat baru: (3.00; 1.17)  (6.50; 6.38)  (11.00; 3.00)
+konvergen; SSE akhir 10.35
+pusat awal DEF: klaster ABCGHIJ E DF  SSE 75.98
+pusat awal AGH: klaster ABC GHIJ DEF  SSE 10.35

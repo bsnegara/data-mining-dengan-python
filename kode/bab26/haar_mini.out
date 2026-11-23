@@ -1,0 +1,14 @@
+tingkat 1: rata-rata [1. 1. 7. 7.], rincian [-1. -1. -1. -1.]
+tingkat 2: rata-rata [1. 7.], rincian [0. 0.]
+tingkat 3: rata-rata [4.], rincian [-3.]
+koefisien Haar: [4.] [-3.] [0. 0.] [-1. -1. -1. -1.]
+rekonstruksi  : [0. 2. 0. 2. 6. 8. 6. 8.]
+tanpa rincian tingkat 1: [1. 1. 1. 1. 7. 7. 7. 7.]
+
+PyWavelets (ortonormal):
+  cA3: [11.314]
+  cD3: [-8.485]
+  cD2: [0. 0.]
+  cD1: [-1.414 -1.414 -1.414 -1.414]
+dibagi 2^(j/2): [[4.0], [-3.0], [0.0, 0.0], [-1.0, -1.0, -1.0, -1.0]]
+energi sama: 208.0 208.0

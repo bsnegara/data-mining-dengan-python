@@ -1,0 +1,42 @@
+{
+ "versi": "churn-v1",
+ "dilatih": "2026-04-07",
+ "data": "pelanggan.csv (potong 2026-03-31)",
+ "auc_cv": 0.9148,
+ "sklearn": "1.9.1",
+ "atribut": [
+  "umur",
+  "frekuensi_90h",
+  "frekuensi_90h_lalu",
+  "recency_hari",
+  "nilai_90h",
+  "rata_nilai_struk",
+  "porsi_promo",
+  "porsi_aplikasi",
+  "porsi_kopi_hitam",
+  "porsi_pagi",
+  "porsi_akhir_pekan",
+  "ragam_menu",
+  "keluhan_90h",
+  "jarak_km",
+  "pakai_ulasan",
+  "tren",
+  "lama_anggota_bln",
+  "kota",
+  "tingkat",
+  "jenis_kelamin"
+ ],
+ "skor_acuan": [
+  1.5607019281792114e-10,
+  0.000521181832653894,
+  0.002660793675295934,
+  0.007547443555055431,
+  0.015654381980971053,
+  0.028534818362420805,
+  0.05148049822344719,
+  0.0932212126597454,
+  0.1827030799468162,
+  0.39334662721641883,
+  0.9977943836985165
+ ]
+}

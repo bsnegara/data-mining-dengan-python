@@ -1,0 +1,8 @@
+bulan sabit: ARI k-means 0.240, ARI DBSCAN 0.970
+  DBSCAN: 2 klaster, 16 titik derau
+
+anggota (7 atribut terstandar), min_samples = 14:
+  eps=0.6: 17 klaster, derau 77.6%, tiga terbesar [918, 352, 322]
+  eps=0.7:  4 klaster, derau 33.8%, tiga terbesar [3809, 1055, 422]
+  eps=0.8:  2 klaster, derau 11.3%, tiga terbesar [7056, 37]
+  eps=1.0:  2 klaster, derau  1.6%, tiga terbesar [7801, 74]

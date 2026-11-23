@@ -1,0 +1,13 @@
+ADF level           : statistik  -2.18, nilai-p 0.212
+ADF selisih pertama : statistik  -7.10, nilai-p 0.000
+
+ACF/PACF selisih pertama (batas +-0.16):
+lag        1      2      3      4      5      6      7      8
+ACF    -0.29  -0.19  -0.08   0.18  -0.01  -0.08  -0.11   0.00
+PACF   -0.29  -0.29  -0.28  -0.02  -0.03  -0.07  -0.18  -0.22
+
+kandidat ARIMA(p,1,q), diurutkan menurut AIC:
+  ARIMA(1,1,1)  AIC   148.9  Ljung-Box p 0.197
+  ARIMA(0,1,2)  AIC   149.2  Ljung-Box p 0.200
+  ARIMA(1,1,2)  AIC   150.6  Ljung-Box p 0.260
+  ARIMA(2,1,1)  AIC   150.6  Ljung-Box p 0.257
