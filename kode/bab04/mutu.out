@@ -1,0 +1,12 @@
+(8064, 22)
+umur              7.0
+jenis_kelamin     3.0
+porsi_aplikasi    2.0
+duplikat penuh: 64
+duplikat id   : 64
+Bandung, Batam, Bdg, DIY, DKI Jakarta, Jakarta, Jogja,
+Medan, PEKANBARU, Padang, Palembang, Pekan Baru, Pekanbaru,
+Yogya, Yogyakarta, jakarta, medan , pekanbaru
+umur < 15 atau > 90: 9
+nilai_90h bukan angka: 322
+['Rp574.500', 'Rp307.100']

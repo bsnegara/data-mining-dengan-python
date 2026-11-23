@@ -1,0 +1,5 @@
+GET /sehat -> ok churn-v1 AUC 0.9148
+POST /skor -> 200
+  A10001: p_churn 0.001, kirim_voucer False
+  A10008: p_churn 0.822, kirim_voucer True
+masukan salah -> 422 Input should be less than or equal to 1

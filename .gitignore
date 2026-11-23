@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Editor dan sistem operasi
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Berkas antara LaTeX (bila sumber buku ikut disimpan)
+*.aux
+*.log
+*.toc
+*.out.tex
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.lol
+*.run.xml
+build/

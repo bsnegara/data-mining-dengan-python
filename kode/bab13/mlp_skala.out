@@ -1,0 +1,10 @@
+sgd  skala X=False skala y=False: MAE uji   128.6
+sgd  skala X=True  skala y=False: MAE uji  5824.5
+sgd  skala X=True  skala y=True : MAE uji    54.3
+adam skala X=True  skala y=True : MAE uji    54.9
+
+lapisan (4,)          parameter    121  MAE uji  52.5
+lapisan (32,)         parameter    961  MAE uji  54.9
+lapisan (128,)        parameter   3841  MAE uji  54.8
+lapisan (64, 32)      parameter   3969  MAE uji  56.4
+lapisan (128, 64, 32) parameter  14081  MAE uji  55.6

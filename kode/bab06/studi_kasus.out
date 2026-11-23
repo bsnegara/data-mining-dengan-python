@@ -1,0 +1,36 @@
+latih: 1008  uji: 492
+aturan lama, kecocokan: 0.77
+terbaik: {'max_leaf_nodes': 16, 'min_samples_leaf': 10} CV: 0.938
+pohon terbaik, kecocokan uji: 0.941
+pohon 8 daun, kecocokan uji: 0.911
+[[347  32]
+ [ 12 101]]
+|--- skor_total <= 76.4
+|   |--- kadar_air <= 12.2
+|   |   |--- cacat_primer <= 2.5
+|   |   |   |--- class: terima
+|   |   |--- cacat_primer >  2.5
+|   |   |   |--- class: tolak
+|   |--- kadar_air >  12.2
+|   |   |--- class: tolak
+|--- skor_total >  76.4
+|   |--- kadar_air <= 13.2
+|   |   |--- skor_total <= 78.4
+|   |   |   |--- kadar_air <= 12.4
+|   |   |   |   |--- class: terima
+|   |   |   |--- kadar_air >  12.4
+|   |   |   |   |--- class: tolak
+|   |   |--- skor_total >  78.4
+|   |   |   |--- class: terima
+|   |--- kadar_air >  13.2
+|   |   |--- skor_total <= 81.2
+|   |   |   |--- class: tolak
+|   |   |--- skor_total >  81.2
+|   |   |   |--- class: terima
+
+skor_total        0.661
+kadar_air         0.289
+cacat_primer      0.050
+cacat_sekunder    0.000
+ukuran_screen     0.000
+densitas_gl       0.000

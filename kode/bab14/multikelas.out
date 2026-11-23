@@ -1,0 +1,8 @@
+satu-lawan-satu: akurasi 0.430, waktu 0.3 dtk
+satu-lawan-sisa: akurasi 0.426, waktu 0.8 dtk
+matriks konfusi (satu-lawan-sisa), baris = asal sebenarnya
+         Flores    Gayo Kerinci  Toraja
+Flores      120      91      46      40
+Gayo         69     312      70      52
+Kerinci      59     138     127      67
+Toraja       48     119      62      80

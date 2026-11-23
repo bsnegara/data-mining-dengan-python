@@ -1,0 +1,7 @@
+awal          : (8064, 22)
+tanpa duplikat: (8000, 22)
+kota: 8 nilai unik
+umur tak wajar -> NaN: 9
+jarak dari meter: 25
+nilai_90h cocok : True
+kota cocok      : True

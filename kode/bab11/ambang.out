@@ -1,0 +1,6 @@
+biasa   : rata-rata peluang 0.128 (porsi churn 0.122)
+balanced: rata-rata peluang 0.299 (porsi churn 0.122)
+bawaan                     t=0.500: ditandai  207, laba Rp 4.13 jt
+F1 maksimum                t=0.260: ditandai  373, laba Rp 6.12 jt
+laba maksimum              t=0.260: ditandai  373, laba Rp 6.12 jt
+teoretis c_FP/(c_FP+c_FN)  t=0.278: ditandai  353, laba Rp 5.78 jt

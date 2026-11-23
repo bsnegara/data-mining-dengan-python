@@ -1,0 +1,33 @@
+terbaik: {'n_neighbors': 15, 'p': 2, 'weights': 'distance'} CV 0.794
+akurasi uji 2025: 0.783
+
+         Gayo  Kerinci  Toraja  Flores
+Gayo      151        0       7       9
+Kerinci     0      101       8       3
+Toraja     18        5      71      15
+Flores     19        7      16      62
+              precision    recall  f1-score   support
+
+      Flores      0.697     0.596     0.642       104
+        Gayo      0.803     0.904     0.851       167
+     Kerinci      0.894     0.902     0.898       112
+      Toraja      0.696     0.651     0.673       109
+
+    accuracy                          0.783       492
+   macro avg      0.772     0.763     0.766       492
+weighted avg      0.778     0.783     0.778       492
+
+ambang suara  cakupan  akurasi
+    0.0       1.000    0.783
+    0.5       0.854    0.821
+    0.6       0.724    0.862
+    0.7       0.543    0.921
+    0.8       0.419    0.932
+
+kiriman K-0020 (sebenarnya Kerinci), lima tetangga terdekat:
+id_kiriman    asal  acidity  body  jarak
+    K-0006 Kerinci     7.50  7.00   0.38
+    K-0170 Kerinci     7.50  7.00   0.39
+    K-0518 Kerinci     7.75  6.75   0.50
+    K-0404 Kerinci     7.75  7.00   0.51
+    K-0869 Kerinci     7.75  7.00   0.53

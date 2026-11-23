@@ -1,0 +1,277 @@
+kopi_a,kopi_b,skor_made,skor_ayu,skor_rizal,skor_tiur,skor_yosef,skor_beda
+Gayo,Mandailing,4,4,4,3,4,3.8
+Gayo,Lintong,2,3,2,4,4,3.0
+Gayo,Sidikalang,5,6,5,5,4,5.0
+Gayo,Kerinci,8,7,6,7,6,6.8
+Gayo,Solok,7,6,6,7,6,6.4
+Gayo,Semendo,5,5,5,3,6,4.8
+Gayo,Lampung Robusta,7,7,7,7,7,7.0
+Gayo,Preanger,7,8,7,7,8,7.4
+Gayo,Malabar,7,8,8,7,7,7.4
+Gayo,Temanggung,5,6,6,5,6,5.6
+Gayo,Ijen,8,7,8,8,7,7.6
+Gayo,Kintamani,9,8,8,9,8,8.4
+Gayo,Toraja,5,5,6,5,5,5.2
+Gayo,Kalosi,5,5,5,4,5,4.8
+Gayo,Enrekang,6,5,6,6,6,5.8
+Gayo,Bajawa,6,7,6,4,7,6.0
+Gayo,Manggarai,6,6,6,6,6,6.0
+Gayo,Wamena,7,8,7,8,8,7.6
+Gayo,Pegunungan Bintang,7,7,9,7,8,7.6
+Gayo,Halmahera,6,5,6,6,7,6.0
+Gayo,Malino,6,6,7,7,8,6.8
+Gayo,Aceh Robusta,8,6,7,6,6,6.6
+Gayo,Dampit,7,8,6,7,7,7.0
+Mandailing,Lintong,3,3,5,3,4,3.6
+Mandailing,Sidikalang,3,4,3,3,4,3.4
+Mandailing,Kerinci,8,8,7,9,8,8.0
+Mandailing,Solok,8,7,8,9,9,8.2
+Mandailing,Semendo,5,5,7,5,5,5.4
+Mandailing,Lampung Robusta,6,7,6,7,6,6.4
+Mandailing,Preanger,9,8,9,7,9,8.4
+Mandailing,Malabar,7,8,8,7,8,7.6
+Mandailing,Temanggung,7,5,6,8,6,6.4
+Mandailing,Ijen,7,8,7,8,9,7.8
+Mandailing,Kintamani,9,7,8,8,8,8.0
+Mandailing,Toraja,6,7,6,6,6,6.2
+Mandailing,Kalosi,7,6,6,6,6,6.2
+Mandailing,Enrekang,6,6,8,7,7,6.8
+Mandailing,Bajawa,8,8,7,7,7,7.4
+Mandailing,Manggarai,7,8,7,6,7,7.0
+Mandailing,Wamena,8,8,9,7,8,8.0
+Mandailing,Pegunungan Bintang,8,9,7,8,9,8.2
+Mandailing,Halmahera,7,7,6,8,7,7.0
+Mandailing,Malino,7,8,9,8,8,8.0
+Mandailing,Aceh Robusta,5,7,4,6,5,5.4
+Mandailing,Dampit,6,6,5,5,6,5.6
+Lintong,Sidikalang,4,5,4,3,4,4.0
+Lintong,Kerinci,7,6,8,7,8,7.2
+Lintong,Solok,7,6,8,7,7,7.0
+Lintong,Semendo,4,4,3,4,3,3.6
+Lintong,Lampung Robusta,6,6,6,6,7,6.2
+Lintong,Preanger,7,8,7,7,7,7.2
+Lintong,Malabar,7,7,7,8,7,7.2
+Lintong,Temanggung,4,5,5,4,4,4.4
+Lintong,Ijen,8,9,8,6,7,7.6
+Lintong,Kintamani,9,8,9,9,9,8.8
+Lintong,Toraja,6,6,7,5,6,6.0
+Lintong,Kalosi,5,5,5,5,4,4.8
+Lintong,Enrekang,7,7,7,7,5,6.6
+Lintong,Bajawa,8,6,7,6,6,6.6
+Lintong,Manggarai,7,8,7,6,6,6.8
+Lintong,Wamena,8,8,8,9,8,8.2
+Lintong,Pegunungan Bintang,9,7,8,8,7,7.8
+Lintong,Halmahera,5,7,7,7,7,6.6
+Lintong,Malino,6,6,6,6,6,6.0
+Lintong,Aceh Robusta,6,6,6,7,5,6.0
+Lintong,Dampit,6,6,6,5,5,5.6
+Sidikalang,Kerinci,8,7,9,9,8,8.2
+Sidikalang,Solok,8,9,7,9,7,8.0
+Sidikalang,Semendo,5,5,6,6,6,5.6
+Sidikalang,Lampung Robusta,6,5,5,5,5,5.2
+Sidikalang,Preanger,7,8,8,8,8,7.8
+Sidikalang,Malabar,7,9,7,8,8,7.8
+Sidikalang,Temanggung,4,5,6,5,5,5.0
+Sidikalang,Ijen,8,9,7,7,8,7.8
+Sidikalang,Kintamani,9,8,9,9,8,8.6
+Sidikalang,Toraja,8,8,6,7,7,7.2
+Sidikalang,Kalosi,6,6,6,6,6,6.0
+Sidikalang,Enrekang,7,7,6,7,7,6.8
+Sidikalang,Bajawa,6,7,7,6,7,6.6
+Sidikalang,Manggarai,8,8,7,8,8,7.8
+Sidikalang,Wamena,8,9,9,9,8,8.6
+Sidikalang,Pegunungan Bintang,7,9,8,9,8,8.2
+Sidikalang,Halmahera,7,8,7,8,7,7.4
+Sidikalang,Malino,7,8,7,6,7,7.0
+Sidikalang,Aceh Robusta,4,4,5,5,5,4.6
+Sidikalang,Dampit,5,4,5,5,4,4.6
+Kerinci,Solok,3,3,2,2,2,2.4
+Kerinci,Semendo,6,7,7,7,7,6.8
+Kerinci,Lampung Robusta,8,9,8,8,8,8.2
+Kerinci,Preanger,4,3,3,4,3,3.4
+Kerinci,Malabar,4,4,4,4,4,4.0
+Kerinci,Temanggung,9,8,8,8,7,8.0
+Kerinci,Ijen,5,5,3,5,5,4.6
+Kerinci,Kintamani,7,6,6,6,7,6.4
+Kerinci,Toraja,6,5,5,6,6,5.6
+Kerinci,Kalosi,5,6,6,6,6,5.8
+Kerinci,Enrekang,5,5,5,4,4,4.6
+Kerinci,Bajawa,7,6,5,6,6,6.0
+Kerinci,Manggarai,5,7,5,6,5,5.6
+Kerinci,Wamena,6,6,5,6,6,5.8
+Kerinci,Pegunungan Bintang,6,6,5,6,6,5.8
+Kerinci,Halmahera,6,8,7,6,5,6.4
+Kerinci,Malino,5,6,5,6,5,5.4
+Kerinci,Aceh Robusta,7,8,8,8,8,7.8
+Kerinci,Dampit,8,9,8,8,9,8.4
+Solok,Semendo,5,8,7,5,6,6.2
+Solok,Lampung Robusta,8,8,8,8,9,8.2
+Solok,Preanger,4,3,3,3,2,3.0
+Solok,Malabar,1,2,2,3,3,2.2
+Solok,Temanggung,8,7,6,8,7,7.2
+Solok,Ijen,4,4,4,4,4,4.0
+Solok,Kintamani,6,7,6,6,5,6.0
+Solok,Toraja,4,5,4,5,4,4.4
+Solok,Kalosi,6,6,6,6,6,6.0
+Solok,Enrekang,5,5,5,5,5,5.0
+Solok,Bajawa,5,6,6,6,6,5.8
+Solok,Manggarai,5,6,5,6,5,5.4
+Solok,Wamena,5,6,5,5,6,5.4
+Solok,Pegunungan Bintang,5,4,5,5,6,5.0
+Solok,Halmahera,6,5,4,6,7,5.6
+Solok,Malino,3,5,4,4,5,4.2
+Solok,Aceh Robusta,7,9,9,8,8,8.2
+Solok,Dampit,8,8,9,9,9,8.6
+Semendo,Lampung Robusta,7,8,7,6,6,6.8
+Semendo,Preanger,7,7,8,7,7,7.2
+Semendo,Malabar,8,7,7,7,7,7.2
+Semendo,Temanggung,3,2,4,2,3,2.8
+Semendo,Ijen,7,7,7,8,7,7.2
+Semendo,Kintamani,8,7,7,9,9,8.0
+Semendo,Toraja,6,5,5,5,6,5.4
+Semendo,Kalosi,4,4,4,4,5,4.2
+Semendo,Enrekang,5,6,4,6,5,5.2
+Semendo,Bajawa,7,7,7,8,7,7.2
+Semendo,Manggarai,6,7,7,6,7,6.6
+Semendo,Wamena,7,8,5,8,8,7.2
+Semendo,Pegunungan Bintang,8,7,6,7,8,7.2
+Semendo,Halmahera,5,7,6,5,6,5.8
+Semendo,Malino,6,6,6,5,6,5.8
+Semendo,Aceh Robusta,7,6,6,6,6,6.2
+Semendo,Dampit,7,7,6,6,5,6.2
+Lampung Robusta,Preanger,9,8,9,9,9,8.8
+Lampung Robusta,Malabar,7,9,8,8,8,8.0
+Lampung Robusta,Temanggung,7,6,7,7,6,6.6
+Lampung Robusta,Ijen,8,9,9,8,9,8.6
+Lampung Robusta,Kintamani,9,9,9,9,9,9.0
+Lampung Robusta,Toraja,7,8,8,8,7,7.6
+Lampung Robusta,Kalosi,8,7,8,8,8,7.8
+Lampung Robusta,Enrekang,8,8,8,7,9,8.0
+Lampung Robusta,Bajawa,8,8,9,9,8,8.4
+Lampung Robusta,Manggarai,7,9,8,8,8,8.0
+Lampung Robusta,Wamena,9,9,9,9,9,9.0
+Lampung Robusta,Pegunungan Bintang,8,9,9,9,9,8.8
+Lampung Robusta,Halmahera,8,9,9,8,9,8.6
+Lampung Robusta,Malino,8,7,8,8,7,7.6
+Lampung Robusta,Aceh Robusta,2,3,4,3,3,3.0
+Lampung Robusta,Dampit,3,4,4,3,4,3.6
+Preanger,Malabar,3,1,3,3,3,2.6
+Preanger,Temanggung,8,6,6,6,7,6.6
+Preanger,Ijen,4,4,4,4,3,3.8
+Preanger,Kintamani,6,5,6,5,6,5.6
+Preanger,Toraja,5,6,6,5,5,5.4
+Preanger,Kalosi,6,6,7,7,7,6.6
+Preanger,Enrekang,6,5,6,5,5,5.4
+Preanger,Bajawa,7,6,7,6,6,6.4
+Preanger,Manggarai,5,6,5,5,6,5.4
+Preanger,Wamena,4,5,5,4,6,4.8
+Preanger,Pegunungan Bintang,5,5,5,6,3,4.8
+Preanger,Halmahera,6,6,5,6,7,6.0
+Preanger,Malino,5,5,5,5,5,5.0
+Preanger,Aceh Robusta,9,8,8,9,9,8.6
+Preanger,Dampit,8,9,8,8,9,8.4
+Malabar,Temanggung,7,8,7,7,8,7.4
+Malabar,Ijen,2,3,2,4,3,2.8
+Malabar,Kintamani,6,5,6,5,6,5.6
+Malabar,Toraja,5,5,5,4,5,4.8
+Malabar,Kalosi,5,5,8,6,7,6.2
+Malabar,Enrekang,5,5,4,6,5,5.0
+Malabar,Bajawa,6,6,4,6,5,5.4
+Malabar,Manggarai,6,6,5,6,6,5.8
+Malabar,Wamena,3,5,5,5,4,4.4
+Malabar,Pegunungan Bintang,3,5,3,4,3,3.6
+Malabar,Halmahera,5,5,5,7,6,5.6
+Malabar,Malino,3,4,5,4,4,4.0
+Malabar,Aceh Robusta,9,9,9,9,8,8.8
+Malabar,Dampit,9,7,9,8,8,8.2
+Temanggung,Ijen,7,7,7,7,9,7.4
+Temanggung,Kintamani,9,8,8,9,8,8.4
+Temanggung,Toraja,6,6,6,7,6,6.2
+Temanggung,Kalosi,5,4,6,5,4,4.8
+Temanggung,Enrekang,6,7,6,6,6,6.2
+Temanggung,Bajawa,7,7,7,7,7,7.0
+Temanggung,Manggarai,8,8,5,6,7,6.8
+Temanggung,Wamena,7,8,8,7,7,7.4
+Temanggung,Pegunungan Bintang,8,8,8,7,7,7.6
+Temanggung,Halmahera,5,6,4,6,6,5.4
+Temanggung,Malino,7,7,5,7,5,6.2
+Temanggung,Aceh Robusta,6,6,6,7,5,6.0
+Temanggung,Dampit,7,6,6,6,6,6.2
+Ijen,Kintamani,5,6,5,6,5,5.4
+Ijen,Toraja,5,5,5,6,7,5.6
+Ijen,Kalosi,7,5,7,5,7,6.2
+Ijen,Enrekang,5,4,5,4,5,4.6
+Ijen,Bajawa,6,6,5,6,5,5.6
+Ijen,Manggarai,5,5,5,4,4,4.6
+Ijen,Wamena,3,3,3,4,4,3.4
+Ijen,Pegunungan Bintang,2,2,2,2,3,2.2
+Ijen,Halmahera,5,6,5,6,4,5.2
+Ijen,Malino,4,5,5,4,4,4.4
+Ijen,Aceh Robusta,8,8,9,9,8,8.4
+Ijen,Dampit,9,9,8,8,8,8.4
+Kintamani,Toraja,8,6,8,8,7,7.4
+Kintamani,Kalosi,8,7,8,8,7,7.6
+Kintamani,Enrekang,7,8,7,8,7,7.4
+Kintamani,Bajawa,7,8,7,7,7,7.2
+Kintamani,Manggarai,7,6,7,7,7,6.8
+Kintamani,Wamena,5,6,6,7,5,5.8
+Kintamani,Pegunungan Bintang,5,6,5,4,5,5.0
+Kintamani,Halmahera,7,7,8,8,8,7.6
+Kintamani,Malino,7,7,8,8,6,7.2
+Kintamani,Aceh Robusta,9,8,8,8,8,8.2
+Kintamani,Dampit,9,9,9,8,9,8.8
+Toraja,Kalosi,3,4,2,3,3,3.0
+Toraja,Enrekang,3,2,2,1,2,2.0
+Toraja,Bajawa,6,7,3,7,6,5.8
+Toraja,Manggarai,5,5,4,6,4,4.8
+Toraja,Wamena,7,7,6,6,6,6.4
+Toraja,Pegunungan Bintang,6,6,7,7,6,6.4
+Toraja,Halmahera,5,5,5,5,5,5.0
+Toraja,Malino,4,4,4,3,2,3.4
+Toraja,Aceh Robusta,8,7,6,7,9,7.4
+Toraja,Dampit,7,7,8,8,8,7.6
+Kalosi,Enrekang,4,4,4,4,3,3.8
+Kalosi,Bajawa,6,7,5,5,6,5.8
+Kalosi,Manggarai,6,6,5,6,7,6.0
+Kalosi,Wamena,7,7,7,7,7,7.0
+Kalosi,Pegunungan Bintang,6,6,8,7,6,6.6
+Kalosi,Halmahera,5,5,5,6,5,5.2
+Kalosi,Malino,5,4,4,6,4,4.6
+Kalosi,Aceh Robusta,7,7,7,6,7,6.8
+Kalosi,Dampit,7,7,6,7,7,6.8
+Enrekang,Bajawa,5,6,6,5,6,5.6
+Enrekang,Manggarai,5,5,5,6,5,5.2
+Enrekang,Wamena,6,6,7,6,6,6.2
+Enrekang,Pegunungan Bintang,7,5,6,6,6,6.0
+Enrekang,Halmahera,5,6,7,6,5,5.8
+Enrekang,Malino,3,4,4,3,3,3.4
+Enrekang,Aceh Robusta,7,8,7,8,7,7.4
+Enrekang,Dampit,8,6,7,8,9,7.6
+Bajawa,Manggarai,3,3,1,2,3,2.4
+Bajawa,Wamena,4,5,6,5,6,5.2
+Bajawa,Pegunungan Bintang,6,6,6,6,6,6.0
+Bajawa,Halmahera,5,5,4,5,5,4.8
+Bajawa,Malino,5,4,5,5,6,5.0
+Bajawa,Aceh Robusta,8,8,8,7,8,7.8
+Bajawa,Dampit,9,9,8,8,8,8.4
+Manggarai,Wamena,4,3,5,3,5,4.0
+Manggarai,Pegunungan Bintang,6,5,5,4,6,5.2
+Manggarai,Halmahera,5,6,4,4,3,4.4
+Manggarai,Malino,4,5,3,4,5,4.2
+Manggarai,Aceh Robusta,8,8,8,7,8,7.8
+Manggarai,Dampit,8,7,8,9,9,8.2
+Wamena,Pegunungan Bintang,2,3,3,2,2,2.4
+Wamena,Halmahera,4,6,5,6,5,5.2
+Wamena,Malino,4,6,3,6,5,4.8
+Wamena,Aceh Robusta,9,9,9,8,9,8.8
+Wamena,Dampit,8,9,9,8,8,8.4
+Pegunungan Bintang,Halmahera,6,5,6,6,5,5.6
+Pegunungan Bintang,Malino,5,5,6,5,6,5.4
+Pegunungan Bintang,Aceh Robusta,8,9,9,8,8,8.4
+Pegunungan Bintang,Dampit,7,9,9,8,9,8.4
+Halmahera,Malino,4,4,4,4,4,4.0
+Halmahera,Aceh Robusta,7,8,8,7,7,7.4
+Halmahera,Dampit,8,8,8,8,7,7.8
+Malino,Aceh Robusta,7,8,8,8,8,7.8
+Malino,Dampit,9,9,7,9,8,8.4
+Aceh Robusta,Dampit,3,2,2,2,2,2.2

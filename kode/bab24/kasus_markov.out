@@ -1,0 +1,23 @@
+5000 sesi, 33174 kejadian; latih 3476, uji 1524
+proporsi beli 0.472; median panjang 6 kejadian
+
+Rantai Markov (data latih):
+             p_keluar_langsung  p_beli_akhirnya  sisa_langkah
+beranda                   0.08             0.47          5.64
+promo                     0.13             0.47          5.32
+cari                      0.07             0.52          5.37
+lihat_menu                0.13             0.52          4.94
+detail_menu               0.10             0.59          4.51
+keranjang                 0.07             0.77          2.96
+bayar                     0.06             0.92          1.23
+
+log-likelihood uji rantai Markov: -11452
+HMM biasa 2 keadaan: log-lik uji -17818, BIC 81747
+HMM biasa 3 keadaan: log-lik uji -15969, BIC 73252
+HMM biasa 4 keadaan: log-lik uji -15066, BIC 69113
+
+emisi tertinggi HMM biasa 3 keadaan:
+  keadaan 0: beranda 1.00, detail_menu 0.00, keluar 0.00
+  keadaan 1: detail_menu 0.45, bayar 0.27, keluar 0.11
+  keadaan 2: lihat_menu 0.34, keranjang 0.22, selesai 0.13
+  transisi: [[0.0, 0.0, 1.0], [0.02, 0.02, 0.96], [0.02, 0.72, 0.26]]

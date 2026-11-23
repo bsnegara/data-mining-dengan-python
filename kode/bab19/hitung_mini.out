@@ -1,0 +1,11 @@
+P(C)               = 0.2345
+P(C | H)           = 0.2988   prediksi
+P(H | C)           = 0.5096   diagnosis
+bukti berurutan:
+  P(H)             = 0.4000
+  P(H | C)         = 0.5096
+  P(H | C,K)       = 0.6582
+  P(H | C,K,P)     = 0.6087   explaining away
+  P(H | C,K,P,J)   = 0.6087   J tak menambah
+P(H | K)           = 0.6582   = P(H | C,K)
+P(J | C)           = 0.6556

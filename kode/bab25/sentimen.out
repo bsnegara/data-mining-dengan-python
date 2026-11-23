@@ -1,0 +1,32 @@
+latih 2363 ulasan, uji 637 ulasan
+sebaran sentimen: {'positif': 2005, 'negatif': 588, 'netral': 407}
+
+makro-F1 data uji (unigram+bigram TF-IDF):
+praproses              NB  logistik
+mentah              0.820     0.869   (1324 atribut)
+stop+stem           0.821     0.880   (1223 atribut)
+stop+stem+negasi    0.819     0.868   (1215 atribut)
+
+logistik, praproses lengkap:
+              precision    recall  f1-score   support
+
+     negatif      0.800     0.954     0.870       130
+      netral      0.884     0.701     0.782        87
+     positif      0.961     0.945     0.953       420
+
+    accuracy                          0.914       637
+   macro avg      0.882     0.867     0.868       637
+weighted avg      0.918     0.914     0.913       637
+
+negatif: parah, kecewa, tidak_deh, baik, coba masih, overall worth_it
+positif: top, balik, recommended, sukses terus, sukses, cepat
+
+55 salah tebak, contoh:
+  [4] harga ramah kantong mahasiswa, rasanya pas, tidak terlalu ma
+      label positif, tebakan negatif
+  [1] antrinya lama, kasir cuma satu, rasanya konsisten dari dulu
+      label negatif, tebakan positif
+  [3] kopinya enak banget. mejanya kotor, pesanan ga lengkap
+      label netral, tebakan negatif
+  [5] overall gagal login terus
+      label positif, tebakan negatif

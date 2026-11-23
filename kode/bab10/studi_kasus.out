@@ -1,0 +1,25 @@
+linier   LOOCV: MAPE 7.5%, galat terbesar 20.7%
+log      LOOCV: MAPE 6.7%, galat terbesar 17.9%
+log+kota LOOCV: MAPE 0.7%, galat terbesar 2.2%
+
+efek (persen):
+  tipe mal                +35.5%  (p = 0.000)
+  tipe perkantoran        +10.3%  (p = 0.000)
+  tipe permukiman         -15.1%  (p = 0.000)
+  kota Batam               -8.9%  (p = 0.000)
+  kota Jakarta            +22.2%  (p = 0.000)
+  kota Medan               -4.7%  (p = 0.000)
+  kota Padang              -9.0%  (p = 0.000)
+  kota Palembang           -9.5%  (p = 0.000)
+  kota Pekanbaru           -9.0%  (p = 0.000)
+  kota Yogyakarta          -9.2%  (p = 0.000)
+  luas_m2                  +0.2%  (p = 0.000)
+  jumlah_kursi             +0.5%  (p = 0.000)
+
+ramalan omzet harian matang (ribu Rp), selang 90%:
+              lokasi  ramalan  bawah90  atas90  thn1_juta
+   Pekanbaru, kampus   1288.0   1270.0  1306.0      353.0
+Jakarta, perkantoran   1778.0   1754.0  1803.0      487.0
+          Medan, mal   1844.0   1820.0  1868.0      505.0
+  Padang, permukiman   1194.0   1178.0  1211.0      327.0
+          Batam, mal   1578.0   1553.0  1604.0      432.0

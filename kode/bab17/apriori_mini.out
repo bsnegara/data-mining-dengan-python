@@ -1,0 +1,13 @@
+L1: {'americano'} 0.22, {'croissant'} 0.22, {'gula aren'} 0.67, {'pisang'} 0.44, {'roti'} 0.56, {'teh'} 0.33
+C2: 15 kandidat; L2: ['americano', 'croissant'] 0.22, ['gula aren', 'pisang'] 0.33, ['gula aren', 'roti'] 0.44, ['gula aren', 'teh'] 0.22, ['pisang', 'roti'] 0.22
+C3: 1 kandidat; L3: ['gula aren', 'pisang', 'roti'] 0.22
+
+aturan dengan confidence >= 0.6:
+  ['pisang'] -> ['gula aren']: sup 0.33 conf 0.75 lift 1.12
+  ['teh'] -> ['gula aren']: sup 0.22 conf 0.67 lift 1.00
+  ['roti'] -> ['gula aren']: sup 0.44 conf 0.80 lift 1.20
+  ['gula aren'] -> ['roti']: sup 0.44 conf 0.67 lift 1.20
+  ['croissant'] -> ['americano']: sup 0.22 conf 1.00 lift 4.50
+  ['americano'] -> ['croissant']: sup 0.22 conf 1.00 lift 4.50
+  ['pisang', 'roti'] -> ['gula aren']: sup 0.22 conf 1.00 lift 1.50
+  ['gula aren', 'pisang'] -> ['roti']: sup 0.22 conf 0.67 lift 1.20

@@ -1,0 +1,15 @@
+model             MAE   RMSE  nol-salah  total(jt) galat-total
+linier            51.4   77.6      1.5%     465.7      +0.5%
+LightGBM          52.3   79.8      1.5%     465.8      +0.5%
+MLP (4,)          52.5   77.9      1.3%     468.8      +1.1%
+PyTorch 2 kepala  51.1   77.4      1.1%     455.0      -1.8%
+aktual                                      463.5
+
+galat per tingkat (MAE, ribu Rp):
+          linier  LightGBM  MLP (4,)  PyTorch 2 kepala     n  rata2 aktual
+tingkat                                                                   
+emas       105.8     109.7     107.6             103.1   327         482.1
+perak       60.9      62.0      61.0              60.7   852         244.5
+perunggu    30.2      30.2      31.7              30.5  1221          79.9
+
+rata-rata linier + PyTorch: MAE 50.9

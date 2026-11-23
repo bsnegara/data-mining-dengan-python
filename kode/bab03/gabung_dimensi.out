@@ -1,0 +1,18 @@
+_merge
+both          211451
+left_only          0
+right_only         0
+   no_struk       kota            nama_menu  qty  nilai
+0  S0000001     Padang     Kopi Susu Klepon    1  25000
+1  S0000002  Palembang  Es Kopi Susu Kelapa    1  26000
+2  S0000003    Jakarta          Bolu Pandan    1  12000
+3  S0000004     Padang  Kopi Susu Gula Aren    1  22000
+           item     nilai
+count  136526.0  136526.0
+mean        2.0   39156.0
+std         1.0   22772.0
+min         1.0    9000.0
+25%         1.0   22000.0
+50%         2.0   31500.0
+75%         2.0   50000.0
+max         9.0  210000.0

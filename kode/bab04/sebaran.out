@@ -1,0 +1,9 @@
+                 rata  median  kemiringan  keruncingan
+umur            29.06   28.00        0.55        -0.38
+frekuensi_90h   14.27   12.00        1.29         2.46
+recency_hari    12.03    5.00        3.30        12.30
+nilai_90h      597.75  497.95        1.63         4.39
+Q1, Q3, IQR : 285.275 800.125 514.85
+di luar pagar: 304
+nilai nol: 104
+kemiringan log10: -0.66

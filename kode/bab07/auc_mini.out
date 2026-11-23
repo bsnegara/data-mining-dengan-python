@@ -1,0 +1,11 @@
+ambang 0.95: FPR 0.000  TPR 0.250
+ambang 0.85: FPR 0.000  TPR 0.500
+ambang 0.80: FPR 0.167  TPR 0.500
+ambang 0.70: FPR 0.167  TPR 0.750
+ambang 0.55: FPR 0.333  TPR 0.750
+ambang 0.45: FPR 0.500  TPR 0.750
+ambang 0.40: FPR 0.500  TPR 1.000
+ambang 0.30: FPR 0.667  TPR 1.000
+ambang 0.20: FPR 0.833  TPR 1.000
+ambang 0.10: FPR 1.000  TPR 1.000
+AUC (pasangan) = 0.8333333333333334  AUC (sklearn) = 0.8333333333333333

@@ -1,0 +1,7 @@
+136526 struk, 22 menu; rata-rata 1.55 item per struk; kepadatan 0.070
+minsup 0.010 Apriori  :   34 itemset,  0.04 dtk
+minsup 0.010 FP-Growth:   34 itemset,  0.20 dtk
+minsup 0.003 Apriori  :  101 itemset,  0.07 dtk
+minsup 0.003 FP-Growth:  101 itemset,  0.20 dtk
+minsup 0.001 Apriori  :  230 itemset,  0.30 dtk
+minsup 0.001 FP-Growth:  230 itemset,  0.21 dtk

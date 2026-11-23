@@ -1,0 +1,23 @@
+log1p pada atribut menceng = False: AUC CV 0.9137
+log1p pada atribut menceng = True : AUC CV 0.9064
+C terpilih 3.162; uji: AUC 0.915, Brier 0.0669
+
+koefisien terbesar (per simpangan baku):
+frekuensi_90h        -3.48
+frekuensi_90h_lalu    1.87
+recency_hari          0.58
+nilai_90h            -0.57
+pakai_ulasan         -0.43
+keluhan_90h           0.38
+porsi_promo           0.34
+porsi_pagi            0.26
+
+skor >= 0.278: 14.2% anggota (~3702 dari 26.000)
+harapan laba: Rp18.6 jt per 8.000 anggota, Rp60.5 jt per 26.000
+sasaran per tingkat: {'perak': 52, 'perunggu': 1087}
+
+anggota A03204, skor 0.59; tiga alasan teratas:
+frekuensi_90h    4.14
+nilai_90h        0.69
+recency_hari     0.54
+{'recency_hari': 31, 'tren': 0.3333333333333333, 'keluhan_90h': 1, 'tingkat': 'perunggu'}

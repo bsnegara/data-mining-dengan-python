@@ -1,0 +1,23 @@
+hitungan kiriman menurut induk jamur:
+jamur           tidak  ya
+air    simpan            
+normal lama       233  14
+       singkat    645  11
+tinggi lama       127  60
+       singkat    343  67
+
+P(jamur=ya | air, simpan):
+                  MLE  Laplace
+air    simpan                 
+normal lama     0.057    0.060
+       singkat  0.017    0.018
+tinggi lama     0.321    0.323
+       singkat  0.163    0.165
+
+CPT cacat dengan dua induk (jamur, jemur):
+  jamur=tidak jemur=mesin     n= 233  P(cacat=ya)=0.004
+  jamur=tidak jemur=para-para n= 605  P(cacat=ya)=0.005
+  jamur=tidak jemur=terpal    n= 510  P(cacat=ya)=0.018
+  jamur=ya    jemur=mesin     n=  10  P(cacat=ya)=0.750
+  jamur=ya    jemur=para-para n=  57  P(cacat=ya)=0.695
+  jamur=ya    jemur=terpal    n=  85  P(cacat=ya)=0.782

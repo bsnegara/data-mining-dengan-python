@@ -1,0 +1,13 @@
+metode                   RMSE   RMSE  |galat|   galat
+                         suhu    RoR    balik   crack
+tanpa penghalusan       0.698   5.90     0.7s   -5.9s
+rata-rata bergerak 15   0.821   5.57     5.7s   -0.1s
+median bergerak 9       0.529   3.83     0.9s   -0.2s
+wavelet sym8 lunak      0.350   2.64     2.7s    0.0s
+wavelet haar lunak      1.071  10.00     0.5s   -1.2s
+wavelet sym8 keras      0.246   1.91     1.7s    0.0s
+wavelet keras + geser   0.201   1.38     1.1s    0.2s
+
+sigma derau dari rincian tingkat 1: 0.641 (benar 0,7)
+ambang universal 2.30; koefisien rincian dinolkan: 645 dari 658
+panjang koefisien per tingkat: [33, 33, 52, 90, 166, 317]

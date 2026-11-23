@@ -1,0 +1,13 @@
+profil acuan RoR dari 29 batch fase I
+RoR rata-rata pada detik 300: 14.0 C/menit
+
+batch bersinyal (ada lonjakan, atau RoR di luar pita
+lebih dari 30 detik):
+       lonjakan  detik_luar        catatan
+batch                                     
+B017         11           2         normal
+B038          0          87  macet (stall)
+B055          0          71  terlalu cepat
+B071          9           5         normal
+
+76 batch lain: lonjakan maks 0, detik luar pita maks 14

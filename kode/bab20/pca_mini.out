@@ -1,0 +1,19 @@
+rata-rata: [6. 6.]
+matriks kovarians:
+ [[2.5 2. ]
+ [2.  2.5]]
+nilai eigen: [4.5 0.5]
+vektor eigen (kolom):
+ [[ 0.7071 -0.7071]
+ [ 0.7071  0.7071]]
+porsi varians: [0.9 0.1]
+skor komponen:
+ [[-2.121  0.707]
+ [-2.121 -0.707]
+ [ 0.     0.   ]
+ [ 2.121  0.707]
+ [ 2.121 -0.707]]
+sklearn komponen (baris):
+ [[ 0.7071  0.7071]
+ [-0.7071  0.7071]]
+sklearn varians: [4.5 0.5]

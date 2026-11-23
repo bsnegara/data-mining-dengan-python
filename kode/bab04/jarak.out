@@ -1,0 +1,11 @@
+            frekuensi_90h  recency_hari  nilai_90h
+id_anggota                                        
+A00001                 13             4     464600
+A00002                 16             0     557600
+A00003                 14             5     264000
+Euclides : 93000.0
+Manhattan: 93007
+Chebyshev: 93000
+Euclides baku: 0.41
+kosinus: 0.75
+Jaccard: 0.4

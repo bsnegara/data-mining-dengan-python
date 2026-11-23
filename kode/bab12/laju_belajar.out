@@ -1,0 +1,3 @@
+laju 1.00: log loss uji minimum 0.3498 pada   1 pohon; setelah 600 pohon 1.7577
+laju 0.30: log loss uji minimum 0.2396 pada  21 pohon; setelah 600 pohon 0.3864
+laju 0.05: log loss uji minimum 0.2264 pada 191 pohon; setelah 600 pohon 0.2309

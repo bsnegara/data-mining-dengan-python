@@ -1,0 +1,24 @@
+awal acak 0: log-lik latih -25885
+awal acak 1: log-lik latih -25894
+awal acak 2: log-lik latih -25914
+log-lik uji HMM beralih: -11429
+
+keadaan niat = 0; pi(niat) = 0.46
+peluang tetap: jelajah 0.869, niat 0.927
+      beranda -> promo       jelajah 0.30   niat 0.10
+      beranda -> cari        jelajah 0.15   niat 0.27
+   lihat_menu -> detail_menu jelajah 0.35   niat 0.52
+  detail_menu -> keranjang   jelajah 0.19   niat 0.66
+    keranjang -> bayar       jelajah 0.53   niat 0.77
+    keranjang -> keluar      jelajah 0.18   niat 0.04
+        bayar -> selesai     jelajah 0.61   niat 0.93
+kecocokan penyaringan dengan niat_laten: 0.692
+kecocokan penghalusan dengan niat_laten: 0.814
+
+AUC menebak pembelian setelah k kejadian (data uji):
+  k  sesi  beli  halaman  logistik  HMM-niat  HMM-beli
+  2  1400  0.51    0.576    0.576    0.565    0.576
+  3  1262  0.57    0.613    0.627    0.621    0.636
+  4  1101  0.63    0.722    0.732    0.729    0.739
+  5   904  0.67    0.715    0.732    0.729    0.740
+  6   592  0.66    0.693    0.694    0.691    0.713

@@ -1,0 +1,19 @@
+7237 anggota latih (Jan-Sep 2025), 4228 anggota uji memesan menu baru di Okt-Des
+
+semua anggota uji, top-3:
+             presisi  recall    hit  pop_rata
+popularitas    0.167   0.286  0.428     1.496
+konten         0.191   0.338  0.482     1.155
+item-kNN       0.199   0.349  0.500     1.332
+user-kNN       0.180   0.316  0.460     1.209
+SVD k=2        0.192   0.337  0.484     1.231
+gabungan       0.202   0.355  0.506     1.239
+
+anggota dengan <= 3 pesanan latih (635 orang):
+             presisi    hit
+popularitas    0.113  0.312
+konten         0.140  0.376
+item-kNN       0.142  0.381
+user-kNN       0.127  0.345
+SVD k=2        0.140  0.375
+gabungan       0.149  0.397

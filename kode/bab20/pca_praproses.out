@@ -1,0 +1,7 @@
+porsi varians : [0.341 0.19  0.154 0.13  0.073 0.07  0.041]
+kumulatif     : [0.341 0.531 0.686 0.816 0.889 0.959 1.   ]
+PCA 1 komponen -> logistik: AUC 0.680
+PCA 2 komponen -> logistik: AUC 0.725
+PCA 3 komponen -> logistik: AUC 0.784
+PCA 5 komponen -> logistik: AUC 0.813
+PCA 7 komponen -> logistik: AUC 0.850

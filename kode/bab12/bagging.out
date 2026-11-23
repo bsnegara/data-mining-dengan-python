@@ -1,0 +1,8 @@
+satu sampel bootstrap: 63.8% baris unik (teori 63,2%)
+satu pohon penuh   AUC uji 0.681  akurasi OOB nan
+bagging 200 pohon  AUC uji 0.891  akurasi OOB 0.907
+random forest 200  AUC uji 0.896  akurasi OOB 0.907
+
+korelasi prediksi antarpohon (rata-rata, 30 pohon pertama):
+  bagging 200 pohon  rho = 0.372
+  random forest 200  rho = 0.318

@@ -1,0 +1,12 @@
+H(S) = 0.9799
+gain: kadar_air=0.3761, cacat=0.4764, proses=0.0207, aroma=0.0102
+[cacat = banyak]
+    -> tolak (5)
+[cacat = sedikit]
+    gain: kadar_air=0.8631, proses=0.0060, aroma=0.1696
+    [kadar_air = rendah]
+        -> terima (3)
+    [kadar_air = sedang]
+        -> terima (2)
+    [kadar_air = tinggi]
+        -> tolak (2)

@@ -1,0 +1,20 @@
+banyak transisi:
+    M  K  S  X
+M  3  5  0  2
+K  1  0  3  1
+
+peluang transisi:
+      M    K    S    X
+M  0.3  0.5  0.0  0.2
+K  0.2  0.0  0.6  0.2
+
+matriks fundamental N:
+ [[1.667 0.833]
+ [0.333 1.167]]
+harapan langkah sampai selesai: [2.5 1.5]
+peluang berakhir di S / X:
+  dari M: S = 0.50, X = 0.50
+  dari K: S = 0.70, X = 0.30
+
+P(M ke S dalam tepat 2 langkah) = 0.3
+P^50 baris M: [0.  0.  0.5 0.5]

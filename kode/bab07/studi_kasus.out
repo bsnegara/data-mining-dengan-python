@@ -1,0 +1,10 @@
+model            AUC CV (10 lipatan)
+aturan recency   0.799  (tanpa pelatihan)
+pohon (d=5)      0.840 +/- 0.024
+hutan acak       0.900 +/- 0.014
+logistik         0.914 +/- 0.015
+
+data uji (dikunci sampai sekarang):
+aturan recency   AUC 0.801  presisi top 3,85% 0.609
+logistik         AUC 0.915  presisi top 3,85% 0.728
+selang 95% logistik: AUC [0.899, 0.930], presisi [0.652, 0.826]

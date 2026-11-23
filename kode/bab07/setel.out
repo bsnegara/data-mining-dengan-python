@@ -1,0 +1,5 @@
+grid  : 12 kombinasi, AUC 0.9013, 40 dtk
+        terbaik: {'max_features': 0.2, 'min_samples_leaf': 5}
+acak  : 12 kombinasi, AUC 0.8996, 32 dtk
+        terbaik: {'max_features': 0.2, 'min_samples_leaf': 22}
+nested CV: AUC 0.9009 +/- 0.0096

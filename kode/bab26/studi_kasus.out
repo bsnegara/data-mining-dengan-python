@@ -1,0 +1,16 @@
+sigma derau sensor: median 0.73  maksimum 0.84 (B002)
+lonjakan terdeteksi: {'B017': 5, 'B071': 5}
+
+metrik pascabatch (kurva bersih):
+       balik  suhu_balik  crack  crack_log    DTR        catatan
+batch                                                           
+B001      85        92.7    575        566  0.170         normal
+B002      87        92.1    613        605  0.144         normal
+B003      81        86.5    552        546  0.229         normal
+B017      85        89.6    583        419  0.123         normal
+B038      88        91.5   <NA>        710    NaN  macet (stall)
+B055      92        99.4    361        360  0.282  terlalu cepat
+crack bersih - crack log: median 5 detik; beda > 30 detik: ['B017']
+DTR batch normal: 0.215 +- 0.029
+median 9 + selisih 30 s (Bab 22): B038 bersinyal pada detik 398
+wavelet + selisih 10 s: B038 bersinyal pada detik 377

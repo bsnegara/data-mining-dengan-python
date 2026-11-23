@@ -1,0 +1,12 @@
+AND
+  x=[0 0] y=0 yhat=0 -> w=[0. 0.] b=+0.0
+  x=[0 1] y=0 yhat=0 -> w=[0. 0.] b=+0.0
+  x=[1 0] y=0 yhat=0 -> w=[0. 0.] b=+0.0
+  x=[1 1] y=1 yhat=0 -> w=[0.5 0.5] b=+0.5
+  x=[0 0] y=0 yhat=1 -> w=[0.5 0.5] b=+0.0
+  x=[0 1] y=0 yhat=1 -> w=[0.5 0. ] b=-0.5
+  x=[1 0] y=0 yhat=0 -> w=[0.5 0. ] b=-0.5
+  x=[1 1] y=1 yhat=0 -> w=[1.  0.5] b=+0.0
+  konvergen pada epoch 6: w=[1.  0.5], b=-1.0
+XOR
+  tidak konvergen setelah 20 epoch

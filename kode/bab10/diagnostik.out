@@ -1,0 +1,11 @@
+linier    : R2 terkoreksi 0.780, AIC   412.6
+log       : R2 terkoreksi 0.826, AIC   -67.8
+log + kota: R2 terkoreksi 0.999, AIC  -219.2
+VIF C(tipe_lokasi)[T.mal]        1.61
+VIF C(tipe_lokasi)[T.perkantoran 1.48
+VIF C(tipe_lokasi)[T.permukiman] 1.55
+VIF jumlah_kursi                 1.10
+VIF luas_m2                      1.21
+VIF kota_besar                   1.05
+Cook terbesar: G25 0.34, G13 0.34, G15 0.32
+sisa log + kota: maks 0.013

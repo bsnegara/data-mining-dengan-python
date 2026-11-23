@@ -1,0 +1,27 @@
+# Pustaka yang dipakai kode pendamping buku. Versi di bawah adalah versi
+# yang dipakai untuk menjalankan seluruh kode dan menghasilkan keluaran
+# di buku (Python 3.13). Versi lebih baru biasanya juga berjalan, tetapi
+# angka keluaran dapat sedikit berbeda.
+numpy==2.5.3
+pandas==2.2.3
+scipy==1.18.1
+matplotlib==3.11.2
+seaborn==0.13.2
+scikit-learn==1.9.1
+statsmodels==0.15.0
+mlxtend==0.25.0
+xgboost==3.4.1
+lightgbm==4.7.0
+hmmlearn==0.3.3
+PyWavelets==1.10.0
+Sastrawi==1.0.1
+shap==0.54.1
+joblib==1.6.0
+fastapi==0.165.0
+httpx2==2.13.1        # dipakai TestClient FastAPI (Bab 27)
+pydantic==2.13.5
+torch==2.15.0
+# Hanya untuk dasbor Bab 27 (tidak dijalankan di buku):
+# streamlit
+# Opsional, disebut di Bab 5 (SMOTE):
+# imbalanced-learn

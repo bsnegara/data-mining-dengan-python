@@ -1,0 +1,21 @@
+            n   frek  struk  pagi  akhir_pkn  promo  hitam   apl   umur  churn
+klaster                                                                       
+0        2527  12.84  31.94  0.35       0.29   0.47   0.09  0.29  21.03   0.17
+1        2885  19.48  38.77  0.68       0.14   0.19   0.21  0.55  30.22   0.08
+2        1476   5.92  89.42  0.17       0.67   0.24   0.07  0.34  37.04   0.13
+3         104   0.00   0.00  0.22       0.62   0.29   0.10  0.39  34.88   0.63
+4        1008  16.62  47.34  0.45       0.34   0.10   0.68  0.24  33.62   0.05
+
+silhouette rata-rata per klaster: 0: 0.272  1: 0.291  2: 0.378  3: 0.753  4: 0.374
+stabilitas bootstrap (ARI): rata-rata 0.967, minimum 0.934
+
+silang dengan tingkat keanggotaan (persen baris):
+tingkat  emas  perak  perunggu
+klaster                       
+0         4.0   27.0      70.0
+1        24.0   42.0      34.0
+2        11.0   32.0      57.0
+3         0.0    0.0     100.0
+4        25.0   44.0      31.0
+
+ARI terhadap segmen laten (hanya ada di data sintetis): 0.808

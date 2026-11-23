@@ -1,0 +1,44 @@
+24 kopi x 12 atribut rasa
+korelasi |r|>0,6 antaratribut: 53 dari 66
+
+komp  nilai eigen  porsi  kumulatif  batas acak 95%
+PC1        9.750  0.779      0.779          3.129
+PC2        1.336  0.107      0.885          2.389
+PC3        0.485  0.039      0.924          1.947
+PC4        0.266  0.021      0.945          1.630
+PC5        0.241  0.019      0.965          1.342
+PC6        0.130  0.010      0.975          1.106
+komponen di atas batas acak: 1
+
+loading (korelasi atribut-komponen):
+              PC1   PC2   PC3
+aroma       -0.85  0.28 -0.03
+cokelat      0.75  0.38  0.49
+rempah       0.95 -0.05 -0.03
+tanah        0.98  0.08 -0.00
+buah        -0.96  0.08  0.04
+bunga       -0.96 -0.04  0.01
+sitrus      -0.94  0.01 -0.19
+keasaman    -0.93  0.10 -0.07
+manis       -0.89  0.17  0.30
+kekentalan   0.92  0.25 -0.18
+pahit        0.97 -0.04 -0.13
+rasa_ikutan  0.01  0.97 -0.19
+
+R^2 atribut dari 3 komponen, min/median: 0.81 / 0.92
+R^2 atribut dari 2 komponen, min/median: 0.71 / 0.91
+kemiripan loading bootstrap (median, persentil 5):
+  PC1: 0.995  0.978
+  PC2: 0.963  0.872
+  PC3: 0.879  0.608
+
+contoh kartu menu (skala 1-5):
+                 berat  ikutan  berat_15  ikutan_15
+kopi                                               
+Kintamani        -5.38   -0.72         1          2
+Kerinci          -2.64    0.91         2          4
+Bajawa           -1.11    2.24         3          5
+Toraja           -0.60    0.85         3          4
+Gayo              2.11    1.98         4          5
+Mandailing        2.98    0.84         4          4
+Lampung Robusta   5.67   -1.07         5          2

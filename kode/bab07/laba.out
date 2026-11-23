@@ -1,0 +1,11 @@
+titik impas presisi = 0.278
+top  2.0%: presisi 0.771 lift 6.34 tangkap 0.127 Rp  13.8 jt
+top  3.9%: presisi 0.728 lift 5.99 tangkap 0.229 Rp  24.2 jt
+top  5.0%: presisi 0.750 lift 6.16 tangkap 0.308 Rp  33.1 jt
+top 10.0%: presisi 0.650 lift 5.34 tangkap 0.534 Rp  52.3 jt
+top 20.0%: presisi 0.481 lift 3.96 tangkap 0.791 Rp  57.1 jt
+top 50.0%: presisi 0.235 lift 1.93 tangkap 0.966 Rp -30.0 jt
+top 100.0%: presisi 0.122 lift 1.00 tangkap 1.000 Rp-219.2 jt
+laba maksimum Rp66.6 jt pada top 15.6% (~4062 anggota)
+  presisi 0.581, skor ambang 0.259
+voucer acak: Rp-8,430 per anggota

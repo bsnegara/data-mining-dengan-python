@@ -1,0 +1,14 @@
+(26126, 3)
+      recency  frequency  monetary
+mean     31.0        2.0   90594.0
+50%      26.0        2.0   78000.0
+max      89.0       10.0  463600.0
+segmen
+111    1279
+555    1274
+455    1013
+355     751
+            recency  frequency  monetary segmen
+id_anggota                                     
+A00004            2          4    188400    555
+A00007            0          6    142300    555

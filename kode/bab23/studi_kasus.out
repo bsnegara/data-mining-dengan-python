@@ -1,0 +1,32 @@
+
+Ramadan 2025: latih s.d. 2024-12-29, uji 15 minggu
+  model                           MAE   MAPE  MASE MAE Ramadan
+  naif musiman                  0.701  12.2%  2.89       0.578
+  Holt-Winters                  0.355   7.2%  1.46       0.578
+  ARIMA + Fourier               0.356   6.9%  1.47       0.535
+  ARIMA + Fourier + kalender    0.108   1.7%  0.45       0.110
+  cakupan selang 80%: 87%
+  cakupan selang 95%: 100%
+
+Ramadan 2026: latih s.d. 2025-12-28, uji 13 minggu
+  model                           MAE   MAPE  MASE MAE Ramadan
+  naif musiman                  0.492   8.4%  1.99       0.509
+  Holt-Winters                  0.519   9.5%  2.10       1.044
+  ARIMA + Fourier               0.489   8.7%  1.98       0.672
+  ARIMA + Fourier + kalender    0.360   5.7%  1.45       0.343
+  cakupan selang 80%: 38%
+  cakupan selang 95%: 77%
+
+koefisien kalender (kg per gerai per minggu, per hari):
+  ramadan -0.065, tutup -0.940, libur +0.034, pasca -0.162
+
+kebutuhan total 2026 (kg), contoh minggu Ramadan:
+            aktual  ramalan  atas90
+tanggal                            
+2026-02-15   276.0    270.0   279.0
+2026-02-22   245.0    259.0   269.0
+2026-03-01   245.0    253.0   263.0
+2026-03-08   240.0    254.0   265.0
+2026-03-15   236.0    256.0   266.0
+2026-03-22   171.0    185.0   195.0
+2026-03-29   289.0    238.0   248.0

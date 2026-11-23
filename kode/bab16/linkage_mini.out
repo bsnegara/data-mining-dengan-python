@@ -1,0 +1,22 @@
+matriks jarak:
+         G1    G2    G3    G4    G5    G6
+G1    0.000 0.071 0.200 0.361 0.354 0.381
+G2    0.071 0.000 0.158 0.292 0.283 0.316
+G3    0.200 0.158 0.000 0.300 0.255 0.354
+G4    0.361 0.292 0.300 0.000 0.071 0.071
+G5    0.354 0.283 0.255 0.071 0.000 0.141
+G6    0.381 0.316 0.354 0.071 0.141 0.000
+
+single linkage:
+  langkah 1: gabung {G4} + {G5} pada jarak 0.071
+  langkah 2: gabung {G1} + {G2} pada jarak 0.071
+  langkah 3: gabung {G6} + {G4,G5} pada jarak 0.071
+  langkah 4: gabung {G3} + {G1,G2} pada jarak 0.158
+  langkah 5: gabung {G6,G4,G5} + {G3,G1,G2} pada jarak 0.255
+
+complete linkage:
+  langkah 1: gabung {G4} + {G5} pada jarak 0.071
+  langkah 2: gabung {G1} + {G2} pada jarak 0.071
+  langkah 3: gabung {G6} + {G4,G5} pada jarak 0.141
+  langkah 4: gabung {G3} + {G1,G2} pada jarak 0.200
+  langkah 5: gabung {G6,G4,G5} + {G3,G1,G2} pada jarak 0.381

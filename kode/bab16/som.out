@@ -1,0 +1,11 @@
+galat kuantisasi rata-rata 0.994; neuron kosong 3
+segmen dominan per baris peta (0-4, - = kosong):
+  4 4 4 1 1 1 1 1
+  4 4 4 1 1 1 1 1
+  4 4 1 1 1 1 1 1
+  4 0 1 1 1 1 1 1
+  2 2 0 0 0 0 0 0
+  2 2 2 0 0 0 0 0
+  2 2 2 2 - 0 0 0
+  2 2 2 - 3 - 0 0
+neuron dengan porsi kopi hitam tertinggi: 0 ; terendah frekuensi: 60

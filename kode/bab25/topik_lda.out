@@ -1,0 +1,28 @@
+
+LDA:
+  0: layan, cepat, banget, aplikasi, rasa, manis
+     569 ulasan; pelayanan di 45%, rasa di 44%
+  1: kopi, es, promonya, cuma, pesan, tipu
+     486 ulasan; rasa di 60%, antar di 44%
+  2: rasa, konsisten, dulu, tapi, nagih, bikin
+     347 ulasan; rasa di 78%, pelayanan di 34%
+  3: kopi, masuk, poin, mantap, banget, cepat
+     531 ulasan; rasa di 64%, aplikasi di 37%
+  4: pesan, tempat, aplikasi, fitur, ambil, bantu
+     720 ulasan; aplikasi di 64%, rasa di 45%
+  5: harga, ramah, baristanya, jangkau, kantong, mahasiswa
+     347 ulasan; harga di 69%, pelayanan di 44%
+
+NMF:
+  0: aplikasi, pakai, gampang, praktis, lewat, pesan
+     190 ulasan; aplikasi di 100%, rasa di 27%
+  1: ramah, harga, ingat, mbak, mahasiswa, kantong
+     495 ulasan; harga di 61%, pelayanan di 59%
+  2: tempat, bantu, ambil, fitur, pesan, nyaman
+     355 ulasan; aplikasi di 61%, suasana di 41%
+  3: cepat, layan, banget, masuk, poin, oke
+     665 ulasan; pelayanan di 51%, aplikasi di 42%
+  4: kopi, mantap, aren, susu, gula, enak
+     523 ulasan; rasa di 89%, pelayanan di 28%
+  5: rasa, konsisten, dulu, pas, manis, tidak_terlalu
+     772 ulasan; rasa di 67%, pelayanan di 31%

@@ -1,0 +1,4 @@
+logistik  AUC 0.915  AP 0.621
+pohon     AUC 0.851  AP 0.479
+hutan     AUC 0.900  AP 0.578
+garis dasar PR = porsi churn = 0.122
