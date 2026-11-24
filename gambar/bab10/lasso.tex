@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+\begin{axis}[width=96mm,height=60mm,axis lines=left,x dir=reverse,xmin=0.45,xmax=2.65,
+  xlabel={$\log_{10}\lambda$ (kekuatan penalti, makin ke kanan makin lemah)},ylabel={koefisien (ribu Rp)},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  legend style={draw=none,font=\sffamily\scriptsize,at={(1.02,1)},anchor=north west},legend cell align=left]
+  \foreach \k in {umur,frekuensi_90h_lalu,recency_hari,rata_nilai_struk,porsi_aplikasi,porsi_akhir_pekan,ragam_menu,keluhan_90h,jarak_km}{
+    \addplot[dlAbu!60,thin,forget plot] table[x=la,y=\k] {gambar/bab10/lasso.dat};}
+  \addplot[dlBiru,thick] table[x=la,y=nilai_90h] {gambar/bab10/lasso.dat};
+  \addplot[dlHijau,thick] table[x=la,y=frekuensi_90h] {gambar/bab10/lasso.dat};
+  \addplot[dlOranye,thick] table[x=la,y=pakai_ulasan] {gambar/bab10/lasso.dat};
+  \addplot[dlMerah,thick] table[x=la,y=porsi_promo] {gambar/bab10/lasso.dat};
+  \addplot[dlUngu,thick] table[x=la,y=porsi_pagi] {gambar/bab10/lasso.dat};
+  \addplot[dlTosca,thick] table[x=la,y=porsi_kopi_hitam] {gambar/bab10/lasso.dat};
+  \legend{nilai 90 hari,frekuensi,menulis ulasan,porsi promo,porsi pagi,porsi kopi hitam}
+\end{axis}
+\end{tikzpicture}

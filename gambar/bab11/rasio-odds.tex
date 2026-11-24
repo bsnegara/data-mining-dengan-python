@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+\begin{axis}[width=92mm,height=62mm,xmode=log,log basis x=10,xmin=0.01,xmax=4,
+  ytick={1,...,8},yticklabels={tingkat emas,tingkat perak,tren (+1),menulis ulasan,ragam menu (+1),promo (+10 poin \%),recency (+10 hari),keluhan (+1)},
+  ymin=0.4,ymax=8.6,axis x line=bottom,axis y line=left,xlabel={rasio odds (skala log), garis bawah 1 = tanpa pengaruh},
+  xtick={0.01,0.1,0.5,1,2},xticklabels={{0,01},{0,1},{0,5},1,2},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize}]
+  \addplot[dlAbu,dashed] coordinates {(1,0.4) (1,8.6)};
+  \addplot[only marks,mark=*,mark size=1.8pt,dlBiru,error bars/.cd,x dir=both,x explicit]
+   coordinates {(0.046,1) -= (0.031,0) += (0.101,0)
+                (0.388,2) -= (0.088,0) += (0.114,0)
+                (0.095,3) -= (0.026,0) += (0.034,0)
+                (0.392,4) -= (0.080,0) += (0.101,0)
+                (0.967,5) -= (0.036,0) += (0.037,0)
+                (1.203,6) -= (0.047,0) += (0.049,0)
+                (1.234,7) -= (0.043,0) += (0.045,0)
+                (1.973,8) -= (0.240,0) += (0.273,0)};
+\end{axis}
+\end{tikzpicture}

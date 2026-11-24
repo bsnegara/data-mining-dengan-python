@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+\pgfplotsset{tsne/.style={width=62mm,height=62mm,xtick=\empty,ytick=\empty,
+  scatter/classes={0={mark=*,dlBiru},1={mark=*,dlOranye},2={mark=*,dlHijau},3={mark=*,dlMerah},4={mark=*,dlUngu}},
+  title style={font=\sffamily\small}}}
+\begin{axis}[tsne,name=a,title={PCA}]
+  \addplot[scatter,only marks,scatter src=explicit symbolic,mark size=0.5pt] table[x=px,y=py,meta=seg] {gambar/bab21/tsne.dat};
+\end{axis}
+\begin{axis}[tsne,at={(a.east)},anchor=west,xshift=6mm,title={t-SNE (perplexity 30)},
+  legend style={draw=none,font=\sffamily\scriptsize,at={(1.03,0.5)},anchor=west},legend cell align=left,
+  legend image post style={mark size=2pt}]
+  \addplot[scatter,only marks,scatter src=explicit symbolic,mark size=0.5pt] table[x=tx,y=ty,meta=seg] {gambar/bab21/tsne.dat};
+  \legend{mahasiswa,pekerja pagi,keluarga,tidur,penikmat}
+\end{axis}
+\end{tikzpicture}

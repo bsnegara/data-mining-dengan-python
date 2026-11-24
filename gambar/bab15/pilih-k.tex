@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+\begin{axis}[name=a,width=62mm,height=50mm,axis lines=left,xlabel={$k$},ylabel={inersia (ribuan)},xmin=1.5,xmax=9.5,xtick={2,...,9},
+  title={(a) metode siku},title style={font=\sffamily\small\bfseries,text=dlBiru},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize}]
+  \addplot[dlBiru,thick,mark=*,mark size=1.3pt] table[x=k,y expr=\thisrow{inersia}/1000] {gambar/bab15/pilih_k.dat};
+\end{axis}
+\begin{axis}[at={(a.east)},anchor=west,xshift=12mm,width=62mm,height=50mm,axis lines=left,xlabel={$k$},ylabel={silhouette rata-rata},
+  xmin=1.5,xmax=9.5,xtick={2,...,9},ymin=0.23,ymax=0.33,title={(b) silhouette},title style={font=\sffamily\small\bfseries,text=dlBiru},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},/pgf/number format/use comma]
+  \addplot[dlOranye,thick,mark=square*,mark size=1.3pt] table[x=k,y=siluet] {gambar/bab15/pilih_k.dat};
+  \draw[dlAbu,dashed] (axis cs:5,0.23) -- (axis cs:5,0.315);
+\end{axis}
+\end{tikzpicture}

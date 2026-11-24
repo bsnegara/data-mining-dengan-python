@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+\begin{axis}[width=80mm,height=52mm,axis lines=left,xlabel={kedalaman maksimum},ylabel={akurasi},
+  xmin=0.5,xmax=12.5,ymin=0.84,ymax=1.01,xtick={1,2,...,12},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  legend style={draw=none,font=\sffamily\scriptsize,at={(0.97,0.05)},anchor=south east},
+  restrict x to domain=0:20]
+  \addplot[dlBiru,thick,mark=*,mark size=1.3pt] table[x=kedalaman,y=latih] {gambar/bab06/kedalaman.dat};
+  \addplot[dlOranye,thick,mark=square*,mark size=1.3pt] table[x=kedalaman,y=uji] {gambar/bab06/kedalaman.dat};
+  \legend{data latih,data uji}
+\end{axis}
+\end{tikzpicture}

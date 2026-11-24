@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+\begin{axis}[width=115mm,height=62mm,axis lines=left,xmin=200,xmax=480,ymin=-2,ymax=22,
+  xlabel={detik},ylabel={RoR ($^\circ$C per menit)},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  legend style={font=\sffamily\scriptsize,draw=none,fill=none,at={(0.02,0.03)},anchor=south west},
+  legend cell align=left,/pgf/number format/use comma]
+\addplot[name path=atas,draw=none,forget plot] table[x=t,y expr=\thisrow{mu}+3*\thisrow{sd}] {gambar/bab26/ror.dat};
+\addplot[name path=bawah,draw=none,forget plot] table[x=t,y expr=\thisrow{mu}-3*\thisrow{sd}] {gambar/bab26/ror.dat};
+\addplot[dlHijau!20,forget plot] fill between[of=atas and bawah];
+\addplot[dlHijau,thin] table[x=t,y=mu] {gambar/bab26/ror.dat};
+\addplot[dlBiru,thin] table[x=t,y=med] {gambar/bab26/ror.dat};
+\addplot[dlOranye,thick] table[x=t,y=wav] {gambar/bab26/ror.dat};
+\draw[dlMerah,dashed] (axis cs:380,-2) -- (axis cs:380,22);
+\node[font=\sffamily\scriptsize,text=dlMerah,anchor=south west] at (axis cs:381,18) {macet dimulai (380 s)};
+\legend{pita acuan wavelet ($\pm3$ sd),median 9 + selisih 30 s,wavelet + selisih 10 s}
+\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,20 @@
+\begin{tikzpicture}[dl,node distance=30mm,
+  st/.style={circle,draw=#1,fill=#1!12,thick,minimum size=11mm,font=\sffamily\bfseries},
+  p/.style={font=\sffamily\scriptsize,fill=white,inner sep=1pt}]
+\node[st=dlBiru] (M) {M};
+\node[st=dlOranye,right=of M] (K) {K};
+\node[st=dlHijau,right=of K,yshift=10mm] (S) {S};
+\node[st=dlMerah,right=of K,yshift=-10mm] (X) {X};
+\draw[->,thick] (M) to[bend left=22] node[p]{0,5} (K);
+\draw[->,thick] (K) to[bend left=22] node[p]{0,2} (M);
+\draw[->,thick] (M) to[loop left,looseness=6] node[p]{0,3} (M);
+\draw[->,thick] (K) -- node[p]{0,6} (S);
+\draw[->,thick] (K) -- node[p]{0,2} (X);
+\draw[->,thick] (M) to[bend right=35] node[p]{0,2} (X);
+\draw[->,thick] (S) to[loop right,looseness=6] node[p]{1} (S);
+\draw[->,thick] (X) to[loop right,looseness=6] node[p]{1} (X);
+\node[keterangan,below=1mm of M] {lihat menu};
+\node[keterangan,above=1mm of K] {keranjang};
+\node[keterangan,above=1mm of S] {selesai (beli)};
+\node[keterangan,below=1mm of X] {keluar};
+\end{tikzpicture}

@@ -1,0 +1,26 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm,
+  s/.style={draw=dlBiru!70!black,fill=dlBiru!10,rounded corners=1.5pt,font=\sffamily\tiny,inner sep=1.5pt,minimum height=4.2mm},
+  j/.style={draw=dlAbu!60,fill=white,text=dlAbu,rounded corners=1.5pt,font=\sffamily\tiny,inner sep=1.5pt,minimum height=4.2mm},
+  p/.style={draw=dlMerah!60,fill=dlMerah!6,text=dlMerah!70!black,rounded corners=1.5pt,font=\sffamily\tiny,inner sep=1.5pt,minimum height=4.2mm,dashed}]
+  % tingkat 1
+  \foreach \n/\x in {americano/0,croissant/20,gula aren/40,pisang/60,roti/80,teh/100}
+    \node[s] (\n) at (\x,0) {\n};
+  % tingkat 2 (sebagian)
+  \node[s] (ac) at (0,16) {amer., crois.};
+  \node[s] (gp) at (24,16) {gula, pisang};
+  \node[s] (gr) at (46,16) {gula, roti};
+  \node[s] (gt) at (66,16) {gula, teh};
+  \node[s] (pr) at (86,16) {pisang, roti};
+  \node[j] (rt) at (104,16) {roti, teh};
+  \node[j] (pt) at (104,9) {pisang, teh};
+  \node[keterangan] at (104,22) {+ 8 lainnya};
+  % tingkat 3
+  \node[s] (gpr) at (46,32) {gula, pisang, roti};
+  \node[p] (grt) at (90,32) {gula, roti, teh};
+  \foreach \a/\b in {gula aren/gp,pisang/gp,gula aren/gr,roti/gr,gula aren/gt,teh/gt,pisang/pr,roti/pr,americano/ac,croissant/ac}
+    \draw[dlAbu!60] (\a) -- (\b);
+  \foreach \a in {gp,gr,pr} \draw[dlBiru!60] (\a) -- (gpr);
+  \draw[dlMerah!50,dashed] (gr) -- (grt); \draw[dlMerah!50,dashed] (gt) -- (grt); \draw[dlMerah!50,dashed] (rt) -- (grt);
+  \node[keterangan,anchor=south,text=dlMerah!70!black] at (90,35) {dipangkas: \{roti, teh\} tidak sering};
+  \node[keterangan,anchor=east] at (-6,0) {$k=1$}; \node[keterangan,anchor=east] at (-6,16) {$k=2$}; \node[keterangan,anchor=east] at (-6,32) {$k=3$};
+\end{tikzpicture}

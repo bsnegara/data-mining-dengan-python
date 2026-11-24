@@ -1,0 +1,24 @@
+\begin{tikzpicture}[dl,
+  kotak/.style={draw=#1,fill=#1!10,thick,rounded corners=2pt,minimum width=27mm,
+     minimum height=10mm,align=center,font=\sffamily\footnotesize},
+  lab/.style={font=\sffamily\scriptsize,text=dlAbu!80!black}]
+\node[kotak=dlAbu] (data) at (0,0) {Data kasir,\\aplikasi, anggota};
+\node[kotak=dlBiru] (fitur) at (38mm,0) {Rekayasa fitur\\(per tanggal potong)};
+\node[kotak=dlBiru] (skor) at (76mm,0) {Skor churn\\harian};
+\node[kotak=dlOranye] (api) at (76mm,-20mm) {API \texttt{/skor}\\dan dasbor};
+\node[kotak=dlHijau] (kampanye) at (38mm,-20mm) {Kampanye voucer\\(dengan kontrol)};
+\node[kotak=dlHijau] (hasil) at (0,-20mm) {Hasil: churn,\\belanja, laba};
+\node[kotak=dlMerah] (pantau) at (0,-40mm) {Pemantauan: PSI,\\AUC kontrol, laba};
+\node[kotak=dlUngu] (latih) at (38mm,-40mm) {Latih ulang dan\\uji model baru};
+\draw[alur] (data) -- (fitur);
+\draw[alur] (fitur) -- (skor);
+\draw[alur] (skor) -- (api);
+\draw[alur] (api) -- (kampanye);
+\draw[alur] (kampanye) -- (hasil);
+\draw[alur] (hasil) -- (pantau);
+\draw[alur] (pantau) -- node[lab,above]{bila perlu} (latih);
+\draw[alur] (latih.east) -- (57mm,-40mm) -- (57mm,-10mm) -| (fitur.south);
+\draw[alur] (api.south) -- (76mm,-51mm) -| (pantau.south);
+\node[lab,anchor=south] at (fitur.north) {setiap malam};
+\node[lab,anchor=north] at (kampanye.south) {setiap minggu};
+\end{tikzpicture}

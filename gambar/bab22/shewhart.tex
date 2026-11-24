@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+\begin{axis}[width=118mm,height=52mm,axis lines=left,xlabel={urutan batch},ylabel={durasi (detik)},
+  xmin=0,xmax=81,ymin=480,ymax=780,
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},/pgf/number format/1000 sep={}]
+  \addplot[dlBiru,mark=*,mark size=1pt,thin] table[x=i,y=x] {gambar/bab22/shewhart.dat};
+  \addplot[dlAbu,domain=0:81] {684.0};
+  \addplot[dlMerah,dashed,domain=0:81] {749.4};
+  \addplot[dlMerah,dashed,domain=0:81] {618.6};
+  \draw[dlAbu,densely dotted] (axis cs:30.5,480) -- (axis cs:30.5,780);
+  \node[font=\sffamily\tiny,text=dlAbu,anchor=north east] at (axis cs:30,778) {fase I};
+  \node[font=\sffamily\tiny,text=dlAbu,anchor=north west] at (axis cs:31,778) {fase II};
+  \node[font=\sffamily\tiny,text=dlMerah,anchor=south east] at (axis cs:81,749.4) {BKA 749,4};
+  \node[font=\sffamily\tiny,text=dlAbu,anchor=south east] at (axis cs:81,684) {garis tengah 684,0};
+  \node[font=\sffamily\tiny,text=dlMerah,anchor=north east] at (axis cs:81,618.6) {BKB 618,6};
+  \addplot[only marks,mark=o,mark size=3pt,dlMerah,thick] coordinates {(55,503)};
+  \node[font=\sffamily\tiny,text=dlMerah,anchor=west] at (axis cs:56.5,503) {B055};
+\end{axis}
+\end{tikzpicture}

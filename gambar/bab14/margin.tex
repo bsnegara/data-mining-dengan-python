@@ -1,0 +1,22 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm]
+  \fill[dlBiru!6] (0,48) -- (48,0) -- (60,0) -- (60,10) -- (10,60) -- (0,60) -- cycle;
+  \draw[dlAbu!60] (0,0) rectangle (70,60);
+  \draw[dlBiru,line width=1.2pt] (0,54) -- (54,0) node[pos=0.06,above right,font=\scriptsize] {$\vect w^\top\vect x+b=0$};
+  \draw[dlBiru,dashed] (0,48) -- (48,0);
+  \draw[dlBiru,dashed] (0,60) -- (60,0);
+  \node[font=\scriptsize,dlBiru,rotate=-45] at (16,36) {$\vect w^\top\vect x+b=-1$};
+  \node[font=\scriptsize,dlBiru,rotate=-45] at (40,24) {$\vect w^\top\vect x+b=+1$};
+  % kelas -1
+  \foreach \p in {(8,10),(14,22),(20,8),(6,30),(26,14),(12,38)} \node[kelasB,minimum size=2.6mm,rectangle] at \p {};
+  % kelas +1
+  \foreach \p in {(52,40),(60,30),(48,52),(64,48),(40,46),(58,54)} \node[kelasA,minimum size=2.6mm] at \p {};
+  % vektor pendukung
+  \node[kelasB,minimum size=2.6mm,rectangle] (s1) at (30,18) {};
+  \node[kelasB,minimum size=2.6mm,rectangle] (s2) at (18,30) {};
+  \node[kelasA,minimum size=2.6mm] (s3) at (34,26) {};
+  \foreach \s in {s1,s2,s3} \draw[dlMerah,thick] (\s) circle (2.6mm);
+  \draw[<->,dlOranye,thick] (24,24) -- (30,30) node[midway,right,font=\scriptsize] {margin $\frac{2}{\|\vect w\|}$};
+  \draw[->,dlHijau!60!black,thick] (27,27) -- (37,37) node[above right,font=\scriptsize] {$\vect w$};
+  \node[keterangan,text=dlMerah,anchor=west] at (36,10) {vektor pendukung};
+  \draw[dlMerah,->] (36,10) -- (32,16);
+\end{tikzpicture}

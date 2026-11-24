@@ -1,0 +1,35 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm]
+  % (a) data XOR
+  \begin{scope}
+  \node[judulkecil] at (14,40) {(a) Data XOR};
+  \draw[->,dlAbu] (-2,0) -- (34,0) node[right,font=\scriptsize] {$x_1$};
+  \draw[->,dlAbu] (0,-2) -- (0,34) node[above,font=\scriptsize] {$x_2$};
+  \node[kelasA,minimum size=3mm] at (4,4) {}; \node[kelasA,minimum size=3mm] at (26,26) {};
+  \node[kelasB,minimum size=3mm,rectangle] at (4,26) {}; \node[kelasB,minimum size=3mm,rectangle] at (26,4) {};
+  \node[font=\scriptsize,anchor=north] at (4,0) {0}; \node[font=\scriptsize,anchor=north] at (26,0) {1};
+  \node[font=\scriptsize,anchor=east] at (0,4) {0}; \node[font=\scriptsize,anchor=east] at (0,26) {1};
+  \draw[dlBiru,thick,dashed] (-2,13) -- (13,-2);
+  \draw[dlBiru,thick,dashed] (15,34) -- (34,15);
+  \node[keterangan,anchor=west] at (20,34) {dua garis\\dibutuhkan};
+  \end{scope}
+  % (b) jaringan 2-2-1
+  \begin{scope}[xshift=52mm]
+  \node[judulkecil] at (22,40) {(b) Jaringan 2--2--1};
+  \node[neuron=dlAbu] (x1) at (0,26) {$x_1$};
+  \node[neuron=dlAbu] (x2) at (0,6) {$x_2$};
+  \node[neuron=dlBiru] (h1) at (24,26) {$h_1$};
+  \node[neuron=dlBiru] (h2) at (24,6) {$h_2$};
+  \node[neuron=dlOranye] (o) at (46,16) {$o$};
+  \draw[alur] (x1) -- node[above,font=\tiny] {0,5} (h1);
+  \draw[alur] (x1) -- node[pos=.25,above,sloped,font=\tiny] {$-0{,}5$} (h2);
+  \draw[alur] (x2) -- node[pos=.25,below,sloped,font=\tiny] {0,5} (h1);
+  \draw[alur] (x2) -- node[below,font=\tiny] {$-0{,}5$} (h2);
+  \draw[alur] (h1) -- node[above,sloped,font=\tiny] {1} (o);
+  \draw[alur] (h2) -- node[below,sloped,font=\tiny] {1} (o);
+  \node[font=\tiny,dlHijau!60!black] at (24,32.5) {$b=-0{,}2$};
+  \node[font=\tiny,dlHijau!60!black] at (24,-0.5) {$b=0{,}7$};
+  \node[font=\tiny,dlHijau!60!black] at (46,22.5) {$b=-1$};
+  \node[keterangan] at (0,-6) {masukan}; \node[keterangan] at (24,-6) {tersembunyi};
+  \node[keterangan] at (46,-6) {keluaran};
+  \end{scope}
+\end{tikzpicture}

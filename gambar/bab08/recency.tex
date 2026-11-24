@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=2 by 1,horizontal sep=14mm},
+  width=62mm,height=52mm,axis lines=left,xmin=-40,xmax=92,ymin=0,ymax=0.115,
+  xlabel={recency (hari)},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  title style={font=\sffamily\small\bfseries,text=dlBiru},
+  yticklabel style={/pgf/number format/fixed,/pgf/number format/precision=2},scaled y ticks=false,
+  legend style={draw=none,font=\sffamily\scriptsize,fill=none,at={(0.98,0.97)},anchor=north east}]
+\nextgroupplot[title={(a) Anggota setia},ylabel={kepadatan}]
+  \addplot[const plot mark mid,draw=dlBiru,fill=dlBiru!25] table[x=x,y=h_setia] {gambar/bab08/recency.dat} \closedcycle;
+  \addplot[dlOranye,thick,domain=-40:92,samples=120] {exp(-(x-8.54)^2/(2*20.29^2))/(20.29*sqrt(2*pi))};
+  \addplot[dlAbu,dashed] coordinates {(0,0) (0,0.115)};
+  \legend{histogram,Gaussian NB}
+\nextgroupplot[title={(b) Anggota churn}]
+  \addplot[const plot mark mid,draw=dlMerah,fill=dlMerah!20] table[x=x,y=h_churn] {gambar/bab08/recency.dat} \closedcycle;
+  \addplot[dlOranye,thick,domain=-40:92,samples=120] {exp(-(x-37.22)^2/(2*38.62^2))/(38.62*sqrt(2*pi))};
+  \addplot[dlAbu,dashed] coordinates {(0,0) (0,0.115)};
+\end{groupplot}
+\end{tikzpicture}

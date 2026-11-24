@@ -1,0 +1,17 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm,
+  lapis/.style={rectangle,rounded corners=2pt,draw=#1!70!black,fill=#1!12,
+    minimum height=9mm,font=\sffamily\scriptsize,align=center},
+  contoh/.style={font=\sffamily\scriptsize,align=left,anchor=west,text width=50mm}]
+  \foreach \i/\w/\nama/\warna/\eks in {
+    0/44/{\textbf{Fase}}/dlBiru/{Persiapan data},
+    1/38/{\textbf{Tugas generik}}/dlBiruMuda/{Membersihkan data (berlaku untuk semua proyek)},
+    2/32/{\textbf{Tugas khusus}}/dlHijau/{Mengisi nilai umur yang kosong pada data anggota loyalitas},
+    3/26/{\textbf{Instans proses}}/dlOranye/{Catatan: 1.204 nilai umur kosong diisi median per kota, dikerjakan Rani, 12 Maret 2026}}{
+    \node[lapis=\warna,minimum width=\w mm] (l\i) at (0,-\i*11) {\nama};
+    \node[contoh] at (26,-\i*11) {\eks};
+    \draw[sambungan,dashed] (l\i.east) -- (25,-\i*11);
+  }
+  \draw[alurtebal] (-27,1)--(-27,-34) node[midway,sloped,above,font=\sffamily\scriptsize] {makin spesifik};
+  \node[keterangan,anchor=south] at (0,6) {model rujukan (umum)};
+  \node[keterangan,anchor=north] at (0,-39) {proyek nyata (spesifik)};
+\end{tikzpicture}

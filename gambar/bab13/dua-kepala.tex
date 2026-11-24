@@ -1,0 +1,14 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm,lap/.style={layer=#1,minimum width=24mm,minimum height=6mm,font=\sffamily\scriptsize,align=center}]
+  \node[lap=dlAbu] (num) at (0,10) {15 atribut numerik\\+ 9 kolom one-hot};
+  \node[lap=dlTosca] (g) at (0,-6) {gerai utama (0--39)};
+  \node[lap=dlTosca] (e) at (30,-6) {embedding\\40 $\times$ 3};
+  \node[lap=dlBiru] (h1) at (60,4) {Linear 64 + ReLU\\+ Dropout};
+  \node[lap=dlBiru] (h2) at (60,-10) {Linear 32 + ReLU};
+  \node[lap=dlOranye] (k1) at (96,4) {kepala ``beli?''\\logit $\to\hat p$};
+  \node[lap=dlOranye] (k2) at (96,-10) {kepala ``nilai''\\softplus $\to\hat v$};
+  \node[loss,font=\sffamily\scriptsize] (out) at (126,-3) {$\hat y=\hat p\cdot\hat v$};
+  \draw[alur] (g) -- (e); \draw[alur] (num) -| (45,4) -- (h1); \draw[alur] (e) -| (45,4);
+  \draw[alur] (h1) -- (h2); \draw[alur] (h2.east) -- ++(4,0) |- (k1); \draw[alur] (h2) -- (k2);
+  \draw[alur] (k1) -| (out); \draw[alur] (k2) -| (out);
+  \node[keterangan] at (45,12) {gabung};
+\end{tikzpicture}

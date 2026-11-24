@@ -1,0 +1,19 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm,
+  terima/.style={daun,fill=dlHijau!15},tolak/.style={daun,draw=dlMerah!70!black,fill=dlMerah!10},
+  cabang/.style={font=\sffamily\scriptsize,fill=white,inner sep=1pt}]
+  \node[simpulputusan] (a) at (0,0) {cacat?\\\scriptsize 5 terima / 7 tolak};
+  \node[tolak] (b) at (-28,-18) {tolak\\\scriptsize 0 / 5};
+  \node[simpulputusan] (c) at (22,-18) {kadar air?\\\scriptsize 5 / 2};
+  \node[terima] (d) at (0,-36) {terima\\\scriptsize 3 / 0};
+  \node[terima] (e) at (22,-36) {terima\\\scriptsize 2 / 0};
+  \node[tolak] (f) at (44,-36) {tolak\\\scriptsize 0 / 2};
+  \draw[alur] (a) -- (b) node[midway,cabang] {banyak};
+  \draw[alur] (a) -- (c) node[midway,cabang] {sedikit};
+  \draw[alur] (c) -- (d) node[midway,cabang] {rendah};
+  \draw[alur] (c) -- (e) node[midway,cabang] {sedang};
+  \draw[alur] (c) -- (f) node[midway,cabang] {tinggi};
+  \node[keterangan,anchor=west] at (16,2) {simpul akar};
+  \node[keterangan,anchor=west] at (34,-16) {simpul internal};
+  \node[keterangan,anchor=north] at (-28,-23) {daun};
+  \node[keterangan,anchor=south] at (-15,-6) {cabang};
+\end{tikzpicture}

@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+\begin{axis}[width=92mm,height=54mm,axis lines=left,xmode=log,xlabel={jumlah pohon (skala log)},ylabel={AUC uji},
+  xmin=1,xmax=500,ymin=0.70,ymax=0.93,log ticks with fixed point,xtick={1,5,20,100,500},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  legend style={draw=none,font=\sffamily\scriptsize,at={(0.97,0.03)},anchor=south east},legend cell align=left]
+  \addplot[dlBiru,thick] table[x=b,y=sqrt] {gambar/bab12/jumlah_pohon.dat};
+  \addplot[dlHijau,thick,dashed] table[x=b,y=setengah] {gambar/bab12/jumlah_pohon.dat};
+  \addplot[dlOranye,thick,dotted] table[x=b,y=semua] {gambar/bab12/jumlah_pohon.dat};
+  \addplot[dlAbu,densely dashed,domain=1:500] {0.915};
+  \legend{{max\_features = sqrt},{max\_features = 0,5},{semua atribut (bagging)},{logistik Bab 11}}
+\end{axis}
+\end{tikzpicture}

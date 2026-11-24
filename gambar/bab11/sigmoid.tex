@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=2 by 1,horizontal sep=16mm},
+  width=62mm,height=52mm,axis lines=left,
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  title style={font=\sffamily\small\bfseries,text=dlBiru}]
+\nextgroupplot[title={(a) Fungsi logistik},xlabel={$z=\beta_0+\beta_1x_1+\dots$},ylabel={$\sigma(z)$},xmin=-6,xmax=6,ymin=0,ymax=1.05]
+  \addplot[dlBiru,thick] table[x=z,y=p] {gambar/bab11/sigmoid.dat};
+  \addplot[dlAbu,dashed] coordinates {(-6,0.5) (6,0.5)};
+  \addplot[dlAbu,dashed] coordinates {(0,0) (0,1)};
+\nextgroupplot[title={(b) Logit empiris churn},xlabel={recency (hari)},ylabel={$\log\frac{p}{1-p}$},xmin=0,xmax=105]
+  \addplot[only marks,mark=*,mark size=1.6pt,dlOranye] table[x=x,y=logit] {gambar/bab11/recency_logit.dat};
+  \addplot[dlOranye,thin] table[x=x,y=logit] {gambar/bab11/recency_logit.dat};
+\end{groupplot}
+\end{tikzpicture}

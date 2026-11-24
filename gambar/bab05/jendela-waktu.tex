@@ -1,0 +1,14 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm]
+  \fill[dlBiru!12] (0,0) rectangle (60,8);
+  \fill[dlOranye!15] (64,0) rectangle (100,8);
+  \draw[dlAbu] (0,0) rectangle (100,8);
+  \node[font=\sffamily\scriptsize,align=center] at (30,4) {jendela pengamatan (90 hari)\\atribut dihitung di sini};
+  \node[font=\sffamily\scriptsize,align=center] at (82,4) {jendela hasil (60 hari)\\target dihitung di sini};
+  \draw[dlMerah,line width=1.4pt] (62,-3)--(62,11);
+  \node[font=\sffamily\scriptsize\bfseries,text=dlMerah,anchor=south] at (62,11) {tanggal potong};
+  \node[font=\sffamily\scriptsize,anchor=north] at (0,-1) {1 Jan 2026};
+  \node[font=\sffamily\scriptsize,anchor=north] at (62,-3) {31 Mar 2026};
+  \node[font=\sffamily\scriptsize,anchor=north] at (100,-1) {30 Mei 2026};
+  \draw[->,dlMerah,thick] (90,-8) -- (66,-8);
+  \node[font=\sffamily\scriptsize,text=dlMerah,anchor=west] at (90,-8) {kebocoran: atribut yang ``melihat'' ke sini};
+\end{tikzpicture}

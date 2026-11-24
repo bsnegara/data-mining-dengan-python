@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+\begin{axis}[width=110mm,height=62mm,axis lines=left,xmin=40,xmax=160,
+  xlabel={detik},ylabel={suhu biji ($^\circ$C)},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  legend style={font=\sffamily\scriptsize,draw=none,fill=none,at={(0.98,0.98)},anchor=north east},
+  legend cell align=left]
+\addplot[only marks,mark=*,mark size=0.7pt,dlAbu!70] table[x=t,y=y] {gambar/bab26/halus.dat};
+\addplot[black,thick] table[x=t,y=benar] {gambar/bab26/halus.dat};
+\addplot[dlBiru,thick,dashed] table[x=t,y=rata] {gambar/bab26/halus.dat};
+\addplot[dlOranye,very thick,opacity=.85] table[x=t,y=wav] {gambar/bab26/halus.dat};
+\legend{pengukuran,kurva sebenarnya,rata-rata bergerak 15 detik,wavelet sym8 keras + geser}
+\end{axis}
+\end{tikzpicture}

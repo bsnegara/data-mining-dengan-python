@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+\begin{axis}[width=82mm,height=62mm,axis lines=left,xlabel={kadar air (\%)},ylabel={skor cupping total},
+  xmin=9.5,xmax=15.5,ymin=62,ymax=90,tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  legend style={draw=none,font=\sffamily\scriptsize,at={(1.02,0.95)},anchor=north west},legend cell align=left,
+  scatter/classes={0={mark=*,dlHijau,mark size=1pt,opacity=.6},1={mark=x,dlMerah,mark size=1.6pt}}]
+  \fill[dlMerah!8] (axis cs:12.45,62) rectangle (axis cs:15.5,77.12);
+  \addplot[scatter,only marks,scatter src=explicit symbolic] table[x=kadar_air,y=skor_total,meta=kelas] {gambar/bab06/sebar_biji.dat};
+  \legend{terima,tolak}
+  \draw[dlBiru,line width=1.1pt] (axis cs:9.5,77.12) -- (axis cs:15.5,77.12);
+  \draw[dlBiru,line width=1.1pt,dashed] (axis cs:12.45,62) -- (axis cs:12.45,77.12);
+  \draw[dlBiru,line width=1.1pt,dashed] (axis cs:12.85,77.12) -- (axis cs:12.85,90);
+  \node[font=\sffamily\scriptsize,text=dlBiru,anchor=south west] at (axis cs:9.6,77.2) {skor $\le$ 77,1};
+\end{axis}
+\end{tikzpicture}

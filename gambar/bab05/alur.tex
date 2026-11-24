@@ -1,0 +1,15 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm,
+  langkah/.style={layer=#1,minimum width=24mm,minimum height=9mm,font=\sffamily\scriptsize},
+  langkah/.default=dlBiru]
+  \node[data,minimum width=20mm,font=\sffamily\scriptsize] (m) at (0,0) {data mentah};
+  \node[langkah] (a) at (28,0) {pembersihan};
+  \node[langkah] (b) at (56,0) {nilai hilang};
+  \node[langkah] (c) at (84,0) {transformasi};
+  \node[langkah=dlHijau] (d) at (84,-16) {pengodean\\kategorik};
+  \node[langkah=dlHijau] (e) at (56,-16) {rekayasa fitur};
+  \node[langkah=dlHijau] (f) at (28,-16) {seleksi fitur};
+  \node[data,minimum width=20mm,font=\sffamily\scriptsize,fill=dlOranye!15,draw=dlOranye] (s) at (0,-16) {dataset\\siap model};
+  \draw[alur] (m)--(a); \draw[alur] (a)--(b); \draw[alur] (b)--(c); \draw[alur] (c)--(d);
+  \draw[alur] (d)--(e); \draw[alur] (e)--(f); \draw[alur] (f)--(s);
+  \node[keterangan,anchor=north] at (42,-23) {penyeimbangan kelas dan pemilihan data latih/uji menyertai langkah-langkah ini};
+\end{tikzpicture}

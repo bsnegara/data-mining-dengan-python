@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+\begin{axis}[width=70mm,height=64mm,axis lines=left,xmin=0,xmax=1,ymin=0,ymax=1,
+  xlabel={rata-rata peluang ramalan},ylabel={porsi churn sebenarnya},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  legend style={draw=none,font=\sffamily\scriptsize,at={(0.03,0.97)},anchor=north west}]
+  \addplot[dlAbu,dashed,domain=0:1] {x};
+  \addplot[dlBiru,thick,mark=*,mark size=1.3pt] table[x=ramal,y=nyata] {gambar/bab07/kalibrasi-logistik.dat};
+  \addplot[dlHijau,thick,mark=square*,mark size=1.3pt] table[x=ramal,y=nyata] {gambar/bab07/kalibrasi-hutan.dat};
+  \addplot[dlOranye,thick,mark=triangle*,mark size=1.5pt] table[x=ramal,y=nyata] {gambar/bab07/kalibrasi-nb.dat};
+  \legend{kalibrasi sempurna,logistik,hutan acak,naive Bayes}
+\end{axis}
+\end{tikzpicture}

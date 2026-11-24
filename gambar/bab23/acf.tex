@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+\pgfplotsset{kor/.style={width=58mm,height=48mm,axis lines=left,xmin=0,xmax=21,ymin=-0.45,ymax=0.45,
+  xlabel={lag (minggu)},tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  /pgf/number format/use comma,title style={font=\sffamily\small}}}
+\begin{axis}[kor,name=a,title={ACF}]
+  \addplot[ycomb,dlBiru,thick,mark=*,mark size=1pt] table[x=lag,y=acf] {gambar/bab23/acf.dat};
+  \addplot[dlMerah,dashed,domain=0:21] {0.157}; \addplot[dlMerah,dashed,domain=0:21] {-0.157};
+  \addplot[black,domain=0:21] {0};
+\end{axis}
+\begin{axis}[kor,at={(a.east)},anchor=west,xshift=10mm,title={PACF}]
+  \addplot[ycomb,dlOranye,thick,mark=*,mark size=1pt] table[x=lag,y=pacf] {gambar/bab23/acf.dat};
+  \addplot[dlMerah,dashed,domain=0:21] {0.157}; \addplot[dlMerah,dashed,domain=0:21] {-0.157};
+  \addplot[black,domain=0:21] {0};
+\end{axis}
+\end{tikzpicture}

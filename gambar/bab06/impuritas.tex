@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+\begin{axis}[width=75mm,height=50mm,axis lines=left,xlabel={proporsi kelas pertama $p$},ylabel={ketakmurnian},
+  xmin=0,xmax=1,ymin=0,ymax=1.08,tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  legend style={draw=none,font=\sffamily\scriptsize,at={(1.02,0.5)},anchor=west},legend cell align=left]
+  \addplot[dlBiru,thick,domain=0.001:0.999,samples=100] {-x*log2(x)-(1-x)*log2(1-x)};
+  \addplot[dlOranye,thick,domain=0:1,samples=100] {2*x*(1-x)};
+  \addplot[dlHijau,thick,domain=0:1,samples=3] {min(x,1-x)};
+  \legend{entropi,Gini,salah klasifikasi}
+\end{axis}
+\end{tikzpicture}

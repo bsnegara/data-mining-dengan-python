@@ -1,0 +1,18 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm,
+  v/.style={circle,draw=dlBiru!75!black,fill=dlBiru!10,minimum size=7mm,font=\sffamily\small\bfseries,inner sep=0pt}]
+  % rantai
+  \node[judulkecil] at (14,22) {rantai};
+  \node[v] (a1) at (0,8) {A}; \node[v] (b1) at (14,8) {B}; \node[v] (c1) at (28,8) {C};
+  \draw[alur] (a1)--(b1); \draw[alur] (b1)--(c1);
+  \node[keterangan] at (14,-6) {$A,C$ bergantung\\$A\perp C\mid B$};
+  % garpu
+  \node[judulkecil] at (58,22) {garpu};
+  \node[v] (b2) at (58,14) {B}; \node[v] (a2) at (46,2) {A}; \node[v] (c2) at (70,2) {C};
+  \draw[alur] (b2)--(a2); \draw[alur] (b2)--(c2);
+  \node[keterangan] at (58,-6) {$A,C$ bergantung\\$A\perp C\mid B$};
+  % kolider
+  \node[judulkecil] at (102,22) {kolider};
+  \node[v] (a3) at (90,14) {A}; \node[v] (c3) at (114,14) {C}; \node[v] (b3) at (102,2) {B};
+  \draw[alur] (a3)--(b3); \draw[alur] (c3)--(b3);
+  \node[keterangan] at (102,-6) {$A\perp C$\\bergantung bila $B$ diketahui};
+\end{tikzpicture}

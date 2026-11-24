@@ -1,0 +1,17 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm]
+  \foreach \i/\y in {1/12,2/4,3/-4} \node[neuron=dlAbu] (x\i) at (0,\y) {$x_{\i}$};
+  \node at (0,-10) {$\vdots$};
+  \node[neuron=dlAbu] (xp) at (0,-17) {$x_p$};
+  \node[operasi,minimum size=11mm] (s) at (34,0) {$\Sigma$};
+  \node[operasi,minimum size=11mm,draw=dlOranye!80!black] (f) at (56,0) {$f$};
+  \node (o) at (76,0) {$o$};
+  \foreach \i/\w in {1/w_1,2/w_2,3/w_3} \draw[alur] (x\i) -- node[above,sloped,font=\scriptsize] {$\w$} (s);
+  \draw[alur] (xp) -- node[below,sloped,font=\scriptsize] {$w_p$} (s);
+  \node[neuron=dlHijau] (b) at (34,16) {$1$};
+  \draw[alur] (b) -- node[right,font=\scriptsize] {$b$} (s);
+  \draw[alur] (s) -- node[above,font=\scriptsize] {$z$} (f);
+  \draw[alur] (f) -- (o);
+  \node[keterangan] at (34,-12) {jumlah berbobot\\$z=\sum_j w_jx_j+b$};
+  \node[keterangan] at (56,-12) {aktivasi\\$o=f(z)$};
+  \node[keterangan] at (0,-24) {masukan};
+\end{tikzpicture}

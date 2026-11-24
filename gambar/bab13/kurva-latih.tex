@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+\begin{axis}[width=86mm,height=50mm,axis lines=left,axis y line*=left,xlabel={epoch},ylabel={galat latih (target terstandar)},
+  xmin=0,xmax=35,ymin=0,ymax=0.5,tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  ylabel style={text=dlBiru}]
+  \addplot[dlBiru,thick,mark=*,mark size=0.9pt] table[x=epoch,y=loss] {gambar/bab13/kurva_latih.dat}; \label{gb13latih}
+\end{axis}
+\begin{axis}[width=86mm,height=50mm,axis x line=none,axis y line*=right,ylabel={$R^2$ validasi},
+  xmin=0,xmax=35,ymin=0.55,ymax=0.8,tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  ylabel style={text=dlOranye},
+  legend style={draw=none,font=\sffamily\scriptsize,at={(0.97,0.4)},anchor=east},legend cell align=left]
+  \addlegendimage{/pgfplots/refstyle=gb13latih}\addlegendentry{galat latih}
+  \addplot[dlOranye,thick,mark=square*,mark size=0.9pt] table[x=epoch,y=r2val] {gambar/bab13/kurva_latih.dat};
+  \addlegendentry{$R^2$ validasi}
+\end{axis}
+\end{tikzpicture}

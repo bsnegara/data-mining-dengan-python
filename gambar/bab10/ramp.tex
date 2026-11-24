@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+\begin{axis}[width=96mm,height=58mm,axis lines=left,xmin=-0.5,xmax=23.5,ymin=0.3,ymax=1.2,
+  xlabel={bulan sejak gerai dibuka},ylabel={omzet relatif terhadap bulan 13--20},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  legend style={draw=none,font=\sffamily\scriptsize,at={(0.97,0.05)},anchor=south east},legend cell align=left]
+  \addplot[only marks,mark=*,mark size=0.9pt,dlAbu,opacity=0.6] table[x=bulan,y=relatif] {gambar/bab10/ramp_titik.dat};
+  \addplot[dlBiru,thick] table[x=t,y=patah] {gambar/bab10/ramp_kurva.dat};
+  \addplot[dlOranye,thick,dashed] table[x=t,y=eks] {gambar/bab10/ramp_kurva.dat};
+  \addplot[dlHijau,thick,densely dotted] table[x=t,y=poli] {gambar/bab10/ramp_kurva.dat};
+  \legend{gerai per bulan,garis patah,eksponen jenuh,polinom kuadrat}
+\end{axis}
+\end{tikzpicture}

@@ -65,6 +65,13 @@ python kode/data/bangkitkan_data_proyek.py kode/data
 python kode/bab05/bersihkan.py
 ```
 
+## Menguji seluruh kode
+
+`uji_kaggle.ipynb` menjalankan semua skrip bab dan notebook di lingkungan
+bersih (Kaggle, Colab, atau lokal), membandingkan keluarannya dengan berkas
+`.out`, membangun ulang seluruh data, lalu mencetak ringkasan per bab. Di
+Kaggle: *File → Import Notebook*, nyalakan *Internet*, lalu *Run All*.
+
 ## Lisensi
 
 Kode dan data dirilis dengan lisensi MIT (lihat `LICENSE`).

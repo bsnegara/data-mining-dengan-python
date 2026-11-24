@@ -1,0 +1,10 @@
+\begin{tikzpicture}[dl,x=7mm,y=7mm]
+  \draw[dlAbuMuda,thin] (0,0) grid (5,4);
+  \node[titik=dlBiru,minimum size=2.4mm,label={[font=\sffamily\scriptsize]below left:$\vect{a}$}] (a) at (1,1) {};
+  \node[titik=dlOranye,minimum size=2.4mm,label={[font=\sffamily\scriptsize]above right:$\vect{b}$}] (b) at (4,3) {};
+  \draw[dlMerah,line width=1.2pt] (a)--(b) node[midway,above left,font=\sffamily\scriptsize,text=dlMerah] {Euclides $\sqrt{13}\approx3{,}6$};
+  \draw[dlHijau,line width=1.2pt,dashed] (1,1)--(4,1)--(4,3);
+  \node[font=\sffamily\scriptsize,text=dlHijau,anchor=north] at (2.5,1) {Manhattan $3+2=5$};
+  \draw[dlUngu,line width=1.2pt,densely dotted] (4.18,1)--(4.18,3);
+  \node[font=\sffamily\scriptsize,text=dlUngu,anchor=west,align=left] at (4.3,2) {Chebyshev\\$\max(3,2)=3$};
+\end{tikzpicture}

@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+\pgfplotsset{pantau/.style={width=118mm,height=34mm,axis lines=left,xmin=0,xmax=60,
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  /pgf/number format/use comma,ylabel style={align=center}}}
+\begin{axis}[pantau,name=a,ylabel={$z_t$\\Shewhart},xticklabels={},ymin=-3,ymax=8]
+  \addplot[ycomb,dlBiru,thick] table[x=hari,y=z] {gambar/bab22/cusum.dat};
+  \addplot[dlMerah,dashed,domain=0:60] {3};
+\end{axis}
+\begin{axis}[pantau,name=b,at={(a.south)},anchor=north,yshift=-3mm,ylabel={$C_t$\\CUSUM},xticklabels={},ymin=0]
+  \addplot[dlOranye,thick,mark=*,mark size=0.8pt] table[x=hari,y=c] {gambar/bab22/cusum.dat};
+  \addplot[dlMerah,dashed,domain=0:60] {5};
+\end{axis}
+\begin{axis}[pantau,at={(b.south)},anchor=north,yshift=-3mm,ylabel={$E_t$\\EWMA},xlabel={hari sejak 1 Februari 2026},ymin=0]
+  \addplot[dlHijau,thick,mark=*,mark size=0.8pt] table[x=hari,y=e] {gambar/bab22/cusum.dat};
+  \addplot[dlMerah,dashed,domain=0:60] {0.688};
+\end{axis}
+\end{tikzpicture}

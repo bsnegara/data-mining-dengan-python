@@ -1,0 +1,7 @@
+\begin{tikzpicture}
+\begin{axis}[width=76mm,height=44mm,axis lines=left,xlabel={titik, diurutkan},ylabel={jarak ke tetangga ke-8},
+  xmin=0,xmax=420,ymin=0,ymax=0.6,tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},/pgf/number format/use comma]
+  \addplot[dlBiru,thick] table[x=i,y=d] {gambar/bab15/k_jarak.dat};
+  \draw[dlOranye,dashed] (axis cs:0,0.15) -- (axis cs:420,0.15) node[pos=0.3,above,font=\sffamily\scriptsize] {$\varepsilon=0{,}15$};
+\end{axis}
+\end{tikzpicture}

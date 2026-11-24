@@ -1,0 +1,24 @@
+\begin{tikzpicture}[dl,x=0.78mm,y=0.95mm,
+  s/.style={simpulputusan,font=\sffamily\scriptsize},
+  terima/.style={daun,fill=dlHijau!15,font=\sffamily\scriptsize},
+  tolak/.style={daun,draw=dlMerah!70!black,fill=dlMerah!10,font=\sffamily\scriptsize},
+  c/.style={font=\sffamily\scriptsize,fill=white,inner sep=.5pt}]
+  \node[s] (r) at (0,0) {skor $\le$ 76,4?};
+  \node[s] (a) at (-36,-14) {air $\le$ 12,2?};
+  \node[s] (b) at (36,-14) {air $\le$ 13,2?};
+  \node[s] (a1) at (-50,-28) {cacat $\le$ 2,5?};
+  \node[tolak] (a2) at (-22,-28) {tolak};
+  \node[terima] (a11) at (-60,-42) {terima};
+  \node[tolak] (a12) at (-40,-42) {tolak};
+  \node[s] (b1) at (14,-28) {skor $\le$ 78,4?};
+  \node[s] (b2) at (56,-28) {skor $\le$ 81,2?};
+  \node[s] (b11) at (2,-42) {air $\le$ 12,4?};
+  \node[terima] (b12) at (26,-42) {terima};
+  \node[tolak] (b21) at (48,-42) {tolak};
+  \node[terima] (b22) at (64,-42) {terima};
+  \node[terima] (b111) at (-6,-56) {terima};
+  \node[tolak] (b112) at (10,-56) {tolak};
+  \foreach \p/\q/\t in {r/a/ya,r/b/tidak,a/a1/ya,a/a2/tidak,a1/a11/ya,a1/a12/tidak,b/b1/ya,b/b2/tidak,
+                        b1/b11/ya,b1/b12/tidak,b2/b21/ya,b2/b22/tidak,b11/b111/ya,b11/b112/tidak}
+    \draw[alur] (\p) -- (\q) node[midway,c] {\t};
+\end{tikzpicture}

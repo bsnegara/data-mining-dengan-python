@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=3 by 1,horizontal sep=8mm},
+  width=46mm,height=36mm,axis lines=left,ymin=0,
+  tick label style={font=\sffamily\scriptsize},title style={font=\sffamily\scriptsize\bfseries}]
+  \nextgroupplot[title={(a) skor-$z$, kemiringan 1,63},ylabel={\scriptsize anggota}]
+    \addplot[ybar interval,fill=dlBiru!40,draw=dlBiru] table[x=x,y=n] {gambar/bab05/hist_z.dat};
+  \nextgroupplot[title={(b) $\log(1+x)$, kemiringan $-2{,}63$}]
+    \addplot[ybar interval,fill=dlOranye!40,draw=dlOranye] table[x=x,y=n] {gambar/bab05/hist_log.dat};
+  \nextgroupplot[title={(c) Yeo--Johnson, kemiringan 0,04}]
+    \addplot[ybar interval,fill=dlHijau!40,draw=dlHijau] table[x=x,y=n] {gambar/bab05/hist_yeo.dat};
+\end{groupplot}
+\end{tikzpicture}

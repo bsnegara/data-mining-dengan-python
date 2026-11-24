@@ -1,0 +1,18 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm,
+  sel/.style={rectangle,minimum width=30mm,minimum height=15mm,align=center,font=\sffamily\scriptsize,draw=white,line width=1pt}]
+  \node[sel,fill=dlHijau!22] (tp) at (0,0)   {\textbf{TP}\\positif benar\\churn, ditandai};
+  \node[sel,fill=dlMerah!16] (fn) at (30,0)  {\textbf{FN}\\negatif palsu\\churn, terlewat};
+  \node[sel,fill=dlOranye!20] (fp) at (0,-15) {\textbf{FP}\\positif palsu\\setia, ditandai};
+  \node[sel,fill=dlBiru!12] (tn) at (30,-15) {\textbf{TN}\\negatif benar\\setia, dibiarkan};
+  \node[font=\sffamily\scriptsize,anchor=south] at (0,8.5) {prediksi churn};
+  \node[font=\sffamily\scriptsize,anchor=south] at (30,8.5) {prediksi setia};
+  \node[font=\sffamily\scriptsize\bfseries,anchor=south] at (15,13) {prediksi model};
+  \node[font=\sffamily\scriptsize,anchor=east] at (-16,0) {churn};
+  \node[font=\sffamily\scriptsize,anchor=east] at (-16,-15) {setia};
+  \node[font=\sffamily\scriptsize\bfseries,rotate=90,anchor=south] at (-28,-7.5) {kenyataan};
+  % rumus di samping
+  \node[font=\sffamily\scriptsize,anchor=west,align=left] at (49,-7.5)
+   {presisi $=\dfrac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FP}}$\ \ (kolom kiri)\\[3mm]
+    recall $=\dfrac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FN}}$\ \ (baris atas)\\[3mm]
+    spesifisitas $=\dfrac{\mathrm{TN}}{\mathrm{TN}+\mathrm{FP}}$\ \ (baris bawah)};
+\end{tikzpicture}
