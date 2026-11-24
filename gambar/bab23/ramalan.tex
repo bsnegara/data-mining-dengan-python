@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+\begin{axis}[width=120mm,height=62mm,axis lines=left,xmin=-30,xmax=14,ymin=3.5,ymax=8,
+  xlabel={minggu sejak awal 2026},ylabel={biji per gerai (kg/minggu)},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  /pgf/number format/use comma,
+  legend style={draw=none,font=\sffamily\scriptsize,at={(0.02,0.02)},anchor=south west},legend cell align=left]
+  \fill[dlHijau!8] (axis cs:7.4,3.5) rectangle (axis cs:11.8,8);
+  \node[font=\sffamily\tiny,text=dlHijau!60!black,anchor=north] at (axis cs:9.6,8) {Ramadan};
+  \addplot[name path=lo,draw=none,forget plot] table[x=t,y=lo95] {gambar/bab23/ramalan.dat};
+  \addplot[name path=hi,draw=none,forget plot] table[x=t,y=hi95] {gambar/bab23/ramalan.dat};
+  \addplot[dlOranye!15] fill between[of=lo and hi];
+  \addlegendentry{selang 95\%}
+  \addplot[name path=lo8,draw=none,forget plot] table[x=t,y=lo80] {gambar/bab23/ramalan.dat};
+  \addplot[name path=hi8,draw=none,forget plot] table[x=t,y=hi80] {gambar/bab23/ramalan.dat};
+  \addplot[dlOranye!35] fill between[of=lo8 and hi8];
+  \addlegendentry{selang 80\%}
+  \addplot[black,thick,mark=*,mark size=1pt] table[x=t,y=y] {gambar/bab23/latih.dat};
+  \addlegendentry{data latih}
+  \addplot[black,thick,mark=o,mark size=1.3pt] table[x=t,y=y] {gambar/bab23/ramalan.dat};
+  \addlegendentry{aktual 2026}
+  \addplot[dlOranye!90!black,thick,dashed] table[x=t,y=f] {gambar/bab23/ramalan.dat};
+  \addlegendentry{ARIMA + Fourier + kalender}
+  \addplot[dlAbu,thin,densely dotted,mark=x,mark size=1.5pt] table[x=t,y=naif] {gambar/bab23/ramalan.dat};
+  \addlegendentry{naif musiman}
+\end{axis}
+\end{tikzpicture}

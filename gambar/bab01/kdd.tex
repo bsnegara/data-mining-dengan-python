@@ -1,0 +1,17 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm,
+  wadah/.style={data,minimum width=17mm,minimum height=8.5mm,inner sep=1.5pt,font=\sffamily\scriptsize},
+  langkah/.style={font=\sffamily\scriptsize\itshape,text=dlBiru,align=center}]
+  \foreach \i/\n/\t in {0/d0/{Basis data\\sumber},1/d1/{Data\\target},2/d2/{Data\\terpraproses},
+                        3/d3/{Data\\tertransformasi}}{
+    \node[wadah] (\n) at (\i*22,\i*10) {\t};}
+  \node[wadah,fill=dlOranye!15,draw=dlOranye!70!black] (d4) at (4*22,4*10) {Pola};
+  \node[wadah,fill=dlHijau!15,draw=dlHijau!70!black] (d5) at (5*22,5*10) {Pengetahuan};
+  \foreach \a/\b/\t in {d0/d1/seleksi,d1/d2/praproses,d2/d3/transformasi,d4/d5/{interpretasi/\\evaluasi}}{
+    \draw[alur] (\a.north) |- (\b.west) node[pos=0.75,above,langkah] {\t};}
+  \draw[alur,draw=dlOranye,line width=1.1pt] (d3.north) |- (d4.west)
+     node[pos=0.75,above,langkah,text=dlOranye] {\textbf{data mining}};
+  % umpan balik
+  \draw[umpanbalik,-] (d5.south) -- (d5.south |- 0,-9) -- (d1.south |- 0,-9);
+  \foreach \t in {d1,d2,d3,d4}{\draw[umpanbalik] (\t.south |- 0,-9) -- (\t.south);}
+  \node[keterangan,anchor=north] at (66,-10) {umpan balik: setiap langkah dapat diulang};
+\end{tikzpicture}

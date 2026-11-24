@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+\begin{axis}[width=80mm,height=55mm,axis lines=left,xlabel={kunjungan 90 hari},ylabel={nilai belanja (ribu Rp)},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  scaled ticks=false,ymin=0,xmin=0,
+  legend style={draw=none,font=\sffamily\scriptsize,at={(0.03,0.97)},anchor=north west},
+  scatter/classes={0={mark=*,dlBiru,mark size=1pt,opacity=.55},1={mark=triangle*,dlMerah,mark size=1.6pt}}]
+  \addplot[scatter,only marks,scatter src=explicit symbolic] table[x=frekuensi_90h,y=nilai_90h,meta=churn] {gambar/bab04/sebar.dat};
+  \legend{tidak churn,churn}
+\end{axis}
+\end{tikzpicture}

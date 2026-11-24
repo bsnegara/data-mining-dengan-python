@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+\begin{axis}[width=80mm,height=56mm,axis lines=left,xlabel={skor beda panel},ylabel={jarak di peta},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  /pgf/number format/use comma,
+  legend style={draw=none,font=\sffamily\scriptsize,at={(0.03,0.97)},anchor=north west},legend cell align=left]
+  \addplot[only marks,mark=*,mark size=0.8pt,dlBiru,opacity=0.6] table[x=skor,y=jarak] {gambar/bab21/shepard.dat};
+  \addlegendentry{pasangan kopi}
+  \addplot[thick,dlOranye,const plot] table[x=skor,y=disparitas] {gambar/bab21/shepard.dat};
+  \addlegendentry{regresi monoton}
+\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=2 by 1,horizontal sep=16mm},
+  width=62mm,height=54mm,axis lines=left,
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  title style={font=\sffamily\small\bfseries,text=dlBiru}]
+\nextgroupplot[title={(a) Model linier},xlabel={ramalan (ribu Rp)},ylabel={sisa (ribu Rp)}]
+  \addplot[only marks,mark=*,mark size=0.5pt,dlBiru,opacity=0.45] table[x=pas,y=sisa] {gambar/bab10/sisa_harian.dat};
+  \addplot[dlOranye,thick,domain=700:3600] {0};
+\nextgroupplot[title={(b) Model log},xlabel={ramalan (log omzet)},ylabel={sisa (log)}]
+  \addplot[only marks,mark=*,mark size=0.5pt,dlBiru,opacity=0.45] table[x=pas_log,y=sisa_log] {gambar/bab10/sisa_harian.dat};
+  \addplot[dlOranye,thick,domain=13.5:15] {0};
+\end{groupplot}
+\end{tikzpicture}

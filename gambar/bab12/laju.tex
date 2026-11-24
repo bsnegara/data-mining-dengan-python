@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+\begin{axis}[width=92mm,height=54mm,axis lines=left,xlabel={jumlah pohon $M$},ylabel={log loss uji},
+  xmin=0,xmax=600,ymin=0.2,ymax=0.5,
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  legend style={draw=none,font=\sffamily\scriptsize,at={(0.97,0.55)},anchor=east},legend cell align=left]
+  \addplot[dlMerah,thick] table[x=m,y=nu1] {gambar/bab12/laju.dat};
+  \addplot[dlOranye,thick,dashed] table[x=m,y=nu03] {gambar/bab12/laju.dat};
+  \addplot[dlBiru,thick] table[x=m,y=nu005] {gambar/bab12/laju.dat};
+  \legend{{$\nu=1$},{$\nu=0{,}3$},{$\nu=0{,}05$}}
+  \draw[dlBiru,dashed] (axis cs:191,0.2) -- (axis cs:191,0.2264);
+  \node[font=\sffamily\scriptsize,text=dlBiru,anchor=south] at (axis cs:191,0.228) {191};
+\end{axis}
+\end{tikzpicture}

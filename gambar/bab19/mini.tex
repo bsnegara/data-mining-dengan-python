@@ -1,0 +1,18 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm,
+  v/.style={circle,draw=dlBiru!75!black,fill=dlBiru!10,minimum size=8mm,font=\sffamily\small\bfseries,inner sep=0pt},
+  cpt/.style={font=\sffamily\scriptsize,align=left,draw=dlAbu!50,fill=dlKertas,rounded corners=1.5pt,inner sep=2pt}]
+  \node[v] (H) at (0,30) {H};
+  \node[v] (P) at (40,30) {P};
+  \node[v] (K) at (20,15) {K};
+  \node[v] (J) at (20,0) {J};
+  \node[v] (C) at (20,-15) {C};
+  \foreach \a/\b in {H/K,P/K,K/J,J/C} \draw[alur] (\a) -- (\b);
+  \node[cpt,anchor=east] at (-6,30) {H: musim hujan\\$P(H)=0{,}4$};
+  \node[cpt,anchor=west] at (46,30) {P: jemur terpal\\$P(P)=0{,}4$};
+  \node[cpt,anchor=west] at (50,10) {K: kadar air tinggi\\[1pt]
+    \begin{tabular}{@{}cc|c@{}}H&P&$P(K\mid H,P)$\\\hline ya&ya&0{,}7\\ ya&tidak&0{,}4\\ tidak&ya&0{,}3\\ tidak&tidak&0{,}1\end{tabular}};
+  \node[cpt,anchor=east] at (13,0) {J: berjamur\\[1pt]
+    \begin{tabular}{@{}c|c@{}}K&$P(J\mid K)$\\\hline ya&0{,}5\\ tidak&0{,}05\end{tabular}};
+  \node[cpt,anchor=west] at (27,-15) {C: cacat\\[1pt]
+    \begin{tabular}{@{}c|c@{}}J&$P(C\mid J)$\\\hline ya&0{,}8\\ tidak&0{,}1\end{tabular}};
+\end{tikzpicture}

@@ -1,0 +1,8 @@
+\begin{tikzpicture}
+\begin{axis}[width=92mm,height=60mm,axis lines=left,xmode=log,xlabel={support (skala log)},ylabel={confidence},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},log ticks with fixed point,xtick={0.002,0.005,0.01,0.02,0.05},
+  colormap={lift}{color=(dlAbu!40) color=(dlBiru!50) color=(dlOranye)},colorbar,point meta min=0.4,point meta max=2.1,
+  colorbar style={font=\sffamily\scriptsize,ylabel={lift}},/pgf/number format/use comma]
+  \addplot[scatter,only marks,mark=*,mark size=1.1pt,scatter src=explicit,opacity=.8] table[x=support,y=confidence,meta=lift] {gambar/bab17/aturan.dat};
+\end{axis}
+\end{tikzpicture}

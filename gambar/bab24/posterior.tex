@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+\begin{axis}[name=p0,width=62mm,height=46mm,
+  ymin=0,ymax=1,xmin=0.5,xmax=7.5,axis lines=left,
+  xtick={1,...,7},xticklabels={beranda,promo,cari,detail~menu,keranjang,bayar,selesai},
+  x tick label style={rotate=55,anchor=east,font=\sffamily\tiny},
+  y tick label style={font=\sffamily\scriptsize,/pgf/number format/use comma},
+  ylabel={$P(\text{niat}\mid o_{1:t})$},label style={font=\sffamily\scriptsize},
+  title={sesi berakhir membeli},title style={font=\sffamily\small}]
+\addplot[dlAbu,dashed,domain=0.5:7.5] {0.5};
+\addplot[dlHijau,very thick,mark=*,mark size=1.6pt] coordinates {(1,0.462) (2,0.254) (3,0.355) (4,0.635) (5,0.861) (6,0.866)};
+\end{axis}
+\begin{axis}[name=p1,at={(p0.east)},anchor=west,xshift=14mm,width=62mm,height=46mm,
+  ymin=0,ymax=1,xmin=0.5,xmax=9.5,axis lines=left,
+  xtick={1,...,9},xticklabels={beranda,promo,beranda,lihat~menu,promo,lihat~menu,detail~menu,keranjang,keluar},
+  x tick label style={rotate=55,anchor=east,font=\sffamily\tiny},
+  y tick label style={font=\sffamily\scriptsize,/pgf/number format/use comma},
+  ylabel={$P(\text{niat}\mid o_{1:t})$},label style={font=\sffamily\scriptsize},
+  title={keranjang ditinggalkan},title style={font=\sffamily\small}]
+\addplot[dlAbu,dashed,domain=0.5:9.5] {0.5};
+\addplot[dlHijau,very thick,mark=*,mark size=1.6pt] coordinates {(1,0.462) (2,0.254) (3,0.059) (4,0.219) (5,0.182) (6,0.337) (7,0.496) (8,0.796)};
+\end{axis}
+\end{tikzpicture}

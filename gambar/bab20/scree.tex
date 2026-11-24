@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+\begin{axis}[width=96mm,height=56mm,axis lines=left,ybar,bar width=4mm,
+  xlabel={komponen},ylabel={nilai eigen},xtick={1,...,12},ymin=0,ymax=10.5,
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  /pgf/number format/use comma,
+  legend style={draw=none,font=\sffamily\scriptsize,at={(0.97,0.97)},anchor=north east},legend cell align=left]
+  \addplot[fill=dlBiru!60,draw=dlBiru!80!black] table[x=k,y=lam] {gambar/bab20/scree.dat};
+  \addlegendentry{data}
+  \addplot[sharp plot,dlOranye,thick,dashed,mark=*,mark size=1.2pt] table[x=k,y=acak] {gambar/bab20/scree.dat};
+  \addlegendentry{batas acak 95\% (analisis paralel)}
+  \addplot[sharp plot,dlAbu,densely dotted] coordinates {(0.5,1) (12.5,1)};
+  \addlegendentry{kriteria Kaiser ($\lambda=1$)}
+\end{axis}
+\end{tikzpicture}

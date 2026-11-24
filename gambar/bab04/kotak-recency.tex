@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+\begin{axis}[width=70mm,height=42mm,boxplot/draw direction=x,
+  ytick={1,2},yticklabels={tidak churn,churn},xlabel={hari sejak transaksi terakhir},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  xmin=0,xmax=150,axis lines=left,
+  cycle list={{dlBiru,fill=dlBiru!20},{dlMerah,fill=dlMerah!20}}]
+\input{gambar/bab04/kotak_recency.tex}
+\end{axis}
+\end{tikzpicture}

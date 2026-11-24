@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+\pgfplotsset{dek/.style={width=118mm,height=27mm,axis lines=left,xmin=0,xmax=720,
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  /pgf/number format/use comma,ylabel style={align=center}}}
+\begin{axis}[dek,name=a,ylabel={suhu biji\\($^\circ$C)},xticklabels={}]
+  \addplot[dlBiru,thin] table[x=t,y=x] {gambar/bab26/dekomposisi.dat};
+\end{axis}
+\begin{axis}[dek,name=b,at={(a.south)},anchor=north,yshift=-2mm,ylabel={aproksimasi\\$A_5$},xticklabels={}]
+  \addplot[dlOranye,thick] table[x=t,y=a5] {gambar/bab26/dekomposisi.dat};
+\end{axis}
+\begin{axis}[dek,name=c,at={(b.south)},anchor=north,yshift=-2mm,ylabel={rincian\\$D_4$},xticklabels={}]
+  \addplot[dlHijau,thin] table[x=t,y=d4] {gambar/bab26/dekomposisi.dat};
+\end{axis}
+\begin{axis}[dek,name=d,at={(c.south)},anchor=north,yshift=-2mm,ylabel={rincian\\$D_2$},xticklabels={}]
+  \addplot[dlUngu,thin] table[x=t,y=d2] {gambar/bab26/dekomposisi.dat};
+\end{axis}
+\begin{axis}[dek,at={(d.south)},anchor=north,yshift=-2mm,ylabel={rincian\\$D_1$},xlabel={detik}]
+  \addplot[dlMerah,thin] table[x=t,y=d1] {gambar/bab26/dekomposisi.dat};
+\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+\begin{axis}[width=80mm,height=80mm,enlargelimits=false,
+  colormap={beda}{color=(dlBiru) color=(white) color=(dlMerah)},
+  point meta min=-1,point meta max=1,colorbar,colorbar style={width=3mm,font=\sffamily\scriptsize},
+  xtick={0,...,7},ytick={0,...,7},y dir=reverse,
+  xticklabels={frek,recency,nilai,rata struk,promo,aplikasi,keluhan,umur},
+  yticklabels={frek,recency,nilai,rata struk,promo,aplikasi,keluhan,umur},
+  x tick label style={rotate=45,anchor=east,font=\sffamily\scriptsize},
+  y tick label style={font=\sffamily\scriptsize},axis line style={draw=none},tick style={draw=none},
+  nodes near coords={\pgfmathprintnumber[fixed,precision=2]{\pgfplotspointmeta}},
+  nodes near coords style={font=\sffamily\tiny,anchor=center},
+  visualization depends on={\thisrow{r} \as \r}]
+  \addplot[matrix plot*,mesh/cols=8,point meta=explicit] table[meta=r] {gambar/bab04/korelasi.dat};
+\end{axis}
+\end{tikzpicture}

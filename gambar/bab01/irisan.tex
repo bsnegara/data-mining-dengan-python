@@ -1,0 +1,17 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm]
+  \begin{scope}[blend group=multiply]
+    \fill[dlBiru!22]   (0,0)   circle (17);
+    \fill[dlOranye!25] (20,0)  circle (17);
+    \fill[dlHijau!22]  (10,-17) circle (17);
+  \end{scope}
+  \node[font=\sffamily\scriptsize\bfseries,align=center] at (-6,6)  {Statistika};
+  \node[font=\sffamily\scriptsize\bfseries,align=center] at (26,6)  {Pembelajaran\\mesin};
+  \node[font=\sffamily\scriptsize\bfseries,align=center] at (10,-27) {Basis data dan\\komputasi skala besar};
+  \node[font=\sffamily\scriptsize\bfseries,text=dmKopi,align=center] at (10,-5) {Data\\mining};
+  \node[keterangan,anchor=east,align=right] at (-19,4) {inferensi,\\ketidakpastian,\\desain sampel};
+  \node[keterangan,anchor=west,align=left] at (39,4) {algoritme\\yang belajar\\dari contoh};
+  \node[keterangan,anchor=west,align=left] at (29,-27) {penyimpanan,\\kueri, efisiensi};
+  \draw[sambungan,dashed] (-38,-36) rectangle (58,22);
+  \node[keterangan,anchor=north west] at (-37,21) {Sains data};
+  \node[keterangan,anchor=north east,text=dmKopi] at (57,21) {+ pengetahuan domain};
+\end{tikzpicture}

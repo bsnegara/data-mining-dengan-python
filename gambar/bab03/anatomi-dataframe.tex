@@ -1,0 +1,13 @@
+\begin{tikzpicture}[dl,x=17mm,y=5.5mm,font=\sffamily\scriptsize]
+  \foreach \c [count=\j] in {no\_struk,kode\_gerai,kode\_menu,qty}{
+    \node[fill=dlBiru,text=white,minimum width=17mm,minimum height=5.5mm] at (\j,0) {\c};}
+  \foreach \r [count=\i from 0] in {{S0000001,G24,K03,1},{S0000002,G03,K06,1},{S0000003,G22,M06,1}}{
+    \node[fill=dlAbuMuda,minimum width=8mm,minimum height=5.5mm] at (0.2,-\i-1) {\i};
+    \foreach \v [count=\j] in \r {
+      \node[draw=dlAbuMuda,fill=white,minimum width=17mm,minimum height=5.5mm] at (\j,-\i-1) {\texttt{\v}};}}
+  \draw[dlOranye,line width=1.2pt,rounded corners=1pt] (3.5,0.4) rectangle (4.5,-3.5);
+  \node[keterangan,text=dlOranye] at (4,-4.1) {satu kolom = \texttt{Series}};
+  \node[keterangan] at (0.2,0.8) {indeks};
+  \draw[kurawal] (0.5,0.7) -- (4.5,0.7) node[midway,above=4pt,keterangan] {nama kolom};
+  \node[keterangan,anchor=west] at (0.6,-4.1) {\texttt{DataFrame}: tabel dua dimensi};
+\end{tikzpicture}

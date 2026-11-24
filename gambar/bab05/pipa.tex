@@ -1,0 +1,18 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm,
+  kotak/.style={layer=#1,minimum width=22mm,minimum height=7mm,font=\sffamily\scriptsize},
+  kotak/.default=dlBiru]
+  \node[data,font=\sffamily\scriptsize,minimum width=18mm] (x) at (0,0) {DataFrame};
+  \node[kotak] (i1) at (32,8) {SimpleImputer};
+  \node[kotak] (s1) at (60,8) {StandardScaler};
+  \node[kotak=dlHijau] (i2) at (32,-8) {SimpleImputer};
+  \node[kotak=dlHijau] (o2) at (60,-8) {OneHotEncoder};
+  \node[kotak=dlOranye,minimum height=12mm] (m) at (96,0) {LogisticRegression};
+  \draw[alur] (x.east) -- ++(3,0) |- (i1.west) node[pos=.75,above,font=\sffamily\tiny] {numerik};
+  \draw[alur] (x.east) -- ++(3,0) |- (i2.west) node[pos=.75,below,font=\sffamily\tiny] {kategorik};
+  \draw[alur] (i1)--(s1); \draw[alur] (i2)--(o2);
+  \draw[alur] (s1.east) -| ($(m.west)+(-4,2)$) -- ($(m.west)+(0,2)$);
+  \draw[alur] (o2.east) -| ($(m.west)+(-4,-2)$) -- ($(m.west)+(0,-2)$);
+  \node[kelompok,fit=(i1)(s1)(i2)(o2),label={[font=\sffamily\scriptsize,text=dlAbu]above:ColumnTransformer}] {};
+  \node[draw=dlAbu,rounded corners=4pt,inner sep=3mm,fit=(i1)(o2)(m)(x),
+        label={[font=\sffamily\scriptsize\bfseries,text=dlBiru]below:Pipeline: \texttt{fit} hanya pada data latih}] {};
+\end{tikzpicture}

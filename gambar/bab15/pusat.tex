@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+\begin{axis}[width=96mm,height=56mm,enlargelimits=false,
+  colormap={beda}{color=(dlOranye) color=(white) color=(dlBiru)},point meta min=-2.2,point meta max=2.2,
+  colorbar,colorbar style={font=\sffamily\scriptsize,ylabel={skor z}},
+  xtick={0,...,6},xticklabels={frekuensi,struk,pagi,akhir pekan,promo,kopi hitam,aplikasi},x tick label style={rotate=35,anchor=north east},
+  ytick={0,...,4},yticklabels={{0 mahasiswa},{1 pekerja pagi},{2 keluarga},{3 tidur},{4 penikmat}},y dir=reverse,
+  tick label style={font=\sffamily\scriptsize}]
+  \addplot[matrix plot*,mesh/cols=7,point meta=explicit,nodes near coords={\pgfmathprintnumber[fixed,precision=1,use comma]{\pgfplotspointmeta}},
+    nodes near coords style={font=\sffamily\tiny,anchor=center}] table[meta index=2] {gambar/bab15/pusat_grid.dat};
+\end{axis}
+\end{tikzpicture}

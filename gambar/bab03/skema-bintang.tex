@@ -1,0 +1,18 @@
+\begin{tikzpicture}[dl,
+    tabel/.style={rectangle split,rectangle split parts=2,draw=#1!70!black,
+      fill=#1!8,rectangle split part fill={#1!25,#1!6},align=left,
+      font=\sffamily\scriptsize,inner sep=2.5pt,text width=27mm},
+    tabel/.default=dlBiru]
+  \node[tabel=dlOranye,text width=31mm] (f) {\textbf{FAKTA\_TRANSAKSI}
+    \nodepart{second}no\_struk\\waktu (kunci waktu)\\id\_gerai (kunci)\\kode\_menu (kunci)\\
+    id\_anggota (kunci)\\qty, harga\_satuan\\diskon, nilai};
+  \node[tabel,above left=2mm and 9mm of f] (g) {\textbf{DIM\_GERAI}
+    \nodepart{second}id\_gerai\\nama, kota, provinsi\\tipe\_lokasi};
+  \node[tabel,below left=2mm and 9mm of f] (m) {\textbf{DIM\_MENU}
+    \nodepart{second}kode\_menu\\nama\_menu\\kategori, harga};
+  \node[tabel,above right=2mm and 9mm of f] (w) {\textbf{DIM\_WAKTU}
+    \nodepart{second}tanggal, jam\\hari, minggu, bulan\\libur, Ramadan};
+  \node[tabel,below right=2mm and 9mm of f] (p) {\textbf{DIM\_PELANGGAN}
+    \nodepart{second}id\_anggota\\kota, tanggal\_daftar\\tingkat keanggotaan};
+  \foreach \t in {g,m,w,p}{\draw[sambungan,line width=0.8pt,draw=dlAbu] (f)--(\t);}
+\end{tikzpicture}

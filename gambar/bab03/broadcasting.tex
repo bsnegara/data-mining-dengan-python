@@ -1,0 +1,16 @@
+\begin{tikzpicture}[dl,x=8mm,y=6mm,font=\sffamily\scriptsize]
+  \foreach \v [count=\i] in {22,28,20,18,32}{
+    \node[draw=dlBiru!60,fill=dlBiru!10,minimum width=8mm,minimum height=6mm] at (0,-\i) {\v};}
+  \node[keterangan] at (0,0) {harga (ribu)\\$5\times1$};
+  \node at (0.9,-3) {$\times$};
+  \foreach \v [count=\j] in {1{,}0,0{,}9,0{,}8}{
+    \node[draw=dlHijau!60,fill=dlHijau!10,minimum width=8mm,minimum height=6mm] at (1+\j,-1) {\v};}
+  \node[keterangan] at (3,0) {$1-$diskon, $1\times3$};
+  \node at (5,-3) {$=$};
+  \foreach \v [count=\i] in {22,28,20,18,32}{
+    \foreach \d/\j in {1.0/1,0.9/2,0.8/3}{
+      \pgfmathsetmacro{\h}{\v*\d}
+      \node[draw=dlOranye!60,fill=dlOranye!10,minimum width=8mm,minimum height=6mm]
+        at (5+\j,-\i) {\pgfmathprintnumber[fixed,precision=1,use comma]{\h}};}}
+  \node[keterangan] at (7,0) {harga\_promo, $5\times3$};
+\end{tikzpicture}

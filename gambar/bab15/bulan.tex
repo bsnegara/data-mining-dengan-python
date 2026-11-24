@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+\begin{axis}[name=a,width=62mm,height=46mm,axis lines=box,xmin=-1.6,xmax=2.6,ymin=-1.1,ymax=1.6,ticks=none,
+  title={(a) k-means, $k=2$},title style={font=\sffamily\small\bfseries,text=dlBiru},
+  scatter/classes={0={mark=*,dlBiru,mark size=0.9pt},1={mark=square*,dlOranye,mark size=0.9pt}}]
+  \addplot[scatter,only marks,scatter src=explicit symbolic] table[x=x,y=y,meta=km] {gambar/bab15/bulan.dat};
+\end{axis}
+\begin{axis}[at={(a.east)},anchor=west,xshift=6mm,width=62mm,height=46mm,axis lines=box,xmin=-1.6,xmax=2.6,ymin=-1.1,ymax=1.6,ticks=none,
+  title={(b) DBSCAN},title style={font=\sffamily\small\bfseries,text=dlBiru},
+  scatter/classes={0={mark=*,dlBiru,mark size=0.9pt},1={mark=square*,dlOranye,mark size=0.9pt},-1={mark=x,black,mark size=1.6pt}}]
+  \addplot[scatter,only marks,scatter src=explicit symbolic] table[x=x,y=y,meta=db] {gambar/bab15/bulan.dat};
+\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+\begin{axis}[width=96mm,height=60mm,axis lines=left,xmin=40,xmax=150,ymin=1000,ymax=2600,
+  xlabel={luas gerai (m$^2$)},ylabel={omzet harian 2025 (ribu Rp)},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  y tick label style={/pgf/number format/1000 sep={.}},
+  legend style={draw=none,font=\sffamily\scriptsize,at={(1.02,1)},anchor=north west},legend cell align=left]
+  \addplot[only marks,mark=*,mark size=1.8pt,dlBiru] table[x=luas_m2,y=omzet] {gambar/bab10/luas_mal.dat};
+  \addplot[only marks,mark=square*,mark size=1.6pt,dlHijau] table[x=luas_m2,y=omzet] {gambar/bab10/luas_perkantoran.dat};
+  \addplot[only marks,mark=triangle*,mark size=2.2pt,dlOranye] table[x=luas_m2,y=omzet] {gambar/bab10/luas_kampus.dat};
+  \addplot[only marks,mark=diamond*,mark size=2.2pt,dlMerah] table[x=luas_m2,y=omzet] {gambar/bab10/luas_permukiman.dat};
+  \legend{mal,perkantoran,kampus,permukiman}
+\end{axis}
+\end{tikzpicture}

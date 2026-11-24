@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+\begin{axis}[width=70mm,height=70mm,axis equal image,xmin=2.5,xmax=9.5,ymin=2.5,ymax=9.5,
+  axis lines=left,xlabel={$x_1$ keasaman},ylabel={$x_2$ sitrus},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize}]
+  \addplot[only marks,mark=*,dlBiru,mark size=2pt] coordinates {(4,5) (5,4) (6,6) (7,8) (8,7)};
+  \addplot[only marks,mark=x,black,mark size=3pt,thick] coordinates {(6,6)};
+  \draw[->,thick,dlOranye] (axis cs:6,6) -- (axis cs:8.4,8.4) node[above,font=\sffamily\scriptsize] {PC1};
+  \draw[dlOranye!60,dashed] (axis cs:3.2,3.2) -- (axis cs:6,6);
+  \draw[->,thick,dlHijau] (axis cs:6,6) -- (axis cs:5.0,7.0) node[above left,font=\sffamily\scriptsize] {PC2};
+  \draw[dlAbu,densely dotted] (axis cs:4,5) -- (axis cs:4.5,4.5);
+  \draw[dlAbu,densely dotted] (axis cs:5,4) -- (axis cs:4.5,4.5);
+  \draw[dlAbu,densely dotted] (axis cs:7,8) -- (axis cs:7.5,7.5);
+  \draw[dlAbu,densely dotted] (axis cs:8,7) -- (axis cs:7.5,7.5);
+  \node[font=\sffamily\scriptsize,anchor=north west] at (axis cs:6.1,5.9) {rata-rata};
+\end{axis}
+\end{tikzpicture}

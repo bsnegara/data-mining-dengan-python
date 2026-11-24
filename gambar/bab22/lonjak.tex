@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+\begin{axis}[width=118mm,height=52mm,axis lines=left,xlabel={detik},ylabel={suhu biji ($^\circ$C)},
+  xmin=0,xmax=670,
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  legend style={draw=none,font=\sffamily\scriptsize,at={(0.02,0.98)},anchor=north west},legend cell align=left]
+  \addplot[dlBiru,thin] table[x=t,y=x] {gambar/bab22/lonjak.dat};
+  \addlegendentry{B017}
+  \addplot[only marks,mark=o,mark size=2pt,dlMerah,thick,restrict expr to domain={\thisrow{tanda}}{1:1}] table[x=t,y=x] {gambar/bab22/lonjak.dat};
+  \addlegendentry{ditandai filter Hampel}
+\end{axis}
+\end{tikzpicture}

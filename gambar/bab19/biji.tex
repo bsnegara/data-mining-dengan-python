@@ -1,0 +1,18 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm,
+  v/.style={rounded corners=3pt,draw=dlBiru!75!black,fill=dlBiru!10,minimum width=17mm,minimum height=7mm,font=\sffamily\small},
+  t/.style={v,draw=dmKopi,fill=dmKopi!12}]
+  \node[v] (musim) at (0,30) {musim};
+  \node[v] (jemur) at (24,30) {jemur};
+  \node[v] (basah) at (48,30) {basah};
+  \node[v] (simpan) at (76,30) {simpan};
+  \node[v] (air) at (24,12) {air};
+  \node[v] (jamur) at (52,0) {jamur};
+  \node[t] (cacat) at (52,-18) {cacat};
+  \foreach \a/\b in {musim/air,jemur/air,basah/air,air/jamur,simpan/jamur,jamur/cacat} \draw[alur] (\a)--(\b);
+  \draw[alur,dlOranye,dashed] (jemur.south west) to[out=-110,in=180] (cacat.west);
+  \node[keterangan,anchor=north,text=dlOranye!80!black] at (8,-6) {hanya di\\struktur pakar};
+  \node[keterangan,anchor=west] at (90,30) {lapis 0: kondisi\\dan keputusan awal};
+  \node[keterangan,anchor=west] at (90,12) {lapis 1};
+  \node[keterangan,anchor=west] at (90,0) {lapis 2};
+  \node[keterangan,anchor=west] at (90,-18) {lapis 3: hasil};
+\end{tikzpicture}

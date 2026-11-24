@@ -1,0 +1,58 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm,
+  panel/.style={draw=#1!60,fill=#1!4,rounded corners=3pt,minimum width=34mm,minimum height=27mm},
+  judulpanel/.style={font=\sffamily\scriptsize\bfseries,text=#1!85!black,align=center}]
+  \pgfmathsetseed{11}
+  % ---- 1 Klasifikasi & prediksi
+  \begin{scope}[shift={(0,0)}]
+    \node[panel=dlBiru] at (17,13.5) {};
+    \foreach \i in {1,...,9}{\node[kelasA,minimum size=1.5mm] at ({4+11*rnd},{4+17*rnd}) {};}
+    \foreach \i in {1,...,9}{\node[kelasB,minimum size=1.5mm] at ({20+11*rnd},{4+17*rnd}) {};}
+    \draw[dlBiru,line width=0.9pt,dashed] (17,2)--(18,24);
+    \node[judulpanel=dlBiru] at (17,-4) {Klasifikasi\\dan prediksi};
+  \end{scope}
+  % ---- 2 Klaster
+  \begin{scope}[shift={(39,0)}]
+    \node[panel=dlHijau] at (17,13.5) {};
+    \foreach \cx/\cy/\w in {9/19/dlHijau,25/18/dlOranye,16/7/dlUngu}{
+      \foreach \i in {1,...,7}{\pgfmathsetmacro{\r}{3.5*sqrt(rnd)}\pgfmathsetmacro{\a}{360*rnd}
+        \node[titik=\w,minimum size=1.5mm] at ({\cx+\r*cos(\a)},{\cy+\r*sin(\a)}) {};}
+      \draw[\w,dashed,line width=0.4pt] (\cx,\cy) circle (5);}
+    \node[judulpanel=dlHijau] at (17,-4) {Klaster};
+  \end{scope}
+  % ---- 3 Asosiasi
+  \begin{scope}[shift={(78,0)}]
+    \node[panel=dlOranye] at (17,13.5) {};
+    \foreach \n/\x/\y/\t in {a/8/19/{kopi},b/26/19/{roti},c/8/7/{teh},d/26/7/{kue}}{
+      \node[draw=dlOranye!70!black,fill=white,rounded corners=1.5pt,font=\sffamily\scriptsize,inner sep=1.5pt] (\n) at (\x,\y) {\t};}
+    \draw[->,dlOranye,line width=1.2pt] (a)--(b);
+    \draw[->,dlOranye!60,line width=0.6pt] (c)--(d);
+    \draw[->,dlOranye!40,line width=0.4pt] (a)--(d);
+    \node[judulpanel=dlOranye] at (17,-4) {Asosiasi};
+  \end{scope}
+  % ---- 4 Reduksi
+  \begin{scope}[shift={(0,-40)}]
+    \node[panel=dlUngu] at (17,13.5) {};
+    \foreach \i in {1,...,18}{\pgfmathsetmacro{\t}{-11+22*rnd}\pgfmathsetmacro{\e}{-2.2+4.4*rnd}
+      \node[titik=dlUngu,minimum size=1.4mm] at ({17+\t*0.89-\e*0.45},{13.5+\t*0.45+\e*0.89}) {};}
+    \draw[->,dlUngu!80!black,line width=1.1pt] (17,13.5)--++(26.7:12);
+    \draw[->,dlUngu!50,line width=0.7pt] (17,13.5)--++(116.7:4);
+    \node[judulpanel=dlUngu] at (17,-4) {Reduksi data};
+  \end{scope}
+  % ---- 5 Anomali
+  \begin{scope}[shift={(39,-40)}]
+    \node[panel=dlMerah] at (17,13.5) {};
+    \foreach \i in {1,...,22}{\pgfmathsetmacro{\r}{6*sqrt(rnd)}\pgfmathsetmacro{\a}{360*rnd}
+      \node[titik=dlAbu,minimum size=1.4mm] at ({13+\r*cos(\a)},{12+0.8*\r*sin(\a)}) {};}
+    \node[titik=dlMerah,minimum size=2.2mm] (o) at (28,22) {};
+    \draw[dlMerah,line width=0.6pt] (o) circle (2.4);
+    \node[judulpanel=dlMerah] at (17,-4) {Anomali};
+  \end{scope}
+  % ---- 6 Sekuensial & temporal
+  \begin{scope}[shift={(78,-40)}]
+    \node[panel=dlTosca] at (17,13.5) {};
+    \draw[dlTosca,line width=0.9pt] plot[smooth,domain=0:28,samples=40]
+      (\x+3,{13+5*sin(\x*45)+0.18*\x});
+    \foreach \x in {2,10,18,26}{\draw[dlTosca!50,dashed,line width=0.3pt] (\x+3,3)--(\x+3,25);}
+    \node[judulpanel=dlTosca] at (17,-4) {Sekuensial\\dan temporal};
+  \end{scope}
+\end{tikzpicture}

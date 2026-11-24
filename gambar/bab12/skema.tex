@@ -1,0 +1,28 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm,
+  kotak/.style={data,minimum width=15mm,minimum height=6mm,font=\sffamily\scriptsize},
+  model/.style={simpulputusan,minimum width=13mm,minimum height=6mm,font=\sffamily\scriptsize},
+  gab/.style={loss,minimum width=24mm,font=\sffamily\scriptsize,align=center}]
+  % bagging
+  \node[judulkecil] at (20,30) {(a) Bagging / random forest};
+  \node[kotak] (d) at (20,22) {data latih};
+  \foreach \i/\x in {1/0,2/20,3/40}{
+    \node[kotak] (s\i) at (\x,10) {bootstrap \i};
+    \node[model] (m\i) at (\x,0) {pohon \i};
+    \draw[alur] (d) -- (s\i); \draw[alur] (s\i) -- (m\i);}
+  \node[gab] (g) at (20,-12) {rata-rata / suara\\[-1pt]{\tiny (paralel)}};
+  \foreach \i in {1,2,3} \draw[alur] (m\i) -- (g);
+  % boosting
+  \begin{scope}[xshift=68mm]
+  \node[judulkecil] at (20,30) {(b) Boosting};
+  \node[kotak] (b0) at (0,22) {data latih};
+  \node[model] (h1) at (0,10) {pohon 1};
+  \node[kotak] (r1) at (20,10) {sisa / bobot};
+  \node[model] (h2) at (20,0) {pohon 2};
+  \node[kotak] (r2) at (40,0) {sisa / bobot};
+  \node[model] (h3) at (40,-10) {pohon 3};
+  \draw[alur] (b0) -- (h1); \draw[alur] (h1) -- (r1); \draw[alur] (r1) -- (h2);
+  \draw[alur] (h2) -- (r2); \draw[alur] (r2) -- (h3);
+  \node[gab] (g2) at (8,-14) {jumlah berbobot\\[-1pt]{\tiny (berurutan)}};
+  \draw[alur] (h1) -- (g2); \draw[alur] (h2) -- (g2); \draw[alur] (h3) -- (g2);
+  \end{scope}
+\end{tikzpicture}

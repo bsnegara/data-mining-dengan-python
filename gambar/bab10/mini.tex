@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+\begin{axis}[width=84mm,height=58mm,axis lines=left,xmin=30,xmax=120,ymin=1400,ymax=1850,
+  xlabel={luas gerai (m$^2$)},ylabel={omzet harian (ribu Rp)},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  y tick label style={/pgf/number format/1000 sep={.}}]
+  \addplot[dlOranye,thick,domain=35:115] {1407.17+3.3847*x};
+  \foreach \x/\y in {75/1780,102/1780,59/1640,74/1630,40/1470,110/1700}{
+    \edef\temp{\noexpand\draw[dlMerah,densely dotted,thick] (axis cs:\x,\y) -- (axis cs:\x,{1407.17+3.3847*\x});}
+    \temp}
+  \addplot[only marks,mark=*,mark size=2pt,dlBiru] coordinates {(75,1780) (102,1780) (59,1640) (74,1630) (40,1470) (110,1700)};
+  \node[font=\sffamily\scriptsize,text=dlOranye,anchor=west] at (axis cs:38,1800) {$\hat y = 1407{,}2 + 3{,}385x$};
+\end{axis}
+\end{tikzpicture}

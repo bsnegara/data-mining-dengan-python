@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+\begin{axis}[width=118mm,height=60mm,axis lines=left,xlabel={detik sejak biji masuk},ylabel={RoR ($^\circ$C/menit)},
+  xmin=200,xmax=480,ymin=0,ymax=30,
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  legend style={draw=none,font=\sffamily\scriptsize,at={(0.98,0.98)},anchor=north east},legend cell align=left]
+  \addplot[name path=lo,draw=none,forget plot] table[x=t,y=lo] {gambar/bab22/ror.dat};
+  \addplot[name path=hi,draw=none,forget plot] table[x=t,y=hi] {gambar/bab22/ror.dat};
+  \addplot[dlAbu!25] fill between[of=lo and hi];
+  \addlegendentry{pita acuan $\pm3\sigma$}
+  \addplot[dlBiru,thick] table[x=t,y=b001] {gambar/bab22/ror.dat};
+  \addlegendentry{B001 (normal)}
+  \addplot[dlMerah,thick] table[x=t,y=b038] {gambar/bab22/ror.dat};
+  \addlegendentry{B038 (macet)}
+  \addplot[dlOranye,thick,dashed] table[x=t,y=b055] {gambar/bab22/ror.dat};
+  \addlegendentry{B055 (terlalu cepat)}
+\end{axis}
+\end{tikzpicture}

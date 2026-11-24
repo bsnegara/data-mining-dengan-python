@@ -1,0 +1,7 @@
+\begin{tikzpicture}
+\begin{axis}[width=82mm,height=50mm,axis lines=left,xlabel={recency (hari sejak transaksi terakhir)},ylabel={rata-rata $\hat p$ churn},
+  ymin=0,ymax=0.55,tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  /pgf/number format/use comma]
+  \addplot[dlBiru,thick,mark=*,mark size=1pt] table[x=recency,y=p] {gambar/bab12/pdp.dat};
+\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+\pgfplotsset{stl/.style={width=118mm,height=28mm,axis lines=left,xmin=2023,xmax=2026.3,
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  /pgf/number format/use comma,xtick={2023,2024,2025,2026},ylabel style={align=center},
+  x tick label style={/pgf/number format/1000 sep={}}}}
+\begin{axis}[stl,name=a,ylabel={data},xticklabels={}]
+  \addplot[dlBiru,thin] table[x=t,y=y] {gambar/bab23/stl.dat};
+\end{axis}
+\begin{axis}[stl,name=b,at={(a.south)},anchor=north,yshift=-2mm,ylabel={tren},xticklabels={}]
+  \addplot[dlOranye,thick] table[x=t,y=tren] {gambar/bab23/stl.dat};
+\end{axis}
+\begin{axis}[stl,name=c,at={(b.south)},anchor=north,yshift=-2mm,ylabel={musiman},xticklabels={}]
+  \addplot[dlHijau,thin] table[x=t,y=mus] {gambar/bab23/stl.dat};
+\end{axis}
+\begin{axis}[stl,at={(c.south)},anchor=north,yshift=-2mm,ylabel={sisaan},xlabel={tahun}]
+  \addplot[ycomb,dlAbu] table[x=t,y=sisa] {gambar/bab23/stl.dat};
+\end{axis}
+\end{tikzpicture}

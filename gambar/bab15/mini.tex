@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+\begin{axis}[width=80mm,height=56mm,axis lines=left,xlabel={frekuensi kunjungan per bulan},ylabel={rata-rata struk (puluh ribu Rp)},
+  xmin=0,xmax=14,ymin=0,ymax=8,tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  nodes near coords,point meta=explicit symbolic,nodes near coords style={font=\sffamily\scriptsize,anchor=south west,inner sep=1pt}]
+  \addplot[only marks,mark=*,dlBiru,mark size=1.8pt] table[meta=n,row sep=\\] {x y n\\ 2 1.0 A\\ 3 1.5 B\\ 4 1.0 C\\};
+  \addplot[only marks,mark=square*,dlOranye,mark size=1.8pt] table[meta=n,row sep=\\] {x y n\\ 10 3.0 D\\ 12 3.5 E\\ 11 2.5 F\\};
+  \addplot[only marks,mark=triangle*,dlHijau,mark size=2.2pt] table[meta=n,row sep=\\] {x y n\\ 6 6.0 G\\ 7 7.0 H\\ 5 6.5 I\\ 8 6.0 J\\};
+  \addplot[only marks,mark=x,dlMerah,mark size=3.5pt,line width=1.2pt,nodes near coords={}] coordinates {(3,1.167)(11,3)(6.5,6.375)};
+  \addplot[only marks,mark=o,dlAbu,mark size=3.5pt,nodes near coords={}] coordinates {(2,1)(3,1.5)(4,1)};
+  \node[font=\sffamily\scriptsize,text=dlAbu,anchor=west] at (axis cs:4.6,0.7) {$\leftarrow$ pusat awal (A, B, C)};
+  \node[font=\sffamily\scriptsize,text=dlMerah,anchor=west] at (axis cs:8.6,7.4) {$\times$ pusat akhir};
+\end{axis}
+\end{tikzpicture}

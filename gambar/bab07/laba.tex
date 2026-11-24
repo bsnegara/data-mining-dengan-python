@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=2 by 1,horizontal sep=16mm},
+  width=62mm,height=58mm,axis lines=left,xmin=0,xmax=1,
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  title style={font=\sffamily\small\bfseries,text=dlBiru},
+  legend style={draw=none,font=\sffamily\scriptsize,fill=none}]
+\nextgroupplot[title={(a) Kurva gain kumulatif},xlabel={porsi anggota yang disasar},ylabel={porsi churn tertangkap},ymin=0,ymax=1.02,
+  legend style={at={(0.97,0.03)},anchor=south east}]
+  \addplot[dlBiru,thick] table[x=porsi,y=tangkap] {gambar/bab07/laba.dat};
+  \addplot[dlAbu,dashed,domain=0:1] {x};
+  \legend{model logistik,penyasaran acak}
+\nextgroupplot[title={(b) Kurva laba},xlabel={porsi anggota yang disasar},ylabel={laba bersih (juta Rp)},
+  xmax=0.6,restrict x to domain=0:0.6,ymin=-70,ymax=75]
+  \addplot[dlBiru,thick] table[x=porsi,y=laba] {gambar/bab07/laba.dat};
+  \addplot[dlAbu,thin,domain=0:0.6] {0};
+  \addplot[dlOranye,thick,dashed] coordinates {(0.0385,-70) (0.0385,75)};
+  \node[font=\sffamily\tiny,text=dlOranye,anchor=south west,align=left] at (axis cs:0.045,-65) {anggaran\\1.000 voucer};
+\end{groupplot}
+\end{tikzpicture}

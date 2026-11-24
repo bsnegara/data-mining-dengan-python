@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=3 by 1,horizontal sep=9mm},
+  width=46mm,height=38mm,axis lines=left,ymin=0,
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  title style={font=\sffamily\scriptsize\bfseries},ylabel={anggota}]
+  \nextgroupplot[title={(a) nilai belanja 90 hari},xlabel={ribu rupiah},xmin=0,xmax=2000,
+    scaled ticks=false,xtick={0,1000,2000}]
+    \addplot[ybar interval,fill=dlBiru!40,draw=dlBiru] table[x=x,y=n] {gambar/bab04/hist_nilai.dat};
+  \nextgroupplot[title={(b) skala logaritma},xlabel={$\log_{10}$(rupiah)},xmin=4,xmax=7,ylabel={}]
+    \addplot[ybar interval,fill=dlTosca!40,draw=dlTosca] table[x=x,y=n] {gambar/bab04/hist_lognilai.dat};
+  \nextgroupplot[title={(c) umur},xlabel={tahun},xmin=16,xmax=64,ylabel={}]
+    \addplot[ybar interval,fill=dlOranye!40,draw=dlOranye] table[x=x,y=n] {gambar/bab04/hist_umur.dat};
+\end{groupplot}
+\end{tikzpicture}

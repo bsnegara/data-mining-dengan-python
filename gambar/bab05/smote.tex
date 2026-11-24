@@ -1,0 +1,15 @@
+\begin{tikzpicture}[dl,x=6mm,y=6mm]
+  \pgfmathsetseed{5}
+  \foreach \i in {1,...,40}{\node[kelasA,minimum size=1.5mm,opacity=.5] at ({8*rnd},{5*rnd}) {};}
+  \node[kelasB,minimum size=2.2mm] (a) at (2,1.2) {};
+  \node[kelasB,minimum size=2.2mm] (b) at (3.6,2.3) {};
+  \node[kelasB,minimum size=2.2mm] (c) at (2.6,3.1) {};
+  \node[kelasB,minimum size=2.2mm] (d) at (6.3,3.6) {};
+  \node[kelasB,minimum size=2.2mm] (e) at (5.5,1) {};
+  \draw[dlOranye,dashed] (a)--(b); \draw[dlOranye,dashed] (a)--(c);
+  \node[star,star points=5,fill=dlMerah,draw=white,minimum size=3.2mm,inner sep=0] (s) at ($(a)!0.6!(b)$) {};
+  \node[font=\sffamily\scriptsize,anchor=west,text=dlMerah,align=left,fill=white,inner sep=1pt] (lab) at (9,1.5) {contoh sintetis:\\$\vect{x}_i+\lambda(\vect{x}_j-\vect{x}_i)$};
+  \draw[->,dlMerah,thin] (lab.west) -- (s);
+  \node[font=\sffamily\scriptsize,anchor=east] at (a.west) {$\vect{x}_i$};
+  \node[font=\sffamily\scriptsize,anchor=south] at (b.north) {$\vect{x}_j$};
+\end{tikzpicture}

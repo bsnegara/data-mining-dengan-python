@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+\begin{axis}[width=120mm,height=60mm,axis lines=left,xmin=0.6,xmax=9.4,ymin=0,ymax=16,
+  xtick={1,...,9},xticklabels={Jul,Agu,Sep,Okt,Nov,Des,Jan,Feb,Mar},
+  ylabel={keluhan per 100 ulasan},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  legend style={font=\sffamily\scriptsize,draw=none,fill=none,at={(1.02,0.5)},anchor=west},
+  legend cell align=left,clip=false]
+\addplot[dmKopi,very thick,mark=*,mark size=1.3pt] table[x=t,y=rasa] {gambar/bab25/tren.dat};
+\addplot[dlBiru,thick,mark=square*,mark size=1.2pt] table[x=t,y=aplikasi] {gambar/bab25/tren.dat};
+\addplot[dlMerah,thick,mark=triangle*,mark size=1.6pt] table[x=t,y=pelayanan] {gambar/bab25/tren.dat};
+\addplot[dlUngu,thick,dashed] table[x=t,y=harga] {gambar/bab25/tren.dat};
+\addplot[dlOranye,thick,mark=o,mark size=1.3pt] table[x=t,y=antar] {gambar/bab25/tren.dat};
+\addplot[dlTosca,thick,dotted] table[x=t,y=suasana] {gambar/bab25/tren.dat};
+\legend{rasa,aplikasi,pelayanan,harga,antar,suasana}
+\node[font=\sffamily\tiny,text=dlAbu] at (axis cs:1,-3.2) {2025};
+\node[font=\sffamily\tiny,text=dlAbu] at (axis cs:7,-3.2) {2026};
+\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+\begin{axis}[width=100mm,height=50mm,axis lines=left,xmin=-1100,xmax=850,ymin=-260,ymax=220,
+  xlabel={dimensi 1 (km)},ylabel={dimensi 2 (km)},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  /pgf/number format/1000 sep={.},axis equal image]
+\addplot[only marks,mark=*,dlBiru,mark size=1.8pt] coordinates {(-967,-55) (-558,79) (-97,84) (-56,-115) (239,108) (323,-165) (437,102) (678,-37)};
+\node[font=\sffamily\scriptsize,above,inner sep=2pt] at (axis cs:-967,-55) {Banda Aceh};
+\node[font=\sffamily\scriptsize,above,inner sep=2pt] at (axis cs:-558,79) {Medan};
+\node[font=\sffamily\scriptsize,above,inner sep=2pt] at (axis cs:-97,84) {Pekanbaru};
+\node[font=\sffamily\scriptsize,below,inner sep=2pt] at (axis cs:-56,-115) {Padang};
+\node[font=\sffamily\scriptsize,above,inner sep=2pt] at (axis cs:239,108) {Jambi};
+\node[font=\sffamily\scriptsize,below,inner sep=2pt] at (axis cs:323,-165) {Bengkulu};
+\node[font=\sffamily\scriptsize,below,inner sep=2pt] at (axis cs:437,102) {Palembang};
+\node[font=\sffamily\scriptsize,above left,inner sep=2pt] at (axis cs:678,-37) {Bandar Lampung};
+\end{axis}
+\end{tikzpicture}

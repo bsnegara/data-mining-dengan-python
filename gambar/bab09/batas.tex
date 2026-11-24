@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+\pgfplotsset{peta/.style={scatter,only marks,scatter src=explicit symbolic,
+   scatter/classes={0={mark=square*,mark size=1.25pt,dlBiru!30},
+                    1={mark=square*,mark size=1.25pt,dlHijau!35},
+                    2={mark=square*,mark size=1.25pt,dlUngu!30},
+                    3={mark=square*,mark size=1.25pt,dlMerah!25}}},
+   titik/.style={scatter,only marks,scatter src=explicit symbolic,
+   scatter/classes={0={mark=*,mark size=1.1pt,dlBiru,mark options={draw=white,line width=0.15pt}},
+                    1={mark=*,mark size=1.1pt,dlHijau!70!black,mark options={draw=white,line width=0.15pt}},
+                    2={mark=*,mark size=1.1pt,dlUngu,mark options={draw=white,line width=0.15pt}},
+                    3={mark=*,mark size=1.1pt,dlMerah,mark options={draw=white,line width=0.15pt}}}}}
+\begin{groupplot}[group style={group size=2 by 1,horizontal sep=10mm},
+  width=62mm,height=58mm,axis lines=box,xmin=5.8,xmax=8.8,ymin=6.0,ymax=8.8,
+  xlabel={acidity},tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  title style={font=\sffamily\small\bfseries,text=dlBiru}]
+\nextgroupplot[title={(a) $k=1$},ylabel={body}]
+  \addplot[peta] table[x=x,y=y,meta=c] {gambar/bab09/batas1.dat};
+  \addplot[titik] table[x=x,y=y,meta=c] {gambar/bab09/titik.dat};
+\nextgroupplot[title={(b) $k=25$},yticklabels={}]
+  \addplot[peta] table[x=x,y=y,meta=c] {gambar/bab09/batas25.dat};
+  \addplot[titik] table[x=x,y=y,meta=c] {gambar/bab09/titik.dat};
+\end{groupplot}
+\end{tikzpicture}

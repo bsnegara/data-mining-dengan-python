@@ -1,0 +1,8 @@
+\begin{tikzpicture}
+\begin{axis}[width=88mm,height=52mm,axis lines=left,xmode=log,xmin=0.8,xmax=650,ymin=0,ymax=1,
+  xlabel={banyaknya atribut $p$ (skala log)},ylabel={$d_{\min}/d_{\max}$},
+  xtick={1,2,5,10,20,50,100,200,500},xticklabels={1,2,5,10,20,50,100,200,500},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize}]
+  \addplot[dlBiru,thick,mark=*,mark size=1.3pt] table[x=p,y=rasio] {gambar/bab09/kutukan.dat};
+\end{axis}
+\end{tikzpicture}

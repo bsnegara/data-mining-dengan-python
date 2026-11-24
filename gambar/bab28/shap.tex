@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+\begin{axis}[xbar,width=95mm,height=62mm,bar width=7pt,axis lines=left,xmin=0,
+  ytick=data,yticklabels from table={gambar/bab28/shap_global.dat}{atribut},
+  y tick label style={font=\ttfamily\scriptsize},
+  x tick label style={font=\sffamily\scriptsize,/pgf/number format/use comma},
+  xlabel={rata-rata $|$SHAP$|$ (log-odds)},label style={font=\sffamily\scriptsize},
+  nodes near coords,nodes near coords style={font=\sffamily\tiny,/pgf/number format/use comma,
+    /pgf/number format/fixed,/pgf/number format/precision=2},enlarge y limits=0.08]
+\addplot[fill=dlBiru,draw=none] table[x=shap,y expr=\coordindex] {gambar/bab28/shap_global.dat};
+\end{axis}
+\end{tikzpicture}

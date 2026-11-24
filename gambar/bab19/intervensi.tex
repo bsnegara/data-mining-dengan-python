@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+\begin{axis}[xbar,width=100mm,height=52mm,bar width=4.5mm,xmin=0,xmax=0.11,
+  axis lines*=left,xlabel={$P(\text{cacat})$},
+  symbolic y coords={{tanpa intervensi},{do(jemur=mesin)},{do(simpan=singkat)},{do(air=normal)},{do(air=normal, simpan=singkat)}},
+  ytick=data,y dir=reverse,enlarge y limits=0.15,
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  /pgf/number format/use comma,/pgf/number format/fixed,/pgf/number format/precision=3,
+  scaled x ticks=false,
+  nodes near coords,nodes near coords style={font=\sffamily\scriptsize},
+  every node near coord/.append style={/pgf/number format/precision=3}]
+  \addplot[fill=dlBiru!60,draw=dlBiru!80!black] coordinates {
+    (0.086,{tanpa intervensi}) (0.056,{do(jemur=mesin)}) (0.068,{do(simpan=singkat)})
+    (0.031,{do(air=normal)}) (0.023,{do(air=normal, simpan=singkat)})};
+\end{axis}
+\end{tikzpicture}

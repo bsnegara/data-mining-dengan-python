@@ -1,0 +1,9 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm,
+  v/.style={circle,draw=dlBiru!80!black,fill=dlBiru!10,minimum size=10mm,inner sep=0pt,font=\sffamily\scriptsize,align=center},
+  c/.style={circle,draw=dlOranye!80!black,fill=dlOranye!20,minimum size=11mm,inner sep=0pt,font=\sffamily\scriptsize\bfseries}]
+  \node[c] (y) at (0,0) {churn};
+  \foreach \n/\t [count=\i] in {r/recency,t/tren,k/keluhan,m/ragam\\menu,p/promo,u/ulasan,g/tingkat}{
+    \node[v] (\n) at ({(\i-4)*15},-20) {\t};
+    \draw[alur] (y) -- (\n);}
+  \node[keterangan,anchor=north] at (0,-28) {$P(\text{churn}\mid x_1,\dots,x_7)\ \propto\ P(\text{churn})\,\prod_{j=1}^{7} P(x_j\mid \text{churn})$};
+\end{tikzpicture}

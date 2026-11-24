@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+\begin{axis}[width=92mm,height=56mm,axis lines=left,xmode=log,log basis x=2,
+  xmin=16,xmax=6000,ymin=0.78,ymax=0.92,
+  xlabel={banyaknya anggota latih (skala log)},ylabel={AUC pada data uji},
+  xtick={20,80,320,1280,4800},xticklabels={20,80,320,1.280,4.800},
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  yticklabel style={/pgf/number format/fixed,/pgf/number format/precision=2},
+  legend style={draw=none,font=\sffamily\scriptsize,at={(0.97,0.05)},anchor=south east}]
+  \addplot[dlOranye,thick,mark=*,mark size=1.3pt] table[x=n,y=nb] {gambar/bab08/kurva_belajar.dat};
+  \addplot[dlBiru,thick,mark=square*,mark size=1.3pt] table[x=n,y=log] {gambar/bab08/kurva_belajar.dat};
+  \legend{naive Bayes,regresi logistik}
+\end{axis}
+\end{tikzpicture}

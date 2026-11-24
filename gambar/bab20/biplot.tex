@@ -1,0 +1,51 @@
+\begin{tikzpicture}
+\begin{axis}[width=120mm,height=84mm,axis lines=middle,xmin=-7,xmax=8.6,ymin=-3.2,ymax=4.6,
+  axis equal image=false,xtick={-6,-4,...,6},ytick={-2,0,2,4},
+  tick label style={font=\sffamily\tiny},/pgf/number format/use comma,
+  legend style={draw=none,font=\sffamily\scriptsize,at={(0.01,0.01)},anchor=south west},legend cell align=left]
+\addplot[only marks,mark=*,dlBiru,mark size=1.6pt] coordinates {(2.110,1.980) (2.980,0.840) (2.840,0.170) (3.690,1.610) (-2.640,0.910) (-2.880,-0.930) (1.940,0.850) (-2.900,-1.040) (-3.150,-0.260) (2.020,-2.310) (-2.770,0.250) (-5.380,-0.720) (-0.600,0.850) (0.880,-0.620) (-0.700,0.530) (-1.110,2.240) (-1.110,0.450) (-3.510,1.030) (-3.660,-0.530) (-0.450,-1.150) (-1.040,-1.570)};
+\addlegendentry{arabika}
+\addplot[only marks,mark=square*,dmKopi,mark size=1.8pt] coordinates {(5.670,-1.070) (5.100,-0.860) (4.690,-0.640)};
+\addlegendentry{robusta}
+\node[font=\sffamily\tiny,text=black!70,right,inner sep=1.5pt] at (axis cs:2.110,1.980) {Gayo};
+\node[font=\sffamily\tiny,text=black!70,above right,inner sep=1.5pt] at (axis cs:2.980,0.840) {Mandailing};
+\node[font=\sffamily\tiny,text=black!70,below,inner sep=1.5pt] at (axis cs:2.840,0.170) {Lintong};
+\node[font=\sffamily\tiny,text=black!70,above,inner sep=1.5pt] at (axis cs:3.690,1.610) {Sidikalang};
+\node[font=\sffamily\tiny,text=black!70,above,inner sep=1.5pt] at (axis cs:-2.640,0.910) {Kerinci};
+\node[font=\sffamily\tiny,text=black!70,below right,inner sep=1.5pt] at (axis cs:-2.880,-0.930) {Solok};
+\node[font=\sffamily\tiny,text=black!70,left,inner sep=1.5pt] at (axis cs:1.940,0.850) {Semendo};
+\node[font=\sffamily\tiny,text=black!70,below right,inner sep=1.5pt] at (axis cs:5.670,-1.070) {Lampung Robusta};
+\node[font=\sffamily\tiny,text=black!70,below left,inner sep=1.5pt] at (axis cs:-2.900,-1.040) {Preanger};
+\node[font=\sffamily\tiny,text=black!70,below,inner sep=1.5pt] at (axis cs:-3.150,-0.260) {Malabar};
+\node[font=\sffamily\tiny,text=black!70,right,inner sep=1.5pt] at (axis cs:2.020,-2.310) {Temanggung};
+\node[font=\sffamily\tiny,text=black!70,above,inner sep=1.5pt] at (axis cs:-2.770,0.250) {Ijen};
+\node[font=\sffamily\tiny,text=black!70,above,inner sep=1.5pt] at (axis cs:-5.380,-0.720) {Kintamani};
+\node[font=\sffamily\tiny,text=black!70,above,inner sep=1.5pt] at (axis cs:-0.600,0.850) {Toraja};
+\node[font=\sffamily\tiny,text=black!70,below,inner sep=1.5pt] at (axis cs:0.880,-0.620) {Kalosi};
+\node[font=\sffamily\tiny,text=black!70,right,inner sep=1.5pt] at (axis cs:-0.700,0.530) {Enrekang};
+\node[font=\sffamily\tiny,text=black!70,right,inner sep=1.5pt] at (axis cs:-1.110,2.240) {Bajawa};
+\node[font=\sffamily\tiny,text=black!70,below left,inner sep=1.5pt] at (axis cs:-1.110,0.450) {Manggarai};
+\node[font=\sffamily\tiny,text=black!70,above,inner sep=1.5pt] at (axis cs:-3.510,1.030) {Wamena};
+\node[font=\sffamily\tiny,text=black!70,below,inner sep=1.5pt] at (axis cs:-3.660,-0.530) {Pegunungan Bintang};
+\node[font=\sffamily\tiny,text=black!70,below left,inner sep=1.5pt] at (axis cs:-0.450,-1.150) {Halmahera};
+\node[font=\sffamily\tiny,text=black!70,below,inner sep=1.5pt] at (axis cs:-1.040,-1.570) {Malino};
+\node[font=\sffamily\tiny,text=black!70,below left,inner sep=1.5pt] at (axis cs:5.100,-0.860) {Aceh Robusta};
+\node[font=\sffamily\tiny,text=black!70,left,inner sep=1.5pt] at (axis cs:4.690,-0.640) {Dampit};
+\draw[->,dlOranye!85!black,thin] (axis cs:0,0) -- (axis cs:-3.42,1.10);
+\draw[->,dlOranye!85!black,thin] (axis cs:0,0) -- (axis cs:3.01,1.54);
+\draw[->,dlOranye!85!black,thin] (axis cs:0,0) -- (axis cs:3.81,-0.22);
+\draw[->,dlOranye!85!black,thin] (axis cs:0,0) -- (axis cs:3.94,0.33);
+\draw[->,dlOranye!85!black,thin] (axis cs:0,0) -- (axis cs:-3.84,0.32);
+\draw[->,dlOranye!85!black,thin] (axis cs:0,0) -- (axis cs:-3.83,-0.15);
+\draw[->,dlOranye!85!black,thin] (axis cs:0,0) -- (axis cs:-3.75,0.03);
+\draw[->,dlOranye!85!black,thin] (axis cs:0,0) -- (axis cs:-3.74,0.41);
+\draw[->,dlOranye!85!black,thin] (axis cs:0,0) -- (axis cs:-3.56,0.68);
+\draw[->,dlOranye!85!black,thin] (axis cs:0,0) -- (axis cs:3.68,1.02);
+\draw[->,dlOranye!85!black,thin] (axis cs:0,0) -- (axis cs:3.89,-0.15);
+\draw[->,dlOranye!85!black,thin] (axis cs:0,0) -- (axis cs:0.06,3.87);
+\node[font=\sffamily\scriptsize,text=dlOranye!80!black,align=left,anchor=west] at (axis cs:4.0,2.4) {tanah, pahit, rempah,\\kekentalan, cokelat};
+\node[font=\sffamily\scriptsize,text=dlOranye!80!black,align=right,anchor=east] at (axis cs:-3.2,2.3) {buah, bunga, sitrus,\\keasaman, manis, aroma};
+\node[font=\sffamily\scriptsize,text=dlOranye!80!black,anchor=south] at (axis cs:0,3.95) {rasa ikutan};
+\node[font=\sffamily\scriptsize,anchor=south east] at (axis cs:8.6,0.15) {PC1: cerah $\leftrightarrow$ berat};
+\end{axis}
+\end{tikzpicture}

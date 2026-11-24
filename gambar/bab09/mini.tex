@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+\begin{axis}[width=78mm,height=66mm,axis lines=left,xmin=6.3,xmax=8.0,ymin=6.8,ymax=8.0,
+  xlabel={acidity},ylabel={body},axis equal image,
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  legend style={draw=none,font=\sffamily\scriptsize,at={(1.03,1)},anchor=north west},legend cell align=left]
+  \draw[dlOranye,thick,dashed] (axis cs:7.25,7.40) circle[radius=0.43];
+  \addplot[only marks,mark=*,mark size=2.6pt,color=dlHijau] coordinates {(7.50,7.25) (7.25,7.00) (7.75,7.00)};
+  \addplot[only marks,mark=square*,mark size=2.4pt,color=dlBiru] coordinates {(6.75,7.75) (6.50,7.50) (7.00,7.75)};
+  \addplot[only marks,mark=triangle*,mark size=3pt,color=dlUngu] coordinates {(7.75,7.50)};
+  \addplot[only marks,mark=diamond*,mark size=3pt,color=dlMerah] coordinates {(6.75,7.00)};
+  \addplot[only marks,mark=star,mark size=4pt,very thick,color=black] coordinates {(7.25,7.40)};
+  \legend{Kerinci,Gayo,Toraja,Flores,kiriman baru}
+\end{axis}
+\end{tikzpicture}

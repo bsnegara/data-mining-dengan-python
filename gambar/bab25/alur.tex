@@ -1,0 +1,17 @@
+\begin{tikzpicture}[dl,
+  kotak/.style={draw=#1,fill=#1!10,thick,rounded corners=2pt,
+     minimum width=27mm,minimum height=8mm,align=center,font=\sffamily\footnotesize},
+  contoh/.style={font=\ttfamily\scriptsize,text=dlAbu!70!black,align=left,anchor=west}]
+\foreach \i/\nama/\warna/\ex in {
+  0/teks mentah/dlAbu/{Kopinya ENAK bgt, tp antrinya lama dan AC nya ga dingin di sini},
+  1/normalisasi/dlBiru/{kopinya enak banget tapi antrinya lama dan acnya tidak dingin di sini},
+  2/stopword/dlBiru/{kopinya enak banget tapi antrinya lama acnya tidak dingin sini},
+  3/stemming/dlBiru/{kopi enak banget tapi antri lama acnya tidak dingin sini},
+  4/penanda negasi/dlBiru/{kopi enak banget tapi antri lama acnya tidak\_dingin sini},
+  5/vektor TF-IDF/dlOranye/{vektor jarang: hanya kata dan bigram yang muncul bernilai tak nol},
+  6/model/dlHijau/{peluang setiap kelas sentimen dan setiap topik}}{
+  \node[kotak=\warna] (k\i) at (0,-\i*11mm) {\nama};
+  \node[contoh] at (16mm,-\i*11mm) {\ex};
+}
+\foreach \i [count=\j] in {0,...,5}{\draw[alur] (k\i) -- (k\j);}
+\end{tikzpicture}

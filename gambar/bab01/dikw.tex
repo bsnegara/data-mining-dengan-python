@@ -1,0 +1,26 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm]
+  % piramida empat lapis
+  \def\lebar{72}\def\tinggi{48}\def\puncak{1.45}
+  \foreach \i/\nama/\warna in {0/Data/dlAbu,1/Informasi/dlBiruMuda,2/Pengetahuan/dlBiru,3/Kebijaksanaan/dmKopi}{
+    \pgfmathsetmacro{\ya}{\i*\tinggi/4}
+    \pgfmathsetmacro{\yb}{(\i+1)*\tinggi/4}
+    \pgfmathsetmacro{\xa}{\lebar/2*(1-\ya/(\puncak*\tinggi))}
+    \pgfmathsetmacro{\xb}{\lebar/2*(1-\yb/(\puncak*\tinggi))}
+    \fill[\warna!80,draw=white,line width=1pt]
+      (-\xa,\ya)--(\xa,\ya)--(\xb,\yb)--(-\xb,\yb)--cycle;
+    \node[font=\sffamily\scriptsize\bfseries,text=white] at (0,{(\ya+\yb)/2}) {\nama};
+  }
+  % contoh di sisi kanan
+  \foreach \i/\teks in {
+    0/{\texttt{S0001234, G01, K01, 2, 22000}}\\{\color{dlAbu}catatan mentah satu struk},
+    1/{Omzet G01 Januari turun 8\%}\\{\color{dlAbu}data yang diringkas dan diberi konteks},
+    2/{Penurunan terjadi pada jam kuliah}\\{\color{dlAbu}saat libur semester; pola berulang},
+    3/{Geser promo ke jam sore selama}\\{libur kampus\ {\color{dlAbu}(keputusan)}}}{
+    \pgfmathsetmacro{\yc}{(\i+0.5)*\tinggi/4}
+    \pgfmathsetmacro{\xc}{\lebar/2*(1-\yc/(\puncak*\tinggi))}
+    \draw[sambungan,dashed] (\xc+1,\yc)--(36,\yc);
+    \node[anchor=west,font=\sffamily\scriptsize,align=left] at (37,\yc) {\teks};
+  }
+  \draw[alurtebal] (-41,2)--(-41,46) node[midway,sloped,above,font=\sffamily\scriptsize]
+    {makin ringkas, makin bernilai};
+\end{tikzpicture}

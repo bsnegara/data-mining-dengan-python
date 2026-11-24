@@ -1,0 +1,27 @@
+\begin{tikzpicture}[dl,
+  st/.style={circle,draw=#1,fill=#1!10,thick,minimum size=15mm,align=center,
+     font=\sffamily\scriptsize,inner sep=0pt},
+  e/.style={->,draw=dlAbu!60,thin},
+  b/.style={->,draw=dlOranye,very thick},
+  p/.style={font=\sffamily\tiny,fill=white,inner sep=1pt}]
+\foreach \t/\x in {1/0,2/38,3/76}{
+  \node[judulkecil] at (\x mm,15mm) {$t=\t$};}
+\node[keterangan] at (0,9mm) {amatan: m};
+\node[keterangan] at (38mm,9mm) {amatan: d};
+\node[keterangan] at (76mm,9mm) {amatan: k};
+\node[st=dlBiru] (J1) at (0,0) {J\\$\delta=0{,}360$};
+\node[st=dlHijau] (N1) at (0,-26mm) {N\\$\delta=0{,}080$};
+\node[st=dlBiru] (J2) at (38mm,0) {J\\$\delta=0{,}0756$};
+\node[st=dlHijau] (N2) at (38mm,-26mm) {N\\$\delta=0{,}0324$};
+\node[st=dlBiru] (J3) at (76mm,0) {J\\$\delta=0{,}00529$};
+\node[st=dlHijau] (N3) at (76mm,-26mm) {N\\$\delta=0{,}01296$};
+\draw[e] (N1) -- (J2); \draw[e] (N1) -- (N2);
+\draw[e] (N2) -- (J3); \draw[e] (J2) -- (N3);
+\draw[->,draw=dlBiru,thick] (J1) -- node[p,above]{0,7} (J2);
+\draw[->,draw=dlBiru,thick] (J2) -- node[p,above]{0,7} (J3);
+\draw[b] (J1) -- node[p,pos=.3,above right]{0,3} (N2);
+\draw[b] (N2) -- node[p,below]{0,8} (N3);
+\node[keterangan,text width=36mm,anchor=west] at (90mm,-13mm)
+  {Panah biru dan oranye: pendahulu terbaik setiap keadaan. Jalur
+   oranye dilacak mundur dari N di $t=3$: \textbf{J\,N\,N}.};
+\end{tikzpicture}

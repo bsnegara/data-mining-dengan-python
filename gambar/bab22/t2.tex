@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+\begin{axis}[width=118mm,height=48mm,axis lines=left,xlabel={urutan batch},ylabel={$T^2$},
+  xmin=0,xmax=81,ymin=0,ymax=62,
+  tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},/pgf/number format/use comma]
+  \addplot[ycomb,dlBiru,thick] table[x=i,y=t2] {gambar/bab22/t2.dat};
+  \addplot[dlMerah,dashed,domain=0:81] {24.82};
+  \node[font=\sffamily\tiny,text=dlMerah,anchor=south west] at (axis cs:60,24.82) {batas kendali 24,82};
+  \node[font=\sffamily\tiny,anchor=south] at (axis cs:17,26.6) {B017};
+  \node[font=\sffamily\tiny,anchor=south] at (axis cs:38,54) {B038};
+  \node[font=\sffamily\tiny,anchor=south] at (axis cs:55,55.8) {B055};
+\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,11 @@
+\begin{tikzpicture}[dl,node distance=5mm and 7mm]
+  \node[data,minimum width=26mm] (k) {mesin kasir\\\scriptsize CSV, 151 ribu baris};
+  \node[data,minimum width=26mm,below=of k] (a) {aplikasi\\\scriptsize CSV, 60 ribu baris};
+  \node[layer,right=11mm of $(k)!0.5!(a)$,minimum width=24mm] (s) {menyeragamkan\\skema\\\scriptsize\cref{lst:seragamkan}};
+  \node[layer,right=of s,minimum width=24mm] (g) {menggabung\\dimensi\\\scriptsize\cref{lst:gabung}};
+  \node[layer=dlOranye,right=of g,minimum width=22mm] (o) {kubus \&\\grafik\\\scriptsize\cref{lst:olap,lst:grafik}};
+  \node[data,above=of g,minimum width=24mm] (d) {gerai.csv, menu.csv};
+  \draw[alur] (k.east) -- ++(4mm,0) |- (s.west);
+  \draw[alur] (a.east) -- ++(4mm,0) |- (s.west);
+  \draw[alur] (s)--(g); \draw[alur] (g)--(o); \draw[alur] (d)--(g);
+\end{tikzpicture}

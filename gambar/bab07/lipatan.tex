@@ -1,0 +1,15 @@
+\begin{tikzpicture}[dl,x=1mm,y=1mm]
+  \foreach \i in {1,...,5}{
+    \node[font=\sffamily\scriptsize,anchor=east] at (-1,-\i*6+3) {putaran \i};
+    \foreach \j in {1,...,5}{
+      \ifnum\i=\j
+        \fill[dlOranye!70] (\j*14-14,-\i*6+0.8) rectangle ++(13.4,4.4);
+      \else
+        \fill[dlBiru!25] (\j*14-14,-\i*6+0.8) rectangle ++(13.4,4.4);
+      \fi}
+    \node[font=\sffamily\scriptsize,anchor=west] at (71,-\i*6+3) {skor$_\i$};
+  }
+  \fill[dlBiru!25] (0,-37) rectangle ++(5,3.5); \node[font=\sffamily\scriptsize,anchor=west] at (6,-35.2) {lipatan latih};
+  \fill[dlOranye!70] (32,-37) rectangle ++(5,3.5); \node[font=\sffamily\scriptsize,anchor=west] at (38,-35.2) {lipatan validasi};
+  \draw[decorate,decoration={brace,amplitude=4pt},dlAbu] (86,1) -- (86,-29) node[midway,right=3mm,font=\sffamily\scriptsize,align=left,text=black] {skor CV =\\rata-rata\\skor$_1,\dots,$skor$_5$};
+\end{tikzpicture}

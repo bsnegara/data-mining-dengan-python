@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+\begin{axis}[width=104mm,height=70mm,axis lines=left,xlabel={faktor 1 (popularitas umum)},ylabel={faktor 2 (hitam $\leftrightarrow$ susu)},
+  xmin=0.1,xmax=0.85,ymin=-0.32,ymax=0.48,tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize},
+  /pgf/number format/use comma,legend style={draw=none,font=\sffamily\scriptsize,at={(0.02,0.98)},anchor=north west},legend cell align=left]
+\addplot[only marks,mark=*,dlOranye,mark size=1.8pt] coordinates {(0.7704,0.423) (0.4965,0.1787) (0.3674,0.0748) (0.3597,-0.0208) (0.2875,-0.0489) (0.3555,0.0947)};
+\addlegendentry{kopi susu}
+\addplot[only marks,mark=square*,black!70,mark size=1.6pt] coordinates {(0.4334,-0.272) (0.3492,-0.2398) (0.3351,-0.2435) (0.3655,-0.2721) (0.3042,-0.1509)};
+\addlegendentry{kopi hitam}
+\addplot[only marks,mark=triangle*,dlHijau,mark size=2.2pt] coordinates {(0.25,0.0418) (0.2652,0.0517) (0.2519,0.0415) (0.173,0.0234) (0.184,0.0207)};
+\addlegendentry{nonkopi}
+\addplot[only marks,mark=diamond*,dlBiru,mark size=2.2pt] coordinates {(0.3639,-0.0564) (0.3092,-0.0226) (0.3086,-0.0696) (0.2537,-0.0205) (0.3341,-0.0185) (0.3427,-0.0225)};
+\addlegendentry{makanan}
+\node[font=\sffamily\tiny,text=black!75,left,inner sep=2pt] at (axis cs:0.7704,0.423) {Kopi Susu Gula Aren};
+\node[font=\sffamily\tiny,text=black!75,right,inner sep=2pt] at (axis cs:0.4965,0.1787) {Kopi Susu Pandan};
+\node[font=\sffamily\tiny,text=black!75,right,inner sep=2pt] at (axis cs:0.3674,0.0748) {Kopi Susu Klepon};
+\node[font=\sffamily\tiny,text=black!75,above left,inner sep=2pt] at (axis cs:0.3555,0.0947) {Es Kopi Susu Kelapa};
+\node[font=\sffamily\tiny,text=black!75,right,inner sep=2pt] at (axis cs:0.4334,-0.272) {Americano};
+\node[font=\sffamily\tiny,text=black!75,below,inner sep=2pt] at (axis cs:0.3655,-0.2721) {V60 Kerinci};
+\node[font=\sffamily\tiny,text=black!75,left,inner sep=2pt] at (axis cs:0.3042,-0.1509) {Kopi Tubruk Toraja};
+\node[font=\sffamily\tiny,text=black!75,above left,inner sep=2pt] at (axis cs:0.2652,0.0517) {Cokelat Aceh};
+\node[font=\sffamily\tiny,text=black!75,below,inner sep=2pt] at (axis cs:0.173,0.0234) {Es Teh Serai};
+\node[font=\sffamily\tiny,text=black!75,above,inner sep=2pt] at (axis cs:0.184,0.0207) {Es Kelapa Muda};
+\node[font=\sffamily\tiny,text=black!75,right,inner sep=2pt] at (axis cs:0.3639,-0.0564) {Roti Bakar Srikaya};
+\node[font=\sffamily\tiny,text=black!75,below,inner sep=2pt] at (axis cs:0.3086,-0.0696) {Croissant Mentega};
+\node[font=\sffamily\tiny\itshape,text=dlAbu,align=left,anchor=west] at (axis cs:0.47,-0.05) {gugus tengah: Cafe Latte, Cappuccino,\\ Teh Tarik, Matcha Latte, roti \& kue};
+\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+\begin{axis}[width=82mm,height=62mm,enlargelimits=false,colormap={biru}{color=(white) color=(dlBiru!25) color=(dlBiru!55)},
+  colorbar,colorbar style={font=\sffamily\scriptsize,ylabel={AUC CV}},point meta min=0.58,point meta max=0.95,
+  xtick={0,...,5},xticklabels={$10^{-4}$,$10^{-3}$,$10^{-2}$,$10^{-1}$,$1$,$10$},
+  ytick={0,...,5},yticklabels={$10^{-2}$,$10^{-1}$,$1$,$10$,$10^{2}$,$10^{3}$},
+  xlabel={$\gamma$},ylabel={$C$},tick label style={font=\sffamily\scriptsize},label style={font=\sffamily\scriptsize}]
+  \addplot[matrix plot*,mesh/cols=6,point meta=explicit,nodes near coords={\pgfmathprintnumber[fixed,precision=2,use comma]{\pgfplotspointmeta}},
+    nodes near coords style={font=\sffamily\scriptsize,anchor=center}] table[meta index=2] {gambar/bab14/kisi.dat};
+\end{axis}
+\end{tikzpicture}
